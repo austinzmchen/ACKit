@@ -1,0 +1,6 @@
+framework module ACKit {
+  umbrella header "ACKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

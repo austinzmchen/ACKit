@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ACKit_Example' do
+  pod 'ACKit', :path => '../'
+
+  target 'ACKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
