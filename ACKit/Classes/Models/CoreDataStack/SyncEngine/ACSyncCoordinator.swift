@@ -41,7 +41,7 @@ open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
             do {
                 try self.syncContext.managedObjectContext!.save()
             } catch let e {
-                log(error: e.localizedDescription)
+                acLog(error: e.localizedDescription)
             }
         })
     }
@@ -63,37 +63,37 @@ open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
         return ACCoreDataStack()
     }()
     
-    lazy var collectionProcessor: STCollectionProcessorType = {
-        return STCollectionProcessor(context: self.syncContext)
-    }()
-   
-    lazy var contentProcessor: STContentProcessorType = {
-        return STContentProcessor(context: self.syncContext)
-    }()
-    
-    lazy var mediaProcessor: STMediaProcessorType = {
-        return STMediaProcessor(context: self.syncContext)
-    }() 
-    
-    lazy var contentPackageProcessor: STContentPackageProcessorType = {
-        return STContentPackageProcessor(context: self.syncContext)
-    }()
-    
-    lazy var watchHistoryProcessor: STWatchHistoryProcessorType = {
-        return STWatchHistoryProcessor(context: self.syncContext)
-    }()
+//    lazy var collectionProcessor: STCollectionProcessorType = {
+//        return STCollectionProcessor(context: self.syncContext)
+//    }()
+//
+//    lazy var contentProcessor: STContentProcessorType = {
+//        return STContentProcessor(context: self.syncContext)
+//    }()
+//
+//    lazy var mediaProcessor: STMediaProcessorType = {
+//        return STMediaProcessor(context: self.syncContext)
+//    }()
+//
+//    lazy var contentPackageProcessor: STContentPackageProcessorType = {
+//        return STContentPackageProcessor(context: self.syncContext)
+//    }()
+//
+//    lazy var watchHistoryProcessor: STWatchHistoryProcessorType = {
+//        return STWatchHistoryProcessor(context: self.syncContext)
+//    }()
     
     func syncAll(_ completion: @escaping (_ success: Bool, _ synced: [Any]?, _ error: Error?) -> ()) {
-        self.collectionProcessor.sync { (success, syncedObjects, error) in
-            completion(success, syncedObjects, nil)
-            
-            // post note
-            var userInfo: [String: Any] = [:]
-            if let sd = syncedObjects {
-                userInfo = ["kSynced": sd]
-            }
-            NotificationCenter.default.post(name: Notification.Name(rawValue: ACSyncAllCompletedNotification), object: nil, userInfo: userInfo)
-        }
+//        self.collectionProcessor.sync { (success, syncedObjects, error) in
+//            completion(success, syncedObjects, nil)
+//            
+//            // post note
+//            var userInfo: [String: Any] = [:]
+//            if let sd = syncedObjects {
+//                userInfo = ["kSynced": sd]
+//            }
+//            NotificationCenter.default.post(name: Notification.Name(rawValue: ACSyncAllCompletedNotification), object: nil, userInfo: userInfo)
+//        }
     }
 
 }
@@ -124,8 +124,6 @@ extension ACSyncCoordinator: ContextOwnerType {
 extension ACSyncCoordinator {
     func registerValueTransformers() {
         // should only run once
-        ValueTransformer.setValueTransformer(STJsonImagesTransformer(), forName: NSValueTransformerName(rawValue: "kSTJsonImagesTransformer"))
-        ValueTransformer.setValueTransformer(STJsonGenresTransformer(), forName: NSValueTransformerName(rawValue: "kSTJsonGenresTransformer"))
-        ValueTransformer.setValueTransformer(STJsonContentPackagesTransformer(), forName: NSValueTransformerName(rawValue: "kSTJsonContentPackagesTransformer"))
+        ValueTransformer.setValueTransformer(ACJsonReplaceMeTransformer(), forName: NSValueTransformerName(rawValue: "kACJsonReplaceMeTransformer"))
     }
 }

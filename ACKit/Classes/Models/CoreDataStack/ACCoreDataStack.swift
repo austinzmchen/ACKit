@@ -53,7 +53,7 @@ class ACCoreDataStack: NSObject, ACCoreDataStackType {
             NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
             abort()
         } catch let e {
-            log(error: e.localizedDescription)
+            acLog(error: e.localizedDescription)
         }
         return coordinator
     }()
@@ -88,7 +88,7 @@ extension ACCoreDataStack {
                                                                        options: [NSMigratePersistentStoresAutomaticallyOption: true,
                                                                                  NSInferMappingModelAutomaticallyOption: true])
         } catch let e {
-            log(error: e.localizedDescription)
+            acLog(error: e.localizedDescription)
         }
     }
 }

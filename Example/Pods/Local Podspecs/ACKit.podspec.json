@@ -9,14 +9,14 @@
     "file": "LICENSE"
   },
   "authors": {
-    "austinzmchen": "austin@hubub.com"
+    "austinzmchen": "austin@accodeworks.com"
   },
   "source": {
     "git": "https://github.com/austinzmchen/ACKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "ACKit/Classes/**/*"
+  "source_files": "ACKit/Classes/**/*.{m,h,mm,hpp,cpp,c,swift}"
 }

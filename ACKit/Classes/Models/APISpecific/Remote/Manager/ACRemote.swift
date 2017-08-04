@@ -93,7 +93,7 @@ class ACRemote: ACSimpleRemote {
         super.init()
         
         if let d = self.remoteSession?.domain {
-            baseUrl = ACSettings.shared.host.prefixUrl
+            baseUrl = ""
         }
         
         if isRetryEnabled,

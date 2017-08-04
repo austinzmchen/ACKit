@@ -24,19 +24,20 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/austinzmchen/ACKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'austinzmchen' => 'austin@hubub.com' }
+  s.author           = { 'austinzmchen' => 'austin@accodeworks.com' }
   s.source           = { :git => 'https://github.com/austinzmchen/ACKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'ACKit/Classes/**/*'
+  s.source_files = 'ACKit/Classes/**/*.{m,h,mm,hpp,cpp,c,swift}'
   
   # s.resource_bundles = {
   #   'ACKit' => ['ACKit/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'Alamofire'
+  s.dependency 'AlamofireObjectMapper'
 end

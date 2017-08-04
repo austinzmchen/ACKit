@@ -236,7 +236,7 @@ extension NSManagedObjectContext {
         do {
             try self.persistentStoreCoordinator?.execute(deleteRequest, with: self)
         } catch let e {
-            log(error: e.localizedDescription)
+            acLog(error: e.localizedDescription)
         }
     }
 }
