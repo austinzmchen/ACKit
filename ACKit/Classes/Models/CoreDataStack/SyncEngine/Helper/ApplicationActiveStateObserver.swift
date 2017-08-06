@@ -8,15 +8,14 @@
 
 import UIKit
 
-
-protocol ObserverTokenStore : class {
+public protocol ObserverTokenStore : class {
     func addObserverToken(_ token: NSObjectProtocol)
 }
 
 /// This is a helper protocol for the SyncCoordinator.
 ///
 /// It receives application active / background state changes and forwards them after switching onto the right queue.
-protocol ApplicationActiveStateObserving : class, ObserverTokenStore {
+public protocol ApplicationActiveStateObserving : class, ObserverTokenStore {
     /// Runs the given block on the right queue & group.
     func performGroupedBlock(_ block: () -> ())
     
@@ -27,7 +26,7 @@ protocol ApplicationActiveStateObserving : class, ObserverTokenStore {
 
 
 extension ApplicationActiveStateObserving {
-    func setupApplicationActiveNotifications() {
+    public func setupApplicationActiveNotifications() {
         addObserverToken(NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidEnterBackground, object: nil, queue: nil) { [weak self] note in
             guard let observer = self else { return }
             observer.performGroupedBlock {

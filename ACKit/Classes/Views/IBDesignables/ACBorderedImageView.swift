@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ACBorderedImageView: UIImageView {
+open class ACBorderedImageView: UIImageView {
 
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {

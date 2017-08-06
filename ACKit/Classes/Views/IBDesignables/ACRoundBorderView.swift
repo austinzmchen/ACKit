@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ACRoundBorderView: ACBorderedView {
+open class ACRoundBorderView: ACBorderedView {
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = self.bounds.size.height / 2.0
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ACBorderedLabel: UILabel {
+open class ACBorderedLabel: UILabel {
 
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -32,7 +32,7 @@ class ACBorderedLabel: UILabel {
     @IBInspectable var textInsets: CGRect = CGRect()
     
     // to add a content insets
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         let insets = UIEdgeInsets(top: textInsets.origin.x,
                                   left: textInsets.origin.y,
                                   bottom: textInsets.size.width,

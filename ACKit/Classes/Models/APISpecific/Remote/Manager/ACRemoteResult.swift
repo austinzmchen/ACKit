@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ACRemoteResult<Value> {
+public enum ACRemoteResult<Value> {
     case success(Value)
     case failure(Error?)
     

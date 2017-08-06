@@ -8,20 +8,20 @@
 import Foundation
 import ObjectMapper
 
-typealias ACSyncableKeyValuePairType = (key: String, value: AnyObject?)
+public typealias ACSyncableKeyValuePairType = (key: String, value: AnyObject?)
 
-class ACSyncableJsonRecord: NSObject, Mappable, ACRemoteRecordSyncableType {
+open class ACSyncableJsonRecord: NSObject, Mappable, ACRemoteRecordSyncableType {
     
     // MARK: app specific stored properties
-    var id: Int64 = -1
+    open var id: Int64 = -1
     
     var order: Int = -1 // optional, ordering info
     var relationshipId: Int64? // optional, for adding relationship to parent
 
     override init() {}
-    required init?(map: Map) {}
+    required public init?(map: Map) {}
     
-    func mapping(map: Map) {
+    open func mapping(map: Map) {
         id <- map["Id"]
     }
 }

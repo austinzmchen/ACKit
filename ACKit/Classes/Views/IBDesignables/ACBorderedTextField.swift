@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ACBorderedTextField: UITextField {
+open class ACBorderedTextField: UITextField {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -32,12 +32,12 @@ class ACBorderedTextField: UITextField {
     @IBInspectable var textInsets: CGRect = CGRect()
     
     // placeholder position
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: textInsets.origin.y, dy: textInsets.size.height);
     }
     
     // text position
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.insetBy(dx: textInsets.origin.y, dy: textInsets.size.height);
     }
     
@@ -46,7 +46,7 @@ class ACBorderedTextField: UITextField {
     private var isAttributedPlaceholderSet = false // prevent repeated setting placehoder, as it causes crash for ios 9
     
     // MARK: life cycle 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         if !isAttributedPlaceholderSet,
@@ -54,8 +54,8 @@ class ACBorderedTextField: UITextField {
             let phc = placeholderFontColor
         {
             self.attributedPlaceholder = NSAttributedString(string: ph, attributes:
-                [NSAttributedStringKey.font : UIFont.systemFont(ofSize: placeholderFontSize, weight: UIFont.Weight.regular),
-                 NSAttributedStringKey.foregroundColor: phc])
+                [NSFontAttributeName : UIFont.systemFont(ofSize: placeholderFontSize, weight: UIFontWeightRegular),
+                 NSForegroundColorAttributeName: phc])
             isAttributedPlaceholderSet = true
         }
         

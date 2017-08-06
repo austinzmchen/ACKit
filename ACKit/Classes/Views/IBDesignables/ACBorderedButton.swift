@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ACBorderedButton: UIButton {
+open class ACBorderedButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -43,10 +43,10 @@ class ACBorderedButton: UIButton {
         }
     }
 
-    var bgColor: UIColor? = nil
-    @IBInspectable var hightlightBGColor: UIColor?
+    open var bgColor: UIColor? = nil
+    @IBInspectable open var hightlightBGColor: UIColor?
     
-    override var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         didSet {
             if let c = self.hightlightBGColor {
                 if isHighlighted {
@@ -62,7 +62,7 @@ class ACBorderedButton: UIButton {
     }
     
     // MARK: overrides 
-    override var isEnabled: Bool {
+    open override var isEnabled: Bool {
         didSet {
             if isEnabled {
                 self.alpha = 1.0
@@ -73,7 +73,7 @@ class ACBorderedButton: UIButton {
     }
     
     // MARK: life cycle
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         if circularCorner {

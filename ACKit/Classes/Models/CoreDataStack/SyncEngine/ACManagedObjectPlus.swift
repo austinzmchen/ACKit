@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 // update this alias if base managed object changes
-typealias ACManagedObject = ACBase
+public typealias ACManagedObject = ACBase
 
-protocol ACManagedObjectType {
+public protocol ACManagedObjectType {
     static func insertItem<T: ACManagedObject>(byID id: Int64, context: NSManagedObjectContext) -> T
     static func removeItem<T: ACManagedObject>(ofType type: T.Type, byID id: String, context: NSManagedObjectContext)
     static func removeByObjectID(_ objectID: NSManagedObjectID, context: NSManagedObjectContext)
@@ -22,14 +22,14 @@ protocol ACManagedObjectType {
 
 extension ACManagedObject: ACManagedObjectType {
     // Insert code here to add functionality to your managed object subclass
-    static func insertItem<T: ACManagedObject>(byID id: Int64, context: NSManagedObjectContext) -> T {
+    open static func insertItem<T: ACManagedObject>(byID id: Int64, context: NSManagedObjectContext) -> T {
         let item:T = NSManagedObject.insertObject(byContext: context)
         item.id = id
         return item
     }
 
     // more expensive than delete by ManagedObjectID
-    static func removeItem<T: ACManagedObject>(ofType type: T.Type, byID id: String, context: NSManagedObjectContext) {
+    open static func removeItem<T: ACManagedObject>(ofType type: T.Type, byID id: String, context: NSManagedObjectContext) {
         let entityName = String(describing: type)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         fetchRequest.predicate = NSPredicate(format: "itemID == %@", id)
@@ -40,7 +40,7 @@ extension ACManagedObject: ACManagedObjectType {
         }
     }
     
-    static func removeByObjectID(_ objectID: NSManagedObjectID, context: NSManagedObjectContext) {
+    open static func removeByObjectID(_ objectID: NSManagedObjectID, context: NSManagedObjectContext) {
         let object = context.object(with: objectID)
         context.delete(object)
     }
@@ -49,14 +49,14 @@ extension ACManagedObject: ACManagedObjectType {
 extension NSManagedObject {
     
     // Insert code here to add functionality to your managed object subclass
-    class func insertObject<T: NSManagedObject>(byContext context: NSManagedObjectContext) -> T {
+    open class func insertObject<T: NSManagedObject>(byContext context: NSManagedObjectContext) -> T {
         let entityName = String(describing: T.self)
         let object:T = NSEntityDescription.insertNewObject(forEntityName: entityName, into: context) as! T
         return object
     }
     
     // update managedObject by its keyValue pairs
-    func updateByKeyValuePairs(_ keyValuePairs: [ACSyncableKeyValuePairType]) -> Void {
+    open func updateByKeyValuePairs(_ keyValuePairs: [ACSyncableKeyValuePairType]) -> Void {
         for (managedObjectkey, managedObjectValue) in keyValuePairs {
             guard let _ = self.entity.propertiesByName[managedObjectkey] else {
                 continue // remote key may not exist in local data schema
@@ -80,7 +80,7 @@ extension NSManagedObject {
      - parameter foreignKey:             foreign entity's primarykey
      - parameter context:                managed object context
      */
-    func addToOneRelationship<S: ACManagedObject>(_ relationshipEntityType: S.Type, relationshipName: String, foreignKeyName: String = "id", foreignKey: Int64,
+    open func addToOneRelationship<S: ACManagedObject>(_ relationshipEntityType: S.Type, relationshipName: String, foreignKeyName: String = "id", foreignKey: Int64,
                               context: NSManagedObjectContext) {
         let entityName = String(describing: relationshipEntityType)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
@@ -103,7 +103,7 @@ extension NSManagedObject {
      - parameter foreignKey:             foreign entity's primarykey
      - parameter context:                managed object context
      */
-    func addToManyRelationship<S: ACManagedObject>(_ relationshipEntityType: S.Type, relationshipName: String, foreignKeyName: String = "id", foreignKey: Int64, context: NSManagedObjectContext) {
+    open func addToManyRelationship<S: ACManagedObject>(_ relationshipEntityType: S.Type, relationshipName: String, foreignKeyName: String = "id", foreignKey: Int64, context: NSManagedObjectContext) {
         
         let entityName = String(describing: relationshipEntityType)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
@@ -122,7 +122,7 @@ extension NSManagedObject {
 
 extension NSManagedObjectContext {
     
-    func findFirst<T: NSManagedObject>(withPredicate predicate:NSPredicate, onType type: T.Type) -> T? {
+    open func findFirst<T: NSManagedObject>(withPredicate predicate:NSPredicate, onType type: T.Type) -> T? {
         let entityName = String(describing: type)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         fetchRequest.predicate = predicate
@@ -157,7 +157,7 @@ extension NSManagedObjectContext {
      10.still local items left, so remove and increment localIndex
      
      */
-    func findOrInsert<T: ACRemoteRecordSyncableType, S: ACManagedObject>(_ items: [T],
+    open func findOrInsert<T: ACRemoteRecordSyncableType, S: ACManagedObject>(_ items: [T],
                         toManagedObjectType type: S.Type,
                         byUniqueKey uniqueKey: String = "itemID",
                         removeLocalItemsIfNotFoundInRemote shouldRemove: Bool = false) -> [ACRemoteRecordChange<T>] {
@@ -229,7 +229,7 @@ extension NSManagedObjectContext {
         return results
     }
 
-    func removeAll<T: NSManagedObject>(managedObjectType type: T.Type) throws {
+    open func removeAll<T: NSManagedObject>(managedObjectType type: T.Type) throws {
         let entityName = String(describing: type)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest) // Todo: only available iOS 9.0 or newer

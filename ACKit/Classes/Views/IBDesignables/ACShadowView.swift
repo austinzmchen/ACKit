@@ -16,7 +16,7 @@ import UIKit
     Ref: http://stackoverflow.com/a/34984063
  */
 @IBDesignable
-class ACShadowView: UIView {
+open class ACShadowView: UIView {
 
     @IBInspectable var foregroundColor: UIColor? = nil
     
@@ -31,7 +31,7 @@ class ACShadowView: UIView {
     
     private var borderView = UIView()
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         // add the shadow to the base view

@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class ACRemoteRetryHandler: RequestAdapter {
+open class ACRemoteRetryHandler: RequestAdapter {
     
     fileprivate var domain: String
     fileprivate var accessToken: String

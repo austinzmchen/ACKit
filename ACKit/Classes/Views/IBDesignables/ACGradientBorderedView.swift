@@ -11,7 +11,7 @@ import UIKit
 // Vertical gradient only
 
 @IBDesignable
-class ACGradientBorderedView: ACBorderedView {
+open class ACGradientBorderedView: ACBorderedView {
 
     @IBInspectable var colorA: UIColor?
     @IBInspectable var colorB: UIColor?
@@ -19,12 +19,12 @@ class ACGradientBorderedView: ACBorderedView {
     
     var gradientLayer = CAGradientLayer()
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         gradientLayer.frame = self.bounds;
     }
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         // remove sublayers
         gradientLayer.removeFromSuperlayer()
         

@@ -10,7 +10,7 @@ import CoreData
 
 
 extension NSManagedObjectContext {
-    func performBlockWithGroup(_ group: DispatchGroup, block: @escaping () -> ()) {
+    public func performBlockWithGroup(_ group: DispatchGroup, block: @escaping () -> ()) {
         group.enter()
         perform {
             block()
@@ -21,7 +21,7 @@ extension NSManagedObjectContext {
 
 
 extension Sequence where Iterator.Element: NSManagedObject {
-    func remapToContext(_ context: NSManagedObjectContext)
+    public func remapToContext(_ context: NSManagedObjectContext)
         -> [Iterator.Element]
     {
         return map { unmappedMO in
@@ -42,7 +42,7 @@ extension NSManagedObjectContext {
             deletedObjects.count
     }
     
-    func delayedSaveOrRollbackWithGroup(_ group: DispatchGroup,
+    public func delayedSaveOrRollbackWithGroup(_ group: DispatchGroup,
         completion: @escaping (Bool) -> () = { _ in })
     {
         let changeCountLimit = 100

@@ -9,7 +9,6 @@
 import Foundation
 import CoreData
 
-
 public struct ContextDidSaveNotification {
     
     public init(note: Notification) {

@@ -13,7 +13,7 @@ import CoreData
 ///
 /// This protocol merges changes from the main context into the sync context and vice versa.
 /// It calls its `processChangedLocalObjects()` methods when objects have changed.
-protocol ContextOwnerType: class, ObserverTokenStore {
+public protocol ContextOwnerType: class, ObserverTokenStore {
     /// This is the UI / main thread managed object context
     var coreDataStack: ACCoreDataStackType { get }
     
@@ -28,7 +28,7 @@ protocol ContextOwnerType: class, ObserverTokenStore {
 
 
 extension ContextOwnerType {
-    func setupContexts() {
+    public func setupContexts() {
         setupContextNotificationObserving()
     }
     

@@ -9,26 +9,26 @@
 import Foundation
 import CoreData
 
-protocol ACCoreDataStackType {
+public protocol ACCoreDataStackType {
     var mainManagedObjectContext: NSManagedObjectContext { get }
     var syncManagedObjectContext: NSManagedObjectContext { get }
     func destroyPersistentStore()
 }
 
-class ACCoreDataStack: NSObject, ACCoreDataStackType {
-    lazy var applicationDocumentsDirectory: URL = {
+open class ACCoreDataStack: NSObject, ACCoreDataStackType {
+    open lazy var applicationDocumentsDirectory: URL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.QoC.williamosler_patient_monitoring" in the application's documents Application Support directory.
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls[urls.count-1]
     }()
     
-    lazy var managedObjectModel: NSManagedObjectModel = {
+    open lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
         let modelURL = Bundle.main.url(forResource: kACCoreDataStackSqliteName, withExtension: "momd")!
         return NSManagedObjectModel(contentsOf: modelURL)!
     }()
     
-    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
+    open lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel) // to be replaced by encrypted CoreData
@@ -58,7 +58,7 @@ class ACCoreDataStack: NSObject, ACCoreDataStackType {
         return coordinator
     }()
     
-    lazy var syncManagedObjectContext: NSManagedObjectContext = {
+    open lazy var syncManagedObjectContext: NSManagedObjectContext = {
         let coordinator = self.persistentStoreCoordinator
         var managedObjectContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
         managedObjectContext.mergePolicy = ACMergePolicy(mode: .local)
@@ -66,7 +66,7 @@ class ACCoreDataStack: NSObject, ACCoreDataStackType {
         return managedObjectContext
     }()
     
-    lazy var mainManagedObjectContext: NSManagedObjectContext = {
+    open lazy var mainManagedObjectContext: NSManagedObjectContext = {
         let coordinator = self.persistentStoreCoordinator
         var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         managedObjectContext.mergePolicy = ACMergePolicy(mode: .local)
@@ -75,12 +75,12 @@ class ACCoreDataStack: NSObject, ACCoreDataStackType {
     }()
 }
 
-fileprivate let kACCoreDataStackSqliteName = "SnackableTV"
+fileprivate let kACCoreDataStackSqliteName = "Q3"
 fileprivate let kACCoreDataStackSqliteFileName = kACCoreDataStackSqliteName + ".sqlite"
 
 
 extension ACCoreDataStack {
-    func destroyPersistentStore() {
+    open func destroyPersistentStore() {
         let url = self.applicationDocumentsDirectory.appendingPathComponent(kACCoreDataStackSqliteFileName)
         do {
             try self.persistentStoreCoordinator.destroyPersistentStore(at: url,

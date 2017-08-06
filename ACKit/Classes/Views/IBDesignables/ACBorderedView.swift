@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class ACBorderedView: UIView {
+open class ACBorderedView: UIView {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
@@ -29,8 +29,8 @@ class ACBorderedView: UIView {
     }
     
     // MARK: hideable properties
-    internal var heightConstraint: NSLayoutConstraint?
-    internal var defaultHeight: CGFloat = 0
+    open var heightConstraint: NSLayoutConstraint?
+    open var defaultHeight: CGFloat = 0
     
     // MARK: shadow
     
@@ -39,7 +39,7 @@ class ACBorderedView: UIView {
     @IBInspectable var shadowOpacity: CGFloat = 1.0
     @IBInspectable var shadowRadius: CGFloat = 0.0
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         
         if let sc = self.shadowColor {
@@ -52,7 +52,7 @@ class ACBorderedView: UIView {
     }
 }
 
-protocol ACHideableViewProtocol {
+public protocol ACHideableViewProtocol {
     var heightConstraint: NSLayoutConstraint? {get set}
     var defaultHeight: CGFloat {get set}
     func setIsHidden(_ hidden: Bool, animated: Bool, completion: ((Bool) -> ())?)
@@ -61,7 +61,7 @@ protocol ACHideableViewProtocol {
 extension ACBorderedView: ACHideableViewProtocol{
     // MARK: instance methods
     
-    override var isHidden: Bool {
+    override open var isHidden: Bool {
         didSet {
             guard oldValue != isHidden else {
                 return
@@ -78,7 +78,7 @@ extension ACBorderedView: ACHideableViewProtocol{
     
     // MARK: instance methods
     
-    func setIsHidden(_ hidden: Bool, animated: Bool, completion: ((Bool) -> ())? = nil) {
+    public func setIsHidden(_ hidden: Bool, animated: Bool, completion: ((Bool) -> ())? = nil) {
         guard hidden != self.isHidden else {
             return
         }

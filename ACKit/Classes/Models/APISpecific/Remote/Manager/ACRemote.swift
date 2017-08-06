@@ -8,16 +8,16 @@
 import Foundation
 import CoreData
 
-protocol ACRemoteRecordSyncableType {
+public protocol ACRemoteRecordSyncableType {
     var id: Int64 { get }
 }
 
-enum ACRemoteRecordChange<T: ACRemoteRecordSyncableType> {
+public enum ACRemoteRecordChange<T: ACRemoteRecordSyncableType> {
     case found(T, NSManagedObjectID)
     case inserted(T, NSManagedObjectID)
     case removed
     
-    var isInserted: Bool {
+    public var isInserted: Bool {
         switch self {
         case .inserted:
             return true
@@ -25,7 +25,7 @@ enum ACRemoteRecordChange<T: ACRemoteRecordSyncableType> {
             return false
         }
     }
-    var isFound: Bool {
+    public var isFound: Bool {
         switch self {
         case .found:
             return true
@@ -33,7 +33,7 @@ enum ACRemoteRecordChange<T: ACRemoteRecordSyncableType> {
             return false
         }
     }
-    var isRemoved: Bool {
+    public var isRemoved: Bool {
         switch self {
         case .removed:
             return true
@@ -47,27 +47,27 @@ import Alamofire
 
 /* remote settings
  */
-struct ACRemoteSettings {
-    static let serialQueue: DispatchQueue = DispatchQueue(label: "com.ac.snackabletv.remote-serial-queue", attributes: [])
-    static let concurrentQueue: DispatchQueue = DispatchQueue(label: "com.ac.snackabletv.remote-concurrent-queue", attributes: DispatchQueue.Attributes.concurrent)
+public struct ACRemoteSettings {
+    public static let serialQueue: DispatchQueue = DispatchQueue(label: "com.ac.snackabletv.remote-serial-queue", attributes: [])
+    public static let concurrentQueue: DispatchQueue = DispatchQueue(label: "com.ac.snackabletv.remote-concurrent-queue", attributes: DispatchQueue.Attributes.concurrent)
 }
 
 /// All Remote subclasses fetch remote data ASYNCHRONOUSLY, so be aware the completion block is NOT executed on main thread
 
-class ACSimpleRemote: NSObject {
+open class ACSimpleRemote: NSObject {
     // api version
-    let apiVersion = "1.0.0"
+    open let apiVersion = "1.0.0"
     
     // domains
-    let domain: String
+    open let domain: String
     
     // base urls
-    var baseUrl: String
+    open var baseUrl: String
     static var stBaseUrl: String {
         return ""
     }
     
-    var alamoFireManager: SessionManager = ACSessionManager.shared
+    open var alamoFireManager: SessionManager = ACSessionManager.shared
     
     override init() {
         domain = "localhost"
@@ -83,18 +83,18 @@ class ACSimpleRemote: NSObject {
     }
 }
 
-class ACRemote: ACSimpleRemote {
-    let isRetryEnabled = false
-    let remoteSession: ACRemoteSessionType?
+open class ACRemote: ACSimpleRemote {
+    open let isRetryEnabled = false
+    open let remoteSession: ACRemoteSessionType?
     
-    init(remoteSession: ACRemoteSession?) {
+    public init(remoteSession: ACRemoteSession?) {
         self.remoteSession = remoteSession
         
         super.init()
         
-        if let d = self.remoteSession?.domain {
-            baseUrl = ""
-        }
+//        if let d = self.remoteSession?.domain {
+            baseUrl = "http://52.60.183.54:8080"
+//        }
         
         if isRetryEnabled,
             let rs = self.remoteSession

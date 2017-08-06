@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 @objc(ACBase)
-public class ACBase: NSManagedObject {
+open class ACBase: NSManagedObject {
     
-    func saveSyncableProperties(fromSyncable syncable: ACRemoteRecordSyncableType) {
+    open func saveSyncableProperties(fromSyncable syncable: ACRemoteRecordSyncableType) {
         print("to be subclassed")
     }
 }

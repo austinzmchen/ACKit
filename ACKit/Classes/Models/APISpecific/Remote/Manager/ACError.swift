@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-enum ACError: Error {
+public enum ACError: Error {
     case remoteError(error: AFError)
     case coreDataError
     case keyChainError

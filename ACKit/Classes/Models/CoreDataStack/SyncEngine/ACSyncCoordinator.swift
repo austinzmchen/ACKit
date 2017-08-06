@@ -10,19 +10,19 @@ import Foundation
 import CoreData
 import UIKit
 
-let ACSyncAllCompletedNotification = "kACSyncAllCompletedNotification"
+public let ACSyncAllCompletedNotification = "kACSyncAllCompletedNotification"
 
-protocol ACSyncCoordinatorType  {
+public protocol ACSyncCoordinatorType  {
     func syncAll(_ completion: @escaping (_ success: Bool, _ synced: [Any]?, _ error: Error?) -> ())
 }
 
 open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
     
-    let syncGroup: DispatchGroup = DispatchGroup()
-    var didSetup: Bool = false
+    open let syncGroup: DispatchGroup = DispatchGroup()
+    public var didSetup: Bool = false
     
-    var syncContext: ACSyncContext = ACSyncContext()
-    var appTerminateObserver: AnyObject? = nil
+    open var syncContext: ACSyncContext = ACSyncContext()
+    open var appTerminateObserver: AnyObject? = nil
     
     fileprivate var observerTokens: [NSObjectProtocol] = [] //< The tokens registered with NSNotificationCenter
     
@@ -46,7 +46,7 @@ open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
         })
     }
     
-    convenience init(remoteSession: ACRemoteSession, managedObjectContext: NSManagedObjectContext) {
+    public convenience init(remoteSession: ACRemoteSession, managedObjectContext: NSManagedObjectContext) {
         self.init(remoteSession: remoteSession)
         self.syncContext = ACSyncContext(remoteSession: remoteSession, managedObjectContext: managedObjectContext)
     }
@@ -59,59 +59,29 @@ open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
     
     // MARK - instance methods
     
-    lazy var coreDataStack: ACCoreDataStackType = {
+    open lazy var coreDataStack: ACCoreDataStackType = {
         return ACCoreDataStack()
     }()
     
-//    lazy var collectionProcessor: STCollectionProcessorType = {
-//        return STCollectionProcessor(context: self.syncContext)
-//    }()
-//
-//    lazy var contentProcessor: STContentProcessorType = {
-//        return STContentProcessor(context: self.syncContext)
-//    }()
-//
-//    lazy var mediaProcessor: STMediaProcessorType = {
-//        return STMediaProcessor(context: self.syncContext)
-//    }()
-//
-//    lazy var contentPackageProcessor: STContentPackageProcessorType = {
-//        return STContentPackageProcessor(context: self.syncContext)
-//    }()
-//
-//    lazy var watchHistoryProcessor: STWatchHistoryProcessorType = {
-//        return STWatchHistoryProcessor(context: self.syncContext)
-//    }()
-    
-    func syncAll(_ completion: @escaping (_ success: Bool, _ synced: [Any]?, _ error: Error?) -> ()) {
-//        self.collectionProcessor.sync { (success, syncedObjects, error) in
-//            completion(success, syncedObjects, nil)
-//            
-//            // post note
-//            var userInfo: [String: Any] = [:]
-//            if let sd = syncedObjects {
-//                userInfo = ["kSynced": sd]
-//            }
-//            NotificationCenter.default.post(name: Notification.Name(rawValue: ACSyncAllCompletedNotification), object: nil, userInfo: userInfo)
-//        }
+    open func syncAll(_ completion: @escaping (_ success: Bool, _ synced: [Any]?, _ error: Error?) -> ()) {
+        fatalError("Should be implemented by subclass")
     }
-
 }
 
 // MARK: - Context Owner -
 
 extension ACSyncCoordinator: ContextOwnerType {
     /// The Sync Coordinator holds onto tokens used to register with the NSNotificationCenter.
-    func addObserverToken(_ token: NSObjectProtocol) {
+    open func addObserverToken(_ token: NSObjectProtocol) {
         precondition(didSetup, "Did not call setup()")
         observerTokens.append(token)
     }
-    func removeAllObserverTokens() {
+    open func removeAllObserverTokens() {
         precondition(didSetup, "Did not call setup()")
         observerTokens.removeAll()
     }
     
-    func processChangedLocalObjects(_ objects: [NSManagedObject]) {
+    open func processChangedLocalObjects(_ objects: [NSManagedObject]) {
         precondition(didSetup, "Did not call setup()")
         /*
         for cp in changeProcessors {
@@ -122,7 +92,7 @@ extension ACSyncCoordinator: ContextOwnerType {
 }
 
 extension ACSyncCoordinator {
-    func registerValueTransformers() {
+    open func registerValueTransformers() {
         // should only run once
         ValueTransformer.setValueTransformer(ACJsonReplaceMeTransformer(), forName: NSValueTransformerName(rawValue: "kACJsonReplaceMeTransformer"))
     }

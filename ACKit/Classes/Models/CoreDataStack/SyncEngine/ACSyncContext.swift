@@ -10,46 +10,46 @@ import Foundation
 import CoreData
 
 // sync context
-enum ACSyncPendingTaskDomain: String {
+public enum ACSyncPendingTaskDomain: String {
     case None, ProfileProcessing, SurveyProcessing, SurveyResponseUploading, ScheduleProcessing
 }
-enum ACSyncPendingTaskPriority: Int {
+public enum ACSyncPendingTaskPriority: Int {
     case low = 0, medium, high
 }
 
-class ACSyncPendingTask: NSObject {
-    var taskDomain: ACSyncPendingTaskDomain = .None
-    var taskPriority: ACSyncPendingTaskPriority = .low
-    var taskAction: String = ""
+open class ACSyncPendingTask: NSObject {
+    open var taskDomain: ACSyncPendingTaskDomain = .None
+    open var taskPriority: ACSyncPendingTaskPriority = .low
+    open var taskAction: String = ""
 }
 
-class ACSyncContext: NSObject {
+open class ACSyncContext: NSObject {
     // remote context
-    var remoteSession: ACRemoteSession?
+    open var remoteSession: ACRemoteSession?
     
     // local CoreData context
-    var managedObjectContext: NSManagedObjectContext?
+    open var managedObjectContext: NSManagedObjectContext?
     
     // a list of to-do items
-    var pendingTasks: [ACSyncPendingTask] = []
+    open var pendingTasks: [ACSyncPendingTask] = []
 }
 
 // serializing ACSyncContext
 extension ACSyncContext {
-    convenience init (remoteSession: ACRemoteSession?, managedObjectContext: NSManagedObjectContext?) {
+    public convenience init (remoteSession: ACRemoteSession?, managedObjectContext: NSManagedObjectContext?) {
         self.init()
         self.remoteSession = remoteSession
         self.managedObjectContext = managedObjectContext
     }
     
-    convenience init?(coder decoder: NSCoder) {
+    public convenience init?(coder decoder: NSCoder) {
         self.init()
         if let pt = decoder.decodeObject(forKey: "pendingTasks") as? [ACSyncPendingTask] {
             self.pendingTasks = pt
         }
     }
     
-    func encodeWithCoder(_ coder: NSCoder) {
+    open func encodeWithCoder(_ coder: NSCoder) {
         coder.encode(self.pendingTasks, forKey: "pendingTasks")
     }
 }

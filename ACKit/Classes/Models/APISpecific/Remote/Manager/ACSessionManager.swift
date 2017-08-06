@@ -9,6 +9,6 @@
 import Foundation
 import Alamofire
 
-class ACSessionManager: SessionManager {
-    static let shared = ACSessionManager()
+open class ACSessionManager: SessionManager {
+    open static let shared = ACSessionManager()
 }

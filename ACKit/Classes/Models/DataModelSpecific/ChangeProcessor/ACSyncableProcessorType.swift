@@ -7,7 +7,7 @@
 
 import CoreData
 
-protocol ACSyncableProcessorType {
+public protocol ACSyncableProcessorType {
     var syncContext: ACSyncContext {get}
     
     init (context: ACSyncContext)
@@ -16,7 +16,7 @@ protocol ACSyncableProcessorType {
 
 extension ACSyncableProcessorType {
     
-    func clearRelationships<S: ACManagedObject>(onManagedObjectType type: S.Type, ofIds ids: [Int64],
+    public func clearRelationships<S: ACManagedObject>(onManagedObjectType type: S.Type, ofIds ids: [Int64],
                             byUniqueKey uniqueKey: String = "id",
                             relationshipName: String) -> Bool
     {
@@ -43,7 +43,7 @@ extension ACSyncableProcessorType {
         return true
     }
     
-    func store<T: ACRemoteRecordSyncableType, S: ACManagedObject>(_ items: [T], toManagedObjectType type: S.Type) -> Bool {
+    public func store<T: ACRemoteRecordSyncableType, S: ACManagedObject>(_ items: [T], toManagedObjectType type: S.Type) -> Bool {
         guard let managedObjectContext = syncContext.managedObjectContext else {
             return false
         }

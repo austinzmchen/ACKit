@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: global func
-func acLog(error msg: String = "",
+public func acLog(error msg: String = "",
          function: String = #function,
          file: String = #file,
          line: Int = #line)
@@ -17,7 +17,7 @@ func acLog(error msg: String = "",
     acLog(msg: msg, logLevel: .error)
 }
 
-func acLog(info msg: String = "",
+public func acLog(info msg: String = "",
            function: String = #function,
            file: String = #file,
            line: Int = #line)
@@ -25,7 +25,7 @@ func acLog(info msg: String = "",
     acLog(msg: msg, logLevel: .info)
 }
 
-func acLog(debug msg: String = "",
+public func acLog(debug msg: String = "",
            function: String = #function,
            file: String = #file,
            line: Int = #line)
@@ -33,7 +33,7 @@ func acLog(debug msg: String = "",
     acLog(msg: msg, logLevel: .debug)
 }
 
-func acLog(msg: String = "",
+public func acLog(msg: String = "",
          logLevel: ACLogLevel,
          function: String = #function,
          file: String = #file,
@@ -46,23 +46,23 @@ func acLog(msg: String = "",
 
 // MARK: class 
 
-class ACLog: NSObject {
-    static let shared = ACLog()
+open class ACLog: NSObject {
+    public static let shared = ACLog()
     
-    var logLevel: ACLogLevel = .info
+    open var logLevel: ACLogLevel = .info
     
-    override init() {
+    public override init() {
         super.init()
     }
     
-    func log(msg: String, level: ACLogLevel) {
+    open func log(msg: String, level: ACLogLevel) {
         if logLevel.rawValue >= level.rawValue {
             print("ACLog: \(level.name) - \(msg)")
         }
     }
 }
 
-enum ACLogLevel: Int {
+public enum ACLogLevel: Int {
     case none = 0
     case error
     case warning
@@ -71,7 +71,7 @@ enum ACLogLevel: Int {
 }
 
 extension ACLogLevel {
-    var name: String {
+    public var name: String {
         switch self {
         case .error:
             return "Error"

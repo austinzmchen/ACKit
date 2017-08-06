@@ -12,12 +12,12 @@ import AlamofireObjectMapper
 
 /* Validate remote response and HTTP status code via Alamofire
  */
-protocol ACResponseValidation {
+public protocol ACResponseValidation {
     var isValid: Bool {get}
 }
 
 extension Alamofire.DataResponse: ACResponseValidation {
-    var isValid: Bool {
+    public var isValid: Bool {
         get {
             if let r = self.response , r.statusCode >= 200 && r.statusCode < 300 {
                 return true
