@@ -1,5 +1,5 @@
 PODS:
-  - ACKit (0.1.3):
+  - ACKit (0.2.2):
     - Alamofire
     - AlamofireObjectMapper
   - Alamofire (4.5.0)
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ACKit: 99dd084a0922563e3c2e73d1a4d744d1f4cc14dc
+  ACKit: 301ef7f5bb9edb3bae58ec6856e863ac974fc1cf
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958

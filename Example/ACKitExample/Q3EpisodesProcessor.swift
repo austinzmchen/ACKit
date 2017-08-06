@@ -28,7 +28,7 @@ protocol Q3EpisodesProcessorType: ACSyncableProcessorType {
         self.episodeRemote.fetchEpisodes { (remoteResult) in
             switch remoteResult {
             case .success(let episodes):
-//                _ = self.store(episodes, toManagedObjectType: Q3Episode.self)
+                _ = self.store(episodes, toManagedObjectType: Q3Episode.self)
                 DispatchQueue.main.async(execute: {
                     completion(true, episodes, nil)
                 })
