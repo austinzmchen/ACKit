@@ -15,6 +15,6 @@ extension ACBase {
         return NSFetchRequest<ACBase>(entityName: "ACBase")
     }
 
-    @NSManaged public var id: Int64
+    @NSManaged public var id: String
     @NSManaged public var order: Int
 }

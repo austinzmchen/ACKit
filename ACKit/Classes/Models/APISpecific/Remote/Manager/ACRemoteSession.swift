@@ -22,7 +22,7 @@ open class ACRemoteSession: ACRemoteSessionType {
     
     open let domain: String
     
-    init(domain: String) {
+    public init(domain: String) {
         self.domain = domain
     }
     
@@ -36,7 +36,7 @@ open class ACRemoteSession: ACRemoteSessionType {
     }
     
     /*
-    func isExpired() -> Bool {
+    open func isExpired() -> Bool {
         if Date().compare(expiration) == .orderedAscending {
             return false
         } else {

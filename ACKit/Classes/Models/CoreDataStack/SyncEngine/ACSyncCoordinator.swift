@@ -28,7 +28,7 @@ open class ACSyncCoordinator: NSObject, ACSyncCoordinatorType {
     
     // MARK - life cycle methods
     
-    init(remoteSession: ACRemoteSession) {
+    public init(remoteSession: ACRemoteSession) {
         super.init()
         
         self.registerValueTransformers()

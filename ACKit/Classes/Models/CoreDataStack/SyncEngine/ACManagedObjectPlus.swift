@@ -13,7 +13,7 @@ import CoreData
 public typealias ACManagedObject = ACBase
 
 public protocol ACManagedObjectType {
-    static func insertItem<T: ACManagedObject>(byID id: Int64, context: NSManagedObjectContext) -> T
+    static func insertItem<T: ACManagedObject>(byID id: String, context: NSManagedObjectContext) -> T
     static func removeItem<T: ACManagedObject>(ofType type: T.Type, byID id: String, context: NSManagedObjectContext)
     static func removeByObjectID(_ objectID: NSManagedObjectID, context: NSManagedObjectContext)
     
@@ -22,7 +22,7 @@ public protocol ACManagedObjectType {
 
 extension ACManagedObject: ACManagedObjectType {
     // Insert code here to add functionality to your managed object subclass
-    open static func insertItem<T: ACManagedObject>(byID id: Int64, context: NSManagedObjectContext) -> T {
+    open static func insertItem<T: ACManagedObject>(byID id: String, context: NSManagedObjectContext) -> T {
         let item:T = NSManagedObject.insertObject(byContext: context)
         item.id = id
         return item
@@ -167,7 +167,7 @@ extension NSManagedObjectContext {
             let key2 = item2.id
             return key1 < key2
         })
-        let sortedRRIds: [Int64] = sortedRemoteRecords.map({$0.id})
+        let sortedRRIds: [String] = sortedRemoteRecords.map({$0.id})
         
         let entityName = String(describing: type)
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
@@ -185,7 +185,7 @@ extension NSManagedObjectContext {
             let itemKey = remoteRecord.id
             
             if (localIndex < localObjects.count) {
-                guard let localItemKey = localObjects[localIndex].value(forKey: uniqueKey) as? Int64 else {
+                guard let localItemKey = localObjects[localIndex].value(forKey: uniqueKey) as? String else {
                     print ("error: local item does not have key")
                     continue
                 }

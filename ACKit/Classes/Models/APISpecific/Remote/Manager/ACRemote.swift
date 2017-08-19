@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 public protocol ACRemoteRecordSyncableType {
-    var id: Int64 { get }
+    var id: String { get }
 }
 
 public enum ACRemoteRecordChange<T: ACRemoteRecordSyncableType> {

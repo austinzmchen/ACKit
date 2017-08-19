@@ -14,7 +14,6 @@
 		C40C2E0D1F36911100B04BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E051F36911100B04BA8 /* Main.storyboard */; };
 		C40C2E0E1F36911100B04BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E071F36911100B04BA8 /* Images.xcassets */; };
 		C40C2E0F1F36911100B04BA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E081F36911100B04BA8 /* Info.plist */; };
-		C40C2E101F36911100B04BA8 /* Q3JsonEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C2E091F36911100B04BA8 /* Q3JsonEpisode.swift */; };
 		C40C2E111F36911100B04BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C2E0A1F36911100B04BA8 /* ViewController.swift */; };
 		C40FCE291F48A2DA005FD7FE /* SampleTransitionFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */; };
 		C40FCE2B1F48A2EE005FD7FE /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */; };
@@ -22,8 +21,6 @@
 		C40FCE371F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE311F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift */; };
 		C40FCE381F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE321F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift */; };
 		C40FCE391F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE331F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift */; };
-		C4D1AEE31F36925200EAA806 /* Q3EpisodesRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D1AEE21F36925200EAA806 /* Q3EpisodesRemote.swift */; };
-		C4D1AEE51F3692AF00EAA806 /* Q3EpisodesProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D1AEE41F3692AF00EAA806 /* Q3EpisodesProcessor.swift */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +52,6 @@
 		C40C2E061F36911100B04BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C40C2E071F36911100B04BA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C40C2E081F36911100B04BA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C40C2E091F36911100B04BA8 /* Q3JsonEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q3JsonEpisode.swift; sourceTree = "<group>"; };
 		C40C2E0A1F36911100B04BA8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionFromViewController.swift; sourceTree = "<group>"; };
 		C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +59,6 @@
 		C40FCE311F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideInAnimator.swift; sourceTree = "<group>"; };
 		C40FCE321F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideOutAnimator.swift; sourceTree = "<group>"; };
 		C40FCE331F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalTransitionManager.swift; sourceTree = "<group>"; };
-		C4D1AEE21F36925200EAA806 /* Q3EpisodesRemote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q3EpisodesRemote.swift; sourceTree = "<group>"; };
-		C4D1AEE41F3692AF00EAA806 /* Q3EpisodesProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q3EpisodesProcessor.swift; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,9 +158,6 @@
 				C40C2E051F36911100B04BA8 /* Main.storyboard */,
 				C40C2E071F36911100B04BA8 /* Images.xcassets */,
 				C40C2E081F36911100B04BA8 /* Info.plist */,
-				C40C2E091F36911100B04BA8 /* Q3JsonEpisode.swift */,
-				C4D1AEE21F36925200EAA806 /* Q3EpisodesRemote.swift */,
-				C4D1AEE41F3692AF00EAA806 /* Q3EpisodesProcessor.swift */,
 				C40C2E0A1F36911100B04BA8 /* ViewController.swift */,
 				C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */,
 				C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */,
@@ -403,11 +394,8 @@
 				C40FCE381F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C40FCE371F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift in Sources */,
 				C40FCE291F48A2DA005FD7FE /* SampleTransitionFromViewController.swift in Sources */,
-				C4D1AEE51F3692AF00EAA806 /* Q3EpisodesProcessor.swift in Sources */,
 				C40FCE361F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift in Sources */,
-				C4D1AEE31F36925200EAA806 /* Q3EpisodesRemote.swift in Sources */,
 				C40C2E0B1F36911100B04BA8 /* AppDelegate.swift in Sources */,
-				C40C2E101F36911100B04BA8 /* Q3JsonEpisode.swift in Sources */,
 				C40FCE391F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
