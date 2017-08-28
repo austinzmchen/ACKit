@@ -21,20 +21,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wf-qN-fuM">
-                                <rect key="frame" x="112" y="360" width="154" height="30"/>
+                                <rect key="frame" x="55" y="360" width="265" height="30"/>
                                 <color key="backgroundColor" red="0.40784313729999999" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="willMove is NOT called"/>
+                                <state key="normal" title="willMove is called after viewWillAppear"/>
                                 <connections>
                                     <segue destination="0ME-PV-DNW" kind="presentation" id="gOg-bT-2bs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atE-TE-D9O">
-                                <rect key="frame" x="112" y="214" width="150" height="30"/>
+                                <rect key="frame" x="62.5" y="214" width="250" height="30"/>
                                 <color key="backgroundColor" red="0.40784313729999999" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="7v4-4D-4Kt"/>
+                                    <constraint firstAttribute="width" constant="250" id="7v4-4D-4Kt"/>
                                 </constraints>
-                                <state key="normal" title="willMove is called"/>
+                                <state key="normal" title="willMove is called before viewWillAppear"/>
                                 <connections>
                                     <segue destination="ayl-Ns-RZO" kind="presentation" id="rKF-gR-1hc"/>
                                 </connections>
@@ -43,9 +43,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="atE-TE-D9O" firstAttribute="centerX" secondItem="fVg-Nn-aHm" secondAttribute="centerX" id="2t4-9t-LUz"/>
-                            <constraint firstItem="atE-TE-D9O" firstAttribute="leading" secondItem="1wf-qN-fuM" secondAttribute="leading" id="ET6-Ln-WL7"/>
                             <constraint firstItem="atE-TE-D9O" firstAttribute="top" secondItem="EuI-P0-jv0" secondAttribute="bottom" constant="194" id="eYi-y8-ZJ5"/>
                             <constraint firstItem="njx-aS-Mnd" firstAttribute="top" secondItem="1wf-qN-fuM" secondAttribute="bottom" constant="277" id="flG-ys-TBV"/>
+                            <constraint firstItem="1wf-qN-fuM" firstAttribute="centerX" secondItem="atE-TE-D9O" secondAttribute="centerX" id="pDp-kl-hIF"/>
                         </constraints>
                     </view>
                 </viewController>
