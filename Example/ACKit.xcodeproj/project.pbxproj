@@ -9,18 +9,35 @@
 /* Begin PBXBuildFile section */
 		138C320C52179B393EB5DE5F /* Pods_ACKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EDEB491C4267B8470A5F0F /* Pods_ACKit_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		C40C2E0B1F36911100B04BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C2E021F36911100B04BA8 /* AppDelegate.swift */; };
-		C40C2E0C1F36911100B04BA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E031F36911100B04BA8 /* LaunchScreen.xib */; };
-		C40C2E0D1F36911100B04BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E051F36911100B04BA8 /* Main.storyboard */; };
-		C40C2E0E1F36911100B04BA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E071F36911100B04BA8 /* Images.xcassets */; };
-		C40C2E0F1F36911100B04BA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C40C2E081F36911100B04BA8 /* Info.plist */; };
-		C40C2E111F36911100B04BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C2E0A1F36911100B04BA8 /* ViewController.swift */; };
-		C40FCE291F48A2DA005FD7FE /* SampleTransitionFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */; };
-		C40FCE2B1F48A2EE005FD7FE /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */; };
-		C40FCE361F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE301F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift */; };
-		C40FCE371F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE311F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift */; };
-		C40FCE381F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE321F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift */; };
-		C40FCE391F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FCE331F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift */; };
+		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
+		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
+		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
+		C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */; };
+		C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */; };
+		C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */; };
+		C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */; };
+		C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */; };
+		C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */; };
+		C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */; };
+		C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */; };
+		C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */; };
+		C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */; };
+		C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */; };
+		C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */; };
+		C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */; };
+		C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */; };
+		C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */; };
+		C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7661F53521100AF5FC9 /* Images.xcassets */; };
+		C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7671F53521100AF5FC9 /* Info.plist */; };
+		C44CB77D1F53521100AF5FC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* MainViewController.swift */; };
+		C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */; };
+		C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */; };
+		C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */; };
+		C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */; };
+		C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */; };
+		C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */; };
+		C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */; };
+		C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,18 +64,36 @@
 		9473BBA84E5B146F7B4369C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C37B466CA7225E3A11A3A2 /* Pods-ACKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Tests/Pods-ACKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C40C2E021F36911100B04BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C40C2E041F36911100B04BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C40C2E061F36911100B04BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C40C2E071F36911100B04BA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C40C2E081F36911100B04BA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C40C2E0A1F36911100B04BA8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionFromViewController.swift; sourceTree = "<group>"; };
-		C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
-		C40FCE301F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalInteractiveTransition.swift; sourceTree = "<group>"; };
-		C40FCE311F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideInAnimator.swift; sourceTree = "<group>"; };
-		C40FCE321F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideOutAnimator.swift; sourceTree = "<group>"; };
-		C40FCE331F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalTransitionManager.swift; sourceTree = "<group>"; };
+		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		C44CB7521F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseCollections.storyboard; sourceTree = "<group>"; };
+		C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTableCells.storyboard; sourceTree = "<group>"; };
+		C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell1.swift; sourceTree = "<group>"; };
+		C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell1.xib; sourceTree = "<group>"; };
+		C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell2.swift; sourceTree = "<group>"; };
+		C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell2.xib; sourceTree = "<group>"; };
+		C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellViewController.swift; sourceTree = "<group>"; };
+		C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions.storyboard; sourceTree = "<group>"; };
+		C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalInteractiveTransition.swift; sourceTree = "<group>"; };
+		C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideInAnimator.swift; sourceTree = "<group>"; };
+		C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideOutAnimator.swift; sourceTree = "<group>"; };
+		C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalTransitionManager.swift; sourceTree = "<group>"; };
+		C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionFromViewController.swift; sourceTree = "<group>"; };
+		C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
+		C44CB7661F53521100AF5FC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C44CB7671F53521100AF5FC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C44CB7681F53521100AF5FC9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseNavigationController.storyboard; sourceTree = "<group>"; };
+		C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavFirstViewController.swift; sourceTree = "<group>"; };
+		C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavMainViewController.swift; sourceTree = "<group>"; };
+		C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUIViewWillMove.storyboard; sourceTree = "<group>"; };
+		C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveMainViewController.swift; sourceTree = "<group>"; };
+		C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseWillMoveView.swift; sourceTree = "<group>"; };
+		C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController1.swift; sourceTree = "<group>"; };
+		C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController2.swift; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,36 +188,94 @@
 		C40C2E011F36911100B04BA8 /* ACKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				C40C2E021F36911100B04BA8 /* AppDelegate.swift */,
-				C40C2E031F36911100B04BA8 /* LaunchScreen.xib */,
-				C40C2E051F36911100B04BA8 /* Main.storyboard */,
-				C40C2E071F36911100B04BA8 /* Images.xcassets */,
-				C40C2E081F36911100B04BA8 /* Info.plist */,
-				C40C2E0A1F36911100B04BA8 /* ViewController.swift */,
-				C40FCE281F48A2DA005FD7FE /* SampleTransitionFromViewController.swift */,
-				C40FCE2A1F48A2EE005FD7FE /* SampleTransitionToViewController.swift */,
-				C40FCE2C1F48A3B9005FD7FE /* Transitions */,
+				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
+				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
+				C44CB7531F53521100AF5FC9 /* CaseCollections */,
+				C44CB7561F53521100AF5FC9 /* CaseTableCells */,
+				C44CB75D1F53521100AF5FC9 /* CaseTransitions */,
+				C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */,
+				C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */,
+				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
+				C44CB7671F53521100AF5FC9 /* Info.plist */,
+				C44CB7681F53521100AF5FC9 /* MainViewController.swift */,
+				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
 			);
 			path = ACKitExample;
 			sourceTree = "<group>";
 		};
-		C40FCE2C1F48A3B9005FD7FE /* Transitions */ = {
+		C44CB74E1F53521100AF5FC9 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				C40FCE2F1F48A3B9005FD7FE /* ProfilePageTransition */,
+				C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */,
+				C44CB7511F53521100AF5FC9 /* Main.storyboard */,
 			);
-			path = Transitions;
+			path = Base.lproj;
 			sourceTree = "<group>";
 		};
-		C40FCE2F1F48A3B9005FD7FE /* ProfilePageTransition */ = {
+		C44CB7531F53521100AF5FC9 /* CaseCollections */ = {
 			isa = PBXGroup;
 			children = (
-				C40FCE301F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift */,
-				C40FCE311F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift */,
-				C40FCE321F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift */,
-				C40FCE331F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift */,
+				C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */,
+				C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */,
+			);
+			path = CaseCollections;
+			sourceTree = "<group>";
+		};
+		C44CB7561F53521100AF5FC9 /* CaseTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */,
+				C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */,
+				C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */,
+				C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */,
+				C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */,
+				C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */,
+			);
+			path = CaseTableCells;
+			sourceTree = "<group>";
+		};
+		C44CB75D1F53521100AF5FC9 /* CaseTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */,
+				C44CB75F1F53521100AF5FC9 /* ProfilePageTransition */,
+				C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */,
+				C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */,
+			);
+			path = CaseTransitions;
+			sourceTree = "<group>";
+		};
+		C44CB75F1F53521100AF5FC9 /* ProfilePageTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */,
+				C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */,
+				C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */,
+				C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */,
 			);
 			path = ProfilePageTransition;
+			sourceTree = "<group>";
+		};
+		C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */,
+				C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */,
+				C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */,
+			);
+			path = CaseComplexHierachy;
+			sourceTree = "<group>";
+		};
+		C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */,
+				C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */,
+				C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */,
+				C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */,
+				C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */,
+			);
+			path = CaseUIViewWillMove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +335,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = JF6RD64R9G;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -275,10 +368,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40C2E0F1F36911100B04BA8 /* Info.plist in Resources */,
-				C40C2E0E1F36911100B04BA8 /* Images.xcassets in Resources */,
-				C40C2E0C1F36911100B04BA8 /* LaunchScreen.xib in Resources */,
-				C40C2E0D1F36911100B04BA8 /* Main.storyboard in Resources */,
+				C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */,
+				C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */,
+				C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */,
+				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
+				C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */,
+				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
+				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
+				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
+				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
+				C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */,
+				C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,14 +489,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40C2E111F36911100B04BA8 /* ViewController.swift in Sources */,
-				C40FCE2B1F48A2EE005FD7FE /* SampleTransitionToViewController.swift in Sources */,
-				C40FCE381F48A3B9005FD7FE /* ACHorizontalSlideOutAnimator.swift in Sources */,
-				C40FCE371F48A3B9005FD7FE /* ACHorizontalSlideInAnimator.swift in Sources */,
-				C40FCE291F48A2DA005FD7FE /* SampleTransitionFromViewController.swift in Sources */,
-				C40FCE361F48A3B9005FD7FE /* ACHorizontalInteractiveTransition.swift in Sources */,
-				C40C2E0B1F36911100B04BA8 /* AppDelegate.swift in Sources */,
-				C40FCE391F48A3B9005FD7FE /* ACHorizontalTransitionManager.swift in Sources */,
+				C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */,
+				C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */,
+				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
+				C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */,
+				C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */,
+				C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */,
+				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
+				C44CB77D1F53521100AF5FC9 /* MainViewController.swift in Sources */,
+				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
+				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
+				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
+				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
+				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
+				C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */,
+				C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */,
+				C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */,
+				C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */,
+				C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,18 +529,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C40C2E031F36911100B04BA8 /* LaunchScreen.xib */ = {
+		C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C40C2E041F36911100B04BA8 /* Base */,
+				C44CB7501F53521100AF5FC9 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		C40C2E051F36911100B04BA8 /* Main.storyboard */ = {
+		C44CB7511F53521100AF5FC9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C40C2E061F36911100B04BA8 /* Base */,
+				C44CB7521F53521100AF5FC9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -530,12 +640,15 @@
 			baseConfigurationReference = 0C7D67CE9ED861429AAFD5AA /* Pods-ACKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACKitExample/ACKit_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -545,12 +658,14 @@
 			baseConfigurationReference = E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACKitExample/ACKit_Example-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

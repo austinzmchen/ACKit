@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  ACKit
 //
 //  Created by austinzmchen on 07/23/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
