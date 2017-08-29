@@ -31,10 +31,18 @@
                                     <action selector="dismissButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jn8-l2-zUn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using UIPanGestureRecognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebs-RK-27o">
+                                <rect key="frame" x="69" y="323" width="237.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40784313729999999" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="CVJ-xa-eUD" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HLM-qY-vX9"/>
+                            <constraint firstItem="Ebs-RK-27o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="NCO-e1-HaS"/>
+                            <constraint firstItem="Ebs-RK-27o" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fwc-in-dA9"/>
                             <constraint firstItem="CVJ-xa-eUD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="uaY-aQ-Tmc"/>
                         </constraints>
                     </view>
@@ -57,7 +65,19 @@
                     <view key="view" contentMode="scaleToFill" id="J5l-Kt-li7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using UILongPressGestureRecognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vY-KX-g6X">
+                                <rect key="frame" x="43" y="323" width="289" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6vY-KX-g6X" firstAttribute="centerX" secondItem="J5l-Kt-li7" secondAttribute="centerX" id="ZnO-gS-tY6"/>
+                            <constraint firstItem="6vY-KX-g6X" firstAttribute="centerY" secondItem="J5l-Kt-li7" secondAttribute="centerY" id="i9c-RN-f28"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wi-l1-UXw" userLabel="First Responder" sceneMemberID="firstResponder"/>

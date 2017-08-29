@@ -15,6 +15,8 @@ class SampleTransitionToViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // UIPanGesture has delay
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(slide(recognizer:)))
         self.view.addGestureRecognizer(panGesture)
     }

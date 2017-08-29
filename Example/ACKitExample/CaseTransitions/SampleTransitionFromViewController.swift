@@ -15,32 +15,40 @@ class SampleTransitionFromViewController: UIViewController {
     }
     
     var transitionManager = ACHorizontalTransitionManager()
+    var p = CGPoint.zero
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(slide(recognizer:)))
+        
+        // use LongPress gesture to sub panGesture because UIPanGesture has initial delay
+        let panGesture = UILongPressGestureRecognizer(target: self, action: #selector(slide(recognizer:)))
+        panGesture.minimumPressDuration = 0.0
+        panGesture.allowableMovement = CGFloat.infinity
         self.view.addGestureRecognizer(panGesture)
     }
     
-    func slide(recognizer: UIPanGestureRecognizer) {
+    func slide(recognizer: UILongPressGestureRecognizer) {
         switch recognizer.state {
         case .began:
+            p = recognizer.location(in: self.view)
             break
         case .changed:
-            let t = recognizer.translation(in: self.view)
-            if !transitionManager.interactiveTransition.hasStarted {
-                if t.x < 0 {
-                    self.performSegue(withIdentifier: "gestureTransitionToVC", sender: nil)
-                }
+            let t = recognizer.location(in: nil)
+            if t.x < p.x,
+                !transitionManager.interactiveTransition.hasStarted
+            {
+                self.performSegue(withIdentifier: "gestureTransitionToVC", sender: nil)
                 transitionManager.interactiveTransition.hasStarted = true
             }
+            
+            let d = self.view.frame.width - fabs(t.x)
             
             guard transitionManager.interactiveTransition.hasStarted
                 else { return }
             
-            let percent = fabs(t.x/self.view.frame.width)
+            let percent = fabs(d/self.view.frame.width)
             transitionManager.interactiveTransition.update(percent)
             transitionManager.interactiveTransition.shouldFinish = percent > 0.5
             break
@@ -72,31 +80,5 @@ class SampleTransitionFromViewController: UIViewController {
             toVC.transitionManager = transitionManager
             toVC.transitioningDelegate = transitionManager
         }
-    }
-}
-
-extension SampleTransitionFromViewController {
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        print("viewWillAppear")
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        print("viewDidAppear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        print("viewWillDisappear")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        print("viewDidDisappear")
     }
 }
