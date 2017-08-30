@@ -39,6 +39,8 @@
 		C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */; };
 		C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */; };
 		C44CB7A31F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7A21F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift */; };
+		C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */; };
+		C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController1.swift; sourceTree = "<group>"; };
 		C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController2.swift; sourceTree = "<group>"; };
 		C44CB7A21F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLongPressGestureRecoginzer.swift; sourceTree = "<group>"; };
+		C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseAutolayout.storyboard; sourceTree = "<group>"; };
+		C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseAutolayoutMainViewController.swift; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +196,7 @@
 			children = (
 				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
 				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
+				C44E72701F565B6100F9EE81 /* CaseAutolayout */,
 				C44CB7531F53521100AF5FC9 /* CaseCollections */,
 				C44CB7561F53521100AF5FC9 /* CaseTableCells */,
 				C44CB75D1F53521100AF5FC9 /* CaseTransitions */,
@@ -279,6 +284,15 @@
 				C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */,
 			);
 			path = CaseUIViewWillMove;
+			sourceTree = "<group>";
+		};
+		C44E72701F565B6100F9EE81 /* CaseAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */,
+				C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */,
+			);
+			path = CaseAutolayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +392,7 @@
 				C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */,
 				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
 				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
+				C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */,
 				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
 				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
 				C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */,
@@ -504,6 +519,7 @@
 				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
 				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
+				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
 				C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */,
