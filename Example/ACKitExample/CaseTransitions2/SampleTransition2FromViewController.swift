@@ -1,5 +1,5 @@
 //
-//  SampleTransitionFromViewController.swift
+//  SampleTransition2FromViewController.swift
 //  ACKit
 //
 //  Created by Austin Chen on 2017-08-19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SampleTransitionFromViewController: UIViewController {
+class SampleTransition2FromViewController: UIViewController {
     
     @IBAction func dismissButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -16,6 +16,7 @@ class SampleTransitionFromViewController: UIViewController {
     
     var transitionManager = ACHorizontalTransitionManager()
     var p = CGPoint.zero
+    var animator: UIViewPropertyAnimator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

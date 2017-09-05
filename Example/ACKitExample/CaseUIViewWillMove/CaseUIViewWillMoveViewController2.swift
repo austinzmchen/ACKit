@@ -18,6 +18,13 @@ class CaseUIViewWillMoveViewController2: UIViewController {
 
     open override func loadView() {
         view = CaseWillMoveView()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismiss(_:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismiss(_ target: Any?) {
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0k6-Yc-m9q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Case Parallax Main View Controller-->
+        <scene sceneID="eVa-kb-vaw">
+            <objects>
+                <viewController id="0k6-Yc-m9q" customClass="CaseParallaxMainViewController" customModule="ACKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IEz-vA-dSC"/>
+                        <viewControllerLayoutGuide type="bottom" id="vdk-8r-9oa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFW-Io-w7b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZs-zQ-R97">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLh-6t-lGy" userLabel="topView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="vPE-YV-2ul"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPf-rk-tk1" userLabel="parallaxView" customClass="KCParallaxView">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="150"/>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.58431372550000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="GO8-HB-Ouh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-l4-Hpk" userLabel="bottomView">
+                                        <rect key="frame" x="0.0" y="450" width="375" height="250"/>
+                                        <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="cHZ-vG-wOQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40784313729999999" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="tLh-6t-lGy" firstAttribute="top" secondItem="EZs-zQ-R97" secondAttribute="top" id="0Yn-x6-OeP"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Yd-l4-Hpk" secondAttribute="bottom" id="2Ak-Rp-lsf"/>
+                                    <constraint firstAttribute="trailing" secondItem="tLh-6t-lGy" secondAttribute="trailing" id="CMw-38-cgl"/>
+                                    <constraint firstItem="oPf-rk-tk1" firstAttribute="leading" secondItem="EZs-zQ-R97" secondAttribute="leading" id="Qvy-lk-Z5y"/>
+                                    <constraint firstItem="9Yd-l4-Hpk" firstAttribute="leading" secondItem="EZs-zQ-R97" secondAttribute="leading" id="gfS-iT-vuI"/>
+                                    <constraint firstItem="9Yd-l4-Hpk" firstAttribute="top" secondItem="oPf-rk-tk1" secondAttribute="bottom" id="hl5-sr-thh"/>
+                                    <constraint firstItem="oPf-rk-tk1" firstAttribute="top" secondItem="tLh-6t-lGy" secondAttribute="bottom" id="nLq-tW-lFh"/>
+                                    <constraint firstItem="tLh-6t-lGy" firstAttribute="leading" secondItem="EZs-zQ-R97" secondAttribute="leading" id="rp4-px-Kdm"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="0k6-Yc-m9q" id="QHR-gX-JoF"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csC-JD-XTM">
+                                <rect key="frame" x="164" y="35" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fgC-oM-NbK" kind="unwind" unwindAction="unwindToMainWithSegue:" id="v1w-7y-wkk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EZs-zQ-R97" firstAttribute="top" secondItem="IEz-vA-dSC" secondAttribute="bottom" constant="80" id="4Mb-Hv-XYQ"/>
+                            <constraint firstItem="EZs-zQ-R97" firstAttribute="bottom" secondItem="vdk-8r-9oa" secondAttribute="top" id="AiG-d8-Qxe"/>
+                            <constraint firstItem="tLh-6t-lGy" firstAttribute="width" secondItem="IFW-Io-w7b" secondAttribute="width" id="Hf7-vW-Ely"/>
+                            <constraint firstAttribute="trailing" secondItem="EZs-zQ-R97" secondAttribute="trailing" id="MHR-z5-h7U"/>
+                            <constraint firstItem="oPf-rk-tk1" firstAttribute="width" secondItem="IFW-Io-w7b" secondAttribute="width" id="Q0m-ev-Tte"/>
+                            <constraint firstItem="EZs-zQ-R97" firstAttribute="top" secondItem="csC-JD-XTM" secondAttribute="bottom" constant="35" id="TZ5-uZ-IC7"/>
+                            <constraint firstItem="EZs-zQ-R97" firstAttribute="leading" secondItem="IFW-Io-w7b" secondAttribute="leading" id="jyr-XM-S9R"/>
+                            <constraint firstItem="9Yd-l4-Hpk" firstAttribute="width" secondItem="IFW-Io-w7b" secondAttribute="width" id="miI-e3-H7V"/>
+                            <constraint firstItem="EZs-zQ-R97" firstAttribute="centerX" secondItem="csC-JD-XTM" secondAttribute="centerX" id="uRp-na-Iwz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="parallaxView" destination="oPf-rk-tk1" id="Muf-hs-CHv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWc-an-Xkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fgC-oM-NbK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+</document>

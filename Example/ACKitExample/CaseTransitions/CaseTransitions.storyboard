@@ -28,7 +28,7 @@
                                 </constraints>
                                 <state key="normal" title="dismiss"/>
                                 <connections>
-                                    <action selector="dismissButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jn8-l2-zUn"/>
+                                    <action selector="dismissButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KMw-A5-ehb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using UIPanGestureRecognizer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebs-RK-27o">
@@ -72,15 +72,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="793-Qe-0jj">
+                                <rect key="frame" x="137.5" y="100" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.40784313729999999" green="0.69019607839999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HmY-t6-2Bw"/>
+                                </constraints>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="ksr-IB-hHv" eventType="touchUpInside" id="KTn-1f-ufe"/>
+                                    <segue destination="bME-t3-0FU" kind="unwind" unwindAction="unwindToVC1WithSegue:" id="anK-wX-mh0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="793-Qe-0jj" firstAttribute="centerX" secondItem="J5l-Kt-li7" secondAttribute="centerX" id="KEC-Mr-luk"/>
                             <constraint firstItem="6vY-KX-g6X" firstAttribute="centerX" secondItem="J5l-Kt-li7" secondAttribute="centerX" id="ZnO-gS-tY6"/>
+                            <constraint firstItem="793-Qe-0jj" firstAttribute="top" secondItem="stY-nN-16X" secondAttribute="bottom" constant="80" id="a7F-a5-gIF"/>
                             <constraint firstItem="6vY-KX-g6X" firstAttribute="centerY" secondItem="J5l-Kt-li7" secondAttribute="centerY" id="i9c-RN-f28"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wi-l1-UXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bME-t3-0FU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="645" y="84"/>
         </scene>

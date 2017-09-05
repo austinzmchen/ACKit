@@ -1,5 +1,5 @@
 //
-//  SampleTransitionToViewController.swift
+//  SampleTransition2ToViewController.swift
 //  ACKit
 //
 //  Created by Austin Chen on 2017-08-19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SampleTransitionToViewController: UIViewController {
+class SampleTransition2ToViewController: UIViewController {
     var transitionManager: ACHorizontalTransitionManager?
     
     @IBAction func backButtonTapped(_ sender: Any) {

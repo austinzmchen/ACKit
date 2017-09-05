@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		138C320C52179B393EB5DE5F /* Pods_ACKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EDEB491C4267B8470A5F0F /* Pods_ACKit_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */; };
+		C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */; };
+		C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */; };
 		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
@@ -38,9 +41,17 @@
 		C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */; };
 		C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */; };
 		C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */; };
-		C44CB7A31F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7A21F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift */; };
 		C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */; };
 		C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */; };
+		C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */; };
+		C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */; };
+		C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */; };
+		C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */; };
+		C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */; };
+		C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */; };
+		C4E0ADD71F589888004BCBA1 /* CaseParallaxMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */; };
+		C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */; };
+		C4E0ADDB1F58AFA6004BCBA1 /* ACParallaxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +78,9 @@
 		9473BBA84E5B146F7B4369C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C37B466CA7225E3A11A3A2 /* Pods-ACKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Tests/Pods-ACKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions2.storyboard; sourceTree = "<group>"; };
+		C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2FromViewController.swift; sourceTree = "<group>"; };
+		C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2ToViewController.swift; sourceTree = "<group>"; };
 		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -97,9 +111,19 @@
 		C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseWillMoveView.swift; sourceTree = "<group>"; };
 		C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController1.swift; sourceTree = "<group>"; };
 		C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController2.swift; sourceTree = "<group>"; };
-		C44CB7A21F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLongPressGestureRecoginzer.swift; sourceTree = "<group>"; };
 		C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseAutolayout.storyboard; sourceTree = "<group>"; };
 		C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseAutolayoutMainViewController.swift; sourceTree = "<group>"; };
+		C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUnwind.storyboard; sourceTree = "<group>"; };
+		C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController1.swift; sourceTree = "<group>"; };
+		C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController2.swift; sourceTree = "<group>"; };
+		C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseParallax.storyboard; sourceTree = "<group>"; };
+		C4E0ADD01F5893D0004BCBA1 /* KCParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParallaxView.h; sourceTree = "<group>"; };
+		C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParallaxView.m; sourceTree = "<group>"; };
+		C4E0ADD31F58940F004BCBA1 /* UIImageView+Aldo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Aldo.h"; sourceTree = "<group>"; };
+		C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Aldo.m"; sourceTree = "<group>"; };
+		C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseParallaxMainViewController.swift; sourceTree = "<group>"; };
+		C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACParallaxView.swift; sourceTree = "<group>"; };
+		C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACParallaxView.xib; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,11 +219,14 @@
 			isa = PBXGroup;
 			children = (
 				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
+				C4E0ADCD1F58933F004BCBA1 /* CaseParallax */,
+				C460FE3E1F574A1100676FCB /* CaseUnwind */,
 				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
 				C44E72701F565B6100F9EE81 /* CaseAutolayout */,
 				C44CB7531F53521100AF5FC9 /* CaseCollections */,
 				C44CB7561F53521100AF5FC9 /* CaseTableCells */,
 				C44CB75D1F53521100AF5FC9 /* CaseTransitions */,
+				C4383A801F5E5CAA00DD2A10 /* CaseTransitions2 */,
 				C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */,
 				C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */,
 				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
@@ -208,6 +235,16 @@
 				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
 			);
 			path = ACKitExample;
+			sourceTree = "<group>";
+		};
+		C4383A801F5E5CAA00DD2A10 /* CaseTransitions2 */ = {
+			isa = PBXGroup;
+			children = (
+				C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */,
+				C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */,
+				C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */,
+			);
+			path = CaseTransitions2;
 			sourceTree = "<group>";
 		};
 		C44CB74E1F53521100AF5FC9 /* Base.lproj */ = {
@@ -248,7 +285,6 @@
 				C44CB75F1F53521100AF5FC9 /* ProfilePageTransition */,
 				C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */,
 				C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */,
-				C44CB7A21F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift */,
 			);
 			path = CaseTransitions;
 			sourceTree = "<group>";
@@ -293,6 +329,31 @@
 				C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */,
 			);
 			path = CaseAutolayout;
+			sourceTree = "<group>";
+		};
+		C460FE3E1F574A1100676FCB /* CaseUnwind */ = {
+			isa = PBXGroup;
+			children = (
+				C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */,
+				C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */,
+				C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */,
+			);
+			path = CaseUnwind;
+			sourceTree = "<group>";
+		};
+		C4E0ADCD1F58933F004BCBA1 /* CaseParallax */ = {
+			isa = PBXGroup;
+			children = (
+				C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */,
+				C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */,
+				C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */,
+				C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */,
+				C4E0ADD01F5893D0004BCBA1 /* KCParallaxView.h */,
+				C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */,
+				C4E0ADD31F58940F004BCBA1 /* UIImageView+Aldo.h */,
+				C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */,
+			);
+			path = CaseParallax;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +448,7 @@
 			files = (
 				C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */,
 				C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */,
+				C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */,
 				C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */,
 				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
 				C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */,
@@ -395,7 +457,10 @@
 				C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */,
 				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
 				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
+				C4E0ADDB1F58AFA6004BCBA1 /* ACParallaxView.xib in Resources */,
+				C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */,
 				C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */,
+				C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */,
 				C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,24 +573,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */,
-				C44CB7A31F560E7500AF5FC9 /* ACLongPressGestureRecoginzer.swift in Sources */,
+				C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */,
 				C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */,
 				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
 				C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */,
 				C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */,
 				C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */,
+				C4E0ADD71F589888004BCBA1 /* CaseParallaxMainViewController.swift in Sources */,
 				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
 				C44CB77D1F53521100AF5FC9 /* MainViewController.swift in Sources */,
 				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
 				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
+				C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */,
+				C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */,
 				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
+				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
 				C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */,
+				C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */,
 				C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */,
+				C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */,
 				C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */,
 				C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */,
+				C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */,
 				C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +735,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -681,6 +754,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
