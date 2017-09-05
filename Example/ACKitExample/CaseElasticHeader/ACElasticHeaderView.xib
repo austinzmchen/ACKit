@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ACElasticHeaderView" customModule="ACKit_Example">
+            <connections>
+                <outlet property="centerYConstraint" destination="E9n-RY-CX7" id="LvD-tW-Lab"/>
+                <outlet property="contentView" destination="UGC-Fb-Juo" id="nDW-dy-jst"/>
+                <outlet property="imgView" destination="4Ma-cJ-R5h" id="AbA-qm-IE9"/>
+                <outlet property="imgViewEqualHeightToContentViewConstraint" destination="zMW-6X-T4n" id="Twe-ax-Iet"/>
+                <outlet property="topConstraint" destination="oJq-qB-tNP" id="GJr-Fe-YUV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Fb-Juo" userLabel="contentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-cJ-R5h" userLabel="imgView">
+                    <rect key="frame" x="-12.5" y="0.0" width="400" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4Ma-cJ-R5h" secondAttribute="height" multiplier="2:1" id="Z9G-W1-5j5"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4Ma-cJ-R5h" firstAttribute="centerY" secondItem="UGC-Fb-Juo" secondAttribute="centerY" id="E9n-RY-CX7"/>
+                <constraint firstItem="4Ma-cJ-R5h" firstAttribute="centerX" secondItem="UGC-Fb-Juo" secondAttribute="centerX" id="VSp-dw-Yex"/>
+                <constraint firstItem="4Ma-cJ-R5h" firstAttribute="top" secondItem="UGC-Fb-Juo" secondAttribute="top" id="oJq-qB-tNP"/>
+                <constraint firstItem="4Ma-cJ-R5h" firstAttribute="height" secondItem="UGC-Fb-Juo" secondAttribute="height" id="zMW-6X-T4n"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="smile" width="600" height="600"/>
+    </resources>
+</document>

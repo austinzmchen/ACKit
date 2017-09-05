@@ -12,8 +12,8 @@ public enum ACScrollDirection {
     case none
     case up
     case down
-    case bounce
-    case unknown
+    case bounceUp
+    case bounceDown
 }
 
 open class ACTableViewDataDelegate: NSObject {
@@ -54,26 +54,34 @@ extension ACTableViewDataDelegate: UIScrollViewDelegate {
     
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // ignore scrolling within bounce regions
-        guard scrollView.contentOffset.y >= 0,
-            scrollView.contentOffset.y <= scrollView.contentSize.height - scrollView.bounds.height else
-        {
-            if (_lastContentOffset > scrollView.contentOffset.y) {
-                _scrollDirection = .bounce
+        
+        if scrollView.contentOffset.y <= 0 {
+            // if bounce within top region
+            if (_lastContentOffset < scrollView.contentOffset.y) {
+                _scrollDirection = .bounceUp
+            } else {
+                _scrollDirection = .bounceDown
+            }
+        } else if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.height {
+            // if bounce within bottom region
+            
+            if (_lastContentOffset < scrollView.contentOffset.y) {
+                _scrollDirection = .bounceUp
             }
             else {
-                _scrollDirection = .unknown
+                _scrollDirection = .bounceDown
             }
-            return
+        } else {
+            // set scroll direction
+            if (_lastContentOffset < scrollView.contentOffset.y) {
+                // scroll up
+                _scrollDirection = .up
+            } else if (_lastContentOffset > scrollView.contentOffset.y) {
+                // scroll down
+                _scrollDirection = .down
+            }
         }
         
-        // set scroll direction
-        if (_lastContentOffset < scrollView.contentOffset.y) {
-            // scroll up
-            _scrollDirection = .up
-        } else if (_lastContentOffset > scrollView.contentOffset.y) {
-            // scroll down
-            _scrollDirection = .down
-        }
         // update the new position acquired
         _lastContentOffset = scrollView.contentOffset.y
     }

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		138C320C52179B393EB5DE5F /* Pods_ACKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EDEB491C4267B8470A5F0F /* Pods_ACKit_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C41B49191F5F53CD00F0F99D /* ACElasticHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49151F5F53CD00F0F99D /* ACElasticHeaderView.swift */; };
+		C41B491A1F5F53CD00F0F99D /* ACElasticHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41B49161F5F53CD00F0F99D /* ACElasticHeaderView.xib */; };
+		C41B491B1F5F53CD00F0F99D /* CaseElasticHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */; };
+		C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */; };
+		C41B491F1F5F574900F0F99D /* CaseScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */; };
+		C41B49211F5F576200F0F99D /* CaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */; };
 		C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */; };
 		C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */; };
 		C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */; };
@@ -78,6 +84,12 @@
 		9473BBA84E5B146F7B4369C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C37B466CA7225E3A11A3A2 /* Pods-ACKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Tests/Pods-ACKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C41B49151F5F53CD00F0F99D /* ACElasticHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACElasticHeaderView.swift; sourceTree = "<group>"; };
+		C41B49161F5F53CD00F0F99D /* ACElasticHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACElasticHeaderView.xib; sourceTree = "<group>"; };
+		C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader.storyboard; sourceTree = "<group>"; };
+		C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticViewController.swift; sourceTree = "<group>"; };
+		C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseScroll.storyboard; sourceTree = "<group>"; };
+		C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseScrollViewController.swift; sourceTree = "<group>"; };
 		C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions2.storyboard; sourceTree = "<group>"; };
 		C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2FromViewController.swift; sourceTree = "<group>"; };
 		C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2ToViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
+				C41B491D1F5F573300F0F99D /* CaseScroll */,
+				C41B49141F5F53CD00F0F99D /* CaseElasticHeader */,
 				C4E0ADCD1F58933F004BCBA1 /* CaseParallax */,
 				C460FE3E1F574A1100676FCB /* CaseUnwind */,
 				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
@@ -235,6 +249,26 @@
 				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
 			);
 			path = ACKitExample;
+			sourceTree = "<group>";
+		};
+		C41B49141F5F53CD00F0F99D /* CaseElasticHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C41B49151F5F53CD00F0F99D /* ACElasticHeaderView.swift */,
+				C41B49161F5F53CD00F0F99D /* ACElasticHeaderView.xib */,
+				C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */,
+				C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */,
+			);
+			path = CaseElasticHeader;
+			sourceTree = "<group>";
+		};
+		C41B491D1F5F573300F0F99D /* CaseScroll */ = {
+			isa = PBXGroup;
+			children = (
+				C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */,
+				C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */,
+			);
+			path = CaseScroll;
 			sourceTree = "<group>";
 		};
 		C4383A801F5E5CAA00DD2A10 /* CaseTransitions2 */ = {
@@ -457,9 +491,12 @@
 				C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */,
 				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
 				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
+				C41B491B1F5F53CD00F0F99D /* CaseElasticHeader.storyboard in Resources */,
 				C4E0ADDB1F58AFA6004BCBA1 /* ACParallaxView.xib in Resources */,
+				C41B491F1F5F574900F0F99D /* CaseScroll.storyboard in Resources */,
 				C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */,
 				C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */,
+				C41B491A1F5F53CD00F0F99D /* ACElasticHeaderView.xib in Resources */,
 				C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */,
 				C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */,
 			);
@@ -573,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */,
+				C41B49191F5F53CD00F0F99D /* ACElasticHeaderView.swift in Sources */,
 				C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */,
 				C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */,
 				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
@@ -588,6 +626,7 @@
 				C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */,
 				C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */,
 				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
+				C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */,
 				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
@@ -597,6 +636,7 @@
 				C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */,
 				C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */,
 				C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */,
+				C41B49211F5F576200F0F99D /* CaseScrollViewController.swift in Sources */,
 				C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */,
 				C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */,
 			);
