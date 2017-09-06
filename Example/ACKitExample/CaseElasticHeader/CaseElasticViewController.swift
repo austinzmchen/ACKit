@@ -10,7 +10,7 @@ import UIKit
 
 class CaseElasticViewController: UIViewController {
 
-    @IBOutlet weak var elasticHeaderView: ACElasticHeaderView!
+    @IBOutlet weak var elasticHeaderView: ACElasticView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -19,8 +19,6 @@ class CaseElasticViewController: UIViewController {
     
         tableView.dataSource = self
         tableView.delegate = self
-        
-        elasticHeaderView.elasticStyle = .centerFixed
     }
 }
 
@@ -39,9 +37,9 @@ extension CaseElasticViewController: UITableViewDelegate, UITableViewDataSource 
         // add expanding
         let offsetY = scrollView.contentOffset.y
         if offsetY > 0 {
-            elasticHeaderView.heightConstraint?.constant = 250.0 - min(50.0, offsetY)
+            elasticHeaderView.cHeight = ACElasticView.maxExpandableHeight - min(50.0, offsetY)
         } else {
-            elasticHeaderView.heightConstraint?.constant = 250.0
+            elasticHeaderView.cHeight = ACElasticView.maxExpandableHeight
         }
         
         // add elasticity
