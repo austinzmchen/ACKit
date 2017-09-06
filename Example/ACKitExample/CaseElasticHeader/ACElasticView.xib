@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ACElasticView" customModule="ACKit_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="ZTG-VT-7sF" id="aFc-z3-U7d"/>
+                <outlet property="centerYConstraint" destination="pXg-d9-xjV" id="Xzo-9E-OnK"/>
+                <outlet property="contentView" destination="UGC-Fb-Juo" id="jJg-wy-HXw"/>
+                <outlet property="eView" destination="Nno-Tp-rsz" id="WBE-au-fEs"/>
+                <outlet property="eViewHeightConstraint" destination="owK-ao-2Ue" id="9b7-U7-Lbv"/>
+                <outlet property="elasticViewEqualHeightToContentViewConstraint" destination="NBY-pn-mh7" id="mwX-qb-SOD"/>
+                <outlet property="topConstraint" destination="b5K-Wx-01J" id="3ma-dg-Cw9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Fb-Juo" userLabel="contentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nno-Tp-rsz" userLabel="eView">
+                    <rect key="frame" x="-12.5" y="0.0" width="400" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-cJ-R5h" userLabel="putAnytingHere">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4Ma-cJ-R5h" firstAttribute="top" secondItem="Nno-Tp-rsz" secondAttribute="top" id="7ts-zK-SEJ"/>
+                        <constraint firstAttribute="bottom" secondItem="4Ma-cJ-R5h" secondAttribute="bottom" id="Iae-tx-kl7"/>
+                        <constraint firstAttribute="trailing" secondItem="4Ma-cJ-R5h" secondAttribute="trailing" id="gZm-Jz-UTE"/>
+                        <constraint firstAttribute="width" secondItem="Nno-Tp-rsz" secondAttribute="height" multiplier="2:1" id="hcf-ao-pnw"/>
+                        <constraint firstAttribute="height" priority="999" constant="200" id="owK-ao-2Ue"/>
+                        <constraint firstItem="4Ma-cJ-R5h" firstAttribute="leading" secondItem="Nno-Tp-rsz" secondAttribute="leading" id="pwX-oY-Bsk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.57254901960000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nno-Tp-rsz" firstAttribute="height" secondItem="UGC-Fb-Juo" secondAttribute="height" priority="999" id="NBY-pn-mh7"/>
+                <constraint firstItem="Nno-Tp-rsz" firstAttribute="centerX" secondItem="UGC-Fb-Juo" secondAttribute="centerX" id="Vpl-lH-8hj"/>
+                <constraint firstAttribute="bottom" secondItem="Nno-Tp-rsz" secondAttribute="bottom" priority="999" id="ZTG-VT-7sF"/>
+                <constraint firstItem="Nno-Tp-rsz" firstAttribute="top" secondItem="UGC-Fb-Juo" secondAttribute="top" priority="999" id="b5K-Wx-01J"/>
+                <constraint firstItem="Nno-Tp-rsz" firstAttribute="centerY" secondItem="UGC-Fb-Juo" secondAttribute="centerY" priority="999" id="pXg-d9-xjV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="smile" width="600" height="600"/>
+    </resources>
+</document>
