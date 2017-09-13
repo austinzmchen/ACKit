@@ -25,7 +25,7 @@ class SampleTableViewCell2: UITableViewCell {
     
     func loadNib() {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "SampleTableViewCell2", bundle: bundle)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         self.contentView.addSubview(view)
         

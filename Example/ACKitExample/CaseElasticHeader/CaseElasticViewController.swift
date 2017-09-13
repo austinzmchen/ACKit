@@ -19,6 +19,9 @@ class CaseElasticViewController: UIViewController {
     
         tableView.dataSource = self
         tableView.delegate = self
+        
+        elasticHeaderView.maxExpandableHeight = 200
+        elasticHeaderView.minExpandableHeight = 0
     }
 }
 
@@ -36,11 +39,7 @@ extension CaseElasticViewController: UITableViewDelegate, UITableViewDataSource 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // add expanding
         let offsetY = scrollView.contentOffset.y
-        if offsetY > 0 {
-            elasticHeaderView.cHeight = ACElasticView.maxExpandableHeight - min(50.0, offsetY)
-        } else {
-            elasticHeaderView.cHeight = ACElasticView.maxExpandableHeight
-        }
+        elasticHeaderView.cOffsetY = offsetY
         
         // add elasticity
         if scrollView.contentOffset.y < 0 {

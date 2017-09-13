@@ -16,7 +16,7 @@ class CaseElasticSampleView: ACElasticView {
         super.loadNib()
         
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "CaseElasticSampleView", bundle: bundle)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let subContentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         self.eView.addSubview(subContentView)
         

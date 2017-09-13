@@ -231,6 +231,26 @@
                                             <segue destination="Szs-4s-EMp" kind="show" id="JPY-Jp-wrk"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ncZ-P5-8wv" style="IBUITableViewCellStyleDefault" id="b3y-mh-bSE">
+                                        <rect key="frame" x="0.0" y="856" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b3y-mh-bSE" id="wUf-b3-Icg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Orientation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ncZ-P5-8wv">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="79.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gHf-0E-pVf" kind="show" id="Xft-AG-Wpy"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -310,6 +330,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzc-Km-9Sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400" y="94"/>
+        </scene>
+        <!--CaseOrientation-->
+        <scene sceneID="Rrd-DW-0Pg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseOrientation" id="gHf-0E-pVf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsZ-Jj-Jts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="243"/>
         </scene>
         <!--CaseParallax-->
         <scene sceneID="Q4P-Dw-0CB">

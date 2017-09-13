@@ -9,11 +9,13 @@
 import UIKit
 
 enum ACElasticViewStyle {
+    case none
     case topFixed
     case centerFixed
 }
 
 enum ACElasticViewExpandStyle {
+    case none
     case scale
     case bottomShift
 }
@@ -23,23 +25,24 @@ class ACElasticView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var eView: UIView!
     
-    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    @IBOutlet weak var eViewTopConstraint: NSLayoutConstraint!
     
     // used when SHIFTING expand/shrink
     @IBOutlet weak var eViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var eViewBottomConstraint: NSLayoutConstraint!
     
     // used when scale elasticity
-    @IBOutlet weak var centerYConstraint: NSLayoutConstraint!
-    @IBOutlet weak var elasticViewEqualHeightToContentViewConstraint: NSLayoutConstraint!
+    @IBOutlet weak var eViewCenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var eViewEqualHeightToContentViewConstraint: NSLayoutConstraint!
     
-    static var maxExpandableHeight: CGFloat {
-        return 200
+    var maxExpandableHeight: CGFloat = kDefaultMaxExpandableHeight {
+        didSet {
+            eView.constraints.filter {$0.firstAttribute == .height}.first?.constant = maxExpandableHeight
+            self.setNeedsUpdateConstraints()
+        }
     }
     
-    static var expandableLimit: CGFloat {
-        return 50
-    }
+    var minExpandableHeight: CGFloat = 0
     
     // MARK: life cycles
     override init(frame: CGRect) {
@@ -56,7 +59,7 @@ class ACElasticView: UIView {
     
     func loadNib() {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "ACElasticView", bundle: bundle)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         self.addSubview(contentView)
         
@@ -68,12 +71,10 @@ class ACElasticView: UIView {
         contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
         self.clipsToBounds = true // in scale expand style, elastic view does not go out of bound of the container view
-        elasticStyle = .topFixed // default to centerFixed
+        maxExpandableHeight = kDefaultMaxExpandableHeight
+        
+        elasticStyle = .centerFixed // default to centerFixed
         expandStyle = .bottomShift
-    }
-    
-    override func updateConstraints() {
-        super.updateConstraints()
     }
     
     // MARK: elastic settings
@@ -81,12 +82,17 @@ class ACElasticView: UIView {
     var elasticStyle: ACElasticViewStyle = .topFixed {
         didSet {
             switch elasticStyle {
+            case .none:
+                eViewTopConstraint.priority = 999
+                eViewHeightConstraint.priority = 999
+                eViewEqualHeightToContentViewConstraint.priority = 1
+                eViewCenterYConstraint.priority = 1
             case .topFixed:
-                topConstraint.priority = 999
-                centerYConstraint.priority = 1
+                eViewTopConstraint.priority = 999
+                eViewCenterYConstraint.priority = 1
             case .centerFixed:
-                topConstraint.priority = 1
-                centerYConstraint.priority = 999
+                eViewTopConstraint.priority = 1
+                eViewCenterYConstraint.priority = 999
             }
             
             setNeedsUpdateConstraints()
@@ -95,7 +101,9 @@ class ACElasticView: UIView {
     
     var elasticZoomConstant: CGFloat = 0 {
         didSet {
-            elasticViewEqualHeightToContentViewConstraint.constant = elasticZoomConstant
+            if case .none = elasticStyle { return }
+            
+            eViewEqualHeightToContentViewConstraint.constant = elasticZoomConstant
         }
     }
     
@@ -103,29 +111,36 @@ class ACElasticView: UIView {
     
     var expandStyle: ACElasticViewExpandStyle = .bottomShift
     
-    var cHeight: CGFloat = ACElasticView.maxExpandableHeight {
+    var cHeight: CGFloat = kDefaultMaxExpandableHeight {
         didSet {
-            if cHeight >= ACElasticView.maxExpandableHeight { // elasticity
+            if cHeight >= maxExpandableHeight { // elasticity
                 // turn off shift
-                bottomConstraint.priority = 1
+                eViewBottomConstraint.priority = 1
                 eViewHeightConstraint.priority = 1
                 
                 // turn on scale
-                elasticViewEqualHeightToContentViewConstraint.priority = 999
+                eViewEqualHeightToContentViewConstraint.priority = 999
                 
             } else { // expand & shrink
-                if case .bottomShift = expandStyle {
+                switch expandStyle {
+                case .none:
+                    eViewTopConstraint.priority = 999
+                    eViewHeightConstraint.priority = 999
+                    
+                    eViewBottomConstraint.priority = 1
+                    eViewEqualHeightToContentViewConstraint.priority = 1
+                case .scale:
+                    eViewBottomConstraint.priority = 1
+                    eViewHeightConstraint.priority = 1
+                    
+                    eViewEqualHeightToContentViewConstraint.priority = 999
+                case .bottomShift:
                     // turn on shift
-                    bottomConstraint.priority = 999
+                    eViewBottomConstraint.priority = 999
                     eViewHeightConstraint.priority = 999
                     
                     // turn off scale
-                    elasticViewEqualHeightToContentViewConstraint.priority = 1
-                } else {
-                    bottomConstraint.priority = 1
-                    eViewHeightConstraint.priority = 1
-                    
-                    elasticViewEqualHeightToContentViewConstraint.priority = 999
+                    eViewEqualHeightToContentViewConstraint.priority = 1
                 }
             }
             
@@ -133,4 +148,16 @@ class ACElasticView: UIView {
             h?.constant = cHeight
         }
     }
+    
+    var cOffsetY: CGFloat = 0 {
+        didSet {
+            if cOffsetY > 0 {
+                cHeight = maxExpandableHeight - min(maxExpandableHeight - minExpandableHeight, cOffsetY)
+            } else {
+                cHeight = maxExpandableHeight
+            }
+        }
+    }
 }
+
+fileprivate var kDefaultMaxExpandableHeight: CGFloat = 300

@@ -30,7 +30,7 @@ class ACParallaxView: UIView {
     
     func loadNib() {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "ACParallaxView", bundle: bundle)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         self.addSubview(contentView)
     }

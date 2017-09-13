@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NpH-jB-2mv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hoH-m1-ckN">
+            <objects>
+                <viewController id="NpH-jB-2mv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lxl-Mb-834"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q1t-Ad-AMr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fAb-ri-9qt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUA-GP-QGK" customClass="CaseOrientationView1" customModule="ACKit_Example" customModuleProvider="target">
+                                <rect key="frame" x="50" y="258.5" width="275" height="150"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="KgV-dG-mQR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lUA-GP-QGK" firstAttribute="leading" secondItem="fAb-ri-9qt" secondAttribute="leading" constant="50" id="8FG-5i-qRz"/>
+                            <constraint firstItem="lUA-GP-QGK" firstAttribute="centerY" secondItem="fAb-ri-9qt" secondAttribute="centerY" id="r3O-Jn-rla"/>
+                            <constraint firstAttribute="trailing" secondItem="lUA-GP-QGK" secondAttribute="trailing" constant="50" id="zKa-P4-7AH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asc-NH-ybg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="104"/>
+        </scene>
+    </scenes>
+</document>
