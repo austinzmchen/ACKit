@@ -16,7 +16,7 @@ class TableCellViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        tableView.register(UINib(nibName: String(describing: type(of: self)), bundle: nil), forCellReuseIdentifier: "kSampleTableViewCell1")
+        tableView.register(UINib(nibName: "SampleTableViewCell1", bundle: nil), forCellReuseIdentifier: "kSampleTableViewCell1")
     }
 
 
