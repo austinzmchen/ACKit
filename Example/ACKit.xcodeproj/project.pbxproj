@@ -55,6 +55,9 @@
 		C45D675F1F7191BE001144B3 /* SampleHeaderView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */; };
 		C45D67FA1F73F802001144B3 /* TableHeaderViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */; };
 		C45D67FC1F7401C1001144B3 /* TableHeaderViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */; };
+		C45D67FE1F74058B001144B3 /* SampleHeaderView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */; };
+		C45D68001F740779001144B3 /* SampleHeaderView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */; };
+		C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */; };
 		C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */; };
 		C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */; };
 		C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */; };
@@ -139,6 +142,9 @@
 		C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView1.xib; sourceTree = "<group>"; };
 		C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController1.swift; sourceTree = "<group>"; };
 		C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController2.swift; sourceTree = "<group>"; };
+		C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView2.swift; sourceTree = "<group>"; };
+		C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView2.xib; sourceTree = "<group>"; };
+		C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController3.swift; sourceTree = "<group>"; };
 		C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUnwind.storyboard; sourceTree = "<group>"; };
 		C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController1.swift; sourceTree = "<group>"; };
 		C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController2.swift; sourceTree = "<group>"; };
@@ -330,6 +336,7 @@
 				C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */,
 				C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */,
 				C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */,
+				C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */,
 			);
 			path = CaseTableCells;
 			sourceTree = "<group>";
@@ -392,6 +399,8 @@
 			children = (
 				C45D675C1F7191B2001144B3 /* SampleHeaderView1.swift */,
 				C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */,
+				C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */,
+				C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -521,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */,
+				C45D68001F740779001144B3 /* SampleHeaderView2.xib in Resources */,
 				C45D675F1F7191BE001144B3 /* SampleHeaderView1.xib in Resources */,
 				C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */,
 				C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */,
@@ -673,11 +683,13 @@
 				C41B492B1F5FA8F600F0F99D /* CaseElasticSampleView.swift in Sources */,
 				C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */,
 				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
+				C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */,
 				C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */,
 				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
 				C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */,
+				C45D67FE1F74058B001144B3 /* SampleHeaderView2.swift in Sources */,
 				C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */,
 				C45D67FC1F7401C1001144B3 /* TableHeaderViewController2.swift in Sources */,
 				C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */,

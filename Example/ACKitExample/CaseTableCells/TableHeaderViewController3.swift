@@ -1,5 +1,5 @@
 //
-//  TableHeaderViewController1.swift
+//  TableHeaderViewController3.swift
 //  ACKit
 //
 //  Created by Austin Chen on 2017-09-21.
@@ -8,24 +8,30 @@
 
 import UIKit
 
-class TableHeaderViewController1: UIViewController {
+class TableHeaderViewController3: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet var headerView: SampleHeaderView1!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "SampleHeaderView2", bundle: nil), forHeaderFooterViewReuseIdentifier: "kSampleHeaderView2")
     }
 }
 
-extension TableHeaderViewController1: UITableViewDelegate, UITableViewDataSource {
-    
+extension TableHeaderViewController3: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "kSampleHeaderView2") as! SampleHeaderView2
+//        headerView.label.text = "Top"
+//        headerView.button.setTitle("bottom", for: .normal)
+//        headerView.backgroundColor = UIColor.red
+        
         return headerView
     }
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
