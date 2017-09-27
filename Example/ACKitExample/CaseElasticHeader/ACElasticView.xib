@@ -15,7 +15,6 @@
                 <outlet property="contentView" destination="UGC-Fb-Juo" id="jJg-wy-HXw"/>
                 <outlet property="eView" destination="Nno-Tp-rsz" id="WBE-au-fEs"/>
                 <outlet property="eViewBottomConstraint" destination="ZTG-VT-7sF" id="GpM-s0-uAK"/>
-                <outlet property="eViewCenterYConstraint" destination="pXg-d9-xjV" id="IQK-ZQ-MbK"/>
                 <outlet property="eViewEqualHeightToContentViewConstraint" destination="NBY-pn-mh7" id="juu-Y4-f8v"/>
                 <outlet property="eViewHeightConstraint" destination="owK-ao-2Ue" id="98E-6y-6w9"/>
                 <outlet property="eViewTopConstraint" destination="b5K-Wx-01J" id="qDg-CL-tek"/>

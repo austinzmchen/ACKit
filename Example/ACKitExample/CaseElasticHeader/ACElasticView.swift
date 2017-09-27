@@ -79,7 +79,9 @@ class ACElasticView: UIView {
     
     // MARK: elastic settings
     
-    var elasticStyle: ACElasticViewStyle = .topFixed {
+    var elasticStyle: ACElasticViewStyle = .topFixed
+    
+    var elasticZoomConstant: CGFloat = 0 {
         didSet {
             switch elasticStyle {
             case .none:
@@ -87,6 +89,7 @@ class ACElasticView: UIView {
                 eViewHeightConstraint.priority = 999
                 eViewEqualHeightToContentViewConstraint.priority = 1
                 eViewCenterYConstraint.priority = 1
+                return // exit early
             case .topFixed:
                 eViewTopConstraint.priority = 999
                 eViewCenterYConstraint.priority = 1
@@ -94,14 +97,6 @@ class ACElasticView: UIView {
                 eViewTopConstraint.priority = 1
                 eViewCenterYConstraint.priority = 999
             }
-            
-            setNeedsUpdateConstraints()
-        }
-    }
-    
-    var elasticZoomConstant: CGFloat = 0 {
-        didSet {
-            if case .none = elasticStyle { return }
             
             eViewEqualHeightToContentViewConstraint.constant = elasticZoomConstant
         }
@@ -120,7 +115,7 @@ class ACElasticView: UIView {
                 
                 // turn on scale
                 eViewEqualHeightToContentViewConstraint.priority = 999
-                
+                eViewCenterYConstraint.priority = 1
             } else { // expand & shrink
                 switch expandStyle {
                 case .none:
@@ -129,6 +124,7 @@ class ACElasticView: UIView {
                     
                     eViewBottomConstraint.priority = 1
                     eViewEqualHeightToContentViewConstraint.priority = 1
+                    eViewCenterYConstraint.priority = 1
                 case .scale:
                     eViewBottomConstraint.priority = 1
                     eViewHeightConstraint.priority = 1
