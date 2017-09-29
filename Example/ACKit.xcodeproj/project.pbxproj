@@ -61,6 +61,11 @@
 		C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */; };
 		C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */; };
 		C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */; };
+		C47121031F7D645800A885BC /* CaseEmbed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47121021F7D645800A885BC /* CaseEmbed.storyboard */; };
+		C47121051F7D647F00A885BC /* CaseEmbedVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */; };
+		C47121071F7D64AA00A885BC /* CaseEmbedVCByCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */; };
+		C47121091F7D6B5400A885BC /* CaseEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */; };
+		C471210B1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */; };
 		C48CE6201F62E79000C5BF59 /* CaseOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */; };
 		C48CE6221F62E7BB00C5BF59 /* CaseOrientationView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */; };
 		C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */; };
@@ -148,6 +153,11 @@
 		C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUnwind.storyboard; sourceTree = "<group>"; };
 		C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController1.swift; sourceTree = "<group>"; };
 		C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController2.swift; sourceTree = "<group>"; };
+		C47121021F7D645800A885BC /* CaseEmbed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseEmbed.storyboard; sourceTree = "<group>"; };
+		C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedVCByCode.swift; sourceTree = "<group>"; };
+		C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaseEmbedVCByCode.xib; sourceTree = "<group>"; };
+		C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedViewController.swift; sourceTree = "<group>"; };
+		C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedSubVCByCode.swift; sourceTree = "<group>"; };
 		C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseOrientation.storyboard; sourceTree = "<group>"; };
 		C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOrientationView1.swift; sourceTree = "<group>"; };
 		C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseParallax.storyboard; sourceTree = "<group>"; };
@@ -266,6 +276,7 @@
 				C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */,
 				C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */,
 				C48CE61C1F62E75600C5BF59 /* CaseOrientation */,
+				C47121011F7D63FF00A885BC /* CaseEmbed */,
 				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
 				C44CB7671F53521100AF5FC9 /* Info.plist */,
 				C44CB7681F53521100AF5FC9 /* MainViewController.swift */,
@@ -415,6 +426,18 @@
 			path = CaseUnwind;
 			sourceTree = "<group>";
 		};
+		C47121011F7D63FF00A885BC /* CaseEmbed */ = {
+			isa = PBXGroup;
+			children = (
+				C47121021F7D645800A885BC /* CaseEmbed.storyboard */,
+				C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */,
+				C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */,
+				C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */,
+				C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */,
+			);
+			path = CaseEmbed;
+			sourceTree = "<group>";
+		};
 		C48CE61C1F62E75600C5BF59 /* CaseOrientation */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,7 +554,9 @@
 			files = (
 				C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */,
 				C45D68001F740779001144B3 /* SampleHeaderView2.xib in Resources */,
+				C47121071F7D64AA00A885BC /* CaseEmbedVCByCode.xib in Resources */,
 				C45D675F1F7191BE001144B3 /* SampleHeaderView1.xib in Resources */,
+				C47121031F7D645800A885BC /* CaseEmbed.storyboard in Resources */,
 				C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */,
 				C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */,
 				C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */,
@@ -669,6 +694,7 @@
 				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
 				C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */,
 				C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */,
+				C471210B1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift in Sources */,
 				C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */,
 				C4E0ADD71F589888004BCBA1 /* CaseParallaxMainViewController.swift in Sources */,
 				C45D675D1F7191B2001144B3 /* SampleHeaderView1.swift in Sources */,
@@ -679,12 +705,14 @@
 				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
 				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
+				C47121051F7D647F00A885BC /* CaseEmbedVCByCode.swift in Sources */,
 				C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */,
 				C41B492B1F5FA8F600F0F99D /* CaseElasticSampleView.swift in Sources */,
 				C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */,
 				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
 				C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */,
 				C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */,
+				C47121091F7D6B5400A885BC /* CaseEmbedViewController.swift in Sources */,
 				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,

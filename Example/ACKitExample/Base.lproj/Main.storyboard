@@ -251,6 +251,26 @@
                                             <segue destination="gHf-0E-pVf" kind="show" id="Xft-AG-Wpy"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KCa-2B-gKt" style="IBUITableViewCellStyleDefault" id="ea8-sU-eYk">
+                                        <rect key="frame" x="0.0" y="936" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ea8-sU-eYk" id="cdz-RE-8cK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="EmbedByCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KCa-2B-gKt">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="79.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kee-LY-Ggp" kind="show" id="3qz-hO-Dc5"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -346,6 +366,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zq6-1N-XmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044" y="-68"/>
+        </scene>
+        <!--CaseEmbed-->
+        <scene sceneID="t2j-eF-Del">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseEmbed" id="kee-LY-Ggp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaa-sF-hMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="203"/>
         </scene>
         <!--CaseAutolayout-->
         <scene sceneID="7vW-yk-iZQ">
