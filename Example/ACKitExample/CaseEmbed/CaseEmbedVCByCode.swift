@@ -29,12 +29,6 @@ class CaseEmbedVCByCode: UIViewController {
         view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        print("reach")
-    }
-    
     // self.view translatesAutoresizingMaskIntoConstraints is always true disregard how self is initialized
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,6 +8,11 @@
 
 import UIKit
 
+/*
+ for starters, set shadowColor, shadowBlurRadius
+ foregroundColor replaces self.backgroundColor
+ */
+
 /**
     this view contains a child view which can create a border around itself.
     the reason for creating a child view is the fact that masksToBounds needs to be one value for creating a border, while being the opposite value for having a shadow.
@@ -27,7 +32,7 @@ open class ACShadowView: UIView {
     @IBInspectable var shadowColor: UIColor? = nil
     @IBInspectable var shadowOffset: CGSize = CGSize.zero
     @IBInspectable var shadowBlurRadius: CGFloat = 0
-    @IBInspectable var shadowOpacity: CGFloat = 0
+    @IBInspectable var shadowOpacity: CGFloat = 1
     
     private var borderView = UIView()
 
