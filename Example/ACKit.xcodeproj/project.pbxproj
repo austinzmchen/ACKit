@@ -74,6 +74,7 @@
 		C471210B1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */; };
 		C48CE6201F62E79000C5BF59 /* CaseOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */; };
 		C48CE6221F62E7BB00C5BF59 /* CaseOrientationView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */; };
+		C4A3177A1F912834007FDB56 /* CaseStackview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A317791F912834007FDB56 /* CaseStackview.storyboard */; };
 		C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */; };
 		C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */; };
 		C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */; };
@@ -172,6 +173,7 @@
 		C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedSubVCByCode.swift; sourceTree = "<group>"; };
 		C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseOrientation.storyboard; sourceTree = "<group>"; };
 		C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOrientationView1.swift; sourceTree = "<group>"; };
+		C4A317791F912834007FDB56 /* CaseStackview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseStackview.storyboard; sourceTree = "<group>"; };
 		C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseParallax.storyboard; sourceTree = "<group>"; };
 		C4E0ADD01F5893D0004BCBA1 /* KCParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParallaxView.h; sourceTree = "<group>"; };
 		C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParallaxView.m; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 				C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */,
 				C48CE61C1F62E75600C5BF59 /* CaseOrientation */,
 				C47121011F7D63FF00A885BC /* CaseEmbed */,
+				C4A317781F91281A007FDB56 /* CaseStackview */,
 				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
 				C44CB7671F53521100AF5FC9 /* Info.plist */,
 				C44CB7681F53521100AF5FC9 /* MainViewController.swift */,
@@ -481,6 +484,14 @@
 			path = CaseOrientation;
 			sourceTree = "<group>";
 		};
+		C4A317781F91281A007FDB56 /* CaseStackview */ = {
+			isa = PBXGroup;
+			children = (
+				C4A317791F912834007FDB56 /* CaseStackview.storyboard */,
+			);
+			path = CaseStackview;
+			sourceTree = "<group>";
+		};
 		C4E0ADCD1F58933F004BCBA1 /* CaseParallax */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +613,7 @@
 				C41522061F84832800490662 /* CaseUI.storyboard in Resources */,
 				C41B492D1F5FA90800F0F99D /* CaseElasticSampleView.xib in Resources */,
 				C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */,
+				C4A3177A1F912834007FDB56 /* CaseStackview.storyboard in Resources */,
 				C43C625D1F83F1C500C885D4 /* CaseBlurModal.storyboard in Resources */,
 				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
 				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
