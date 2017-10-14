@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-protocol ACFetchedResultsControllerProtocol {
+public protocol ACFetchedResultsControllerProtocol {
     static func instantiate(entityName: String,
                             predicate: NSPredicate?,
                             managedObjectContext: NSManagedObjectContext?,
@@ -22,7 +22,7 @@ protocol ACFetchedResultsControllerProtocol {
 }
 
 extension NSFetchedResultsController: ACFetchedResultsControllerProtocol {
-    static func instantiate(entityName: String,
+    open static func instantiate(entityName: String,
                             predicate: NSPredicate?,
                             managedObjectContext: NSManagedObjectContext?,
                             fetchOffset: Int = 0,

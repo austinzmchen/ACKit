@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum STAspectRatio {
+public enum STAspectRatio {
     case sixteenByNine
     case threeByTwo
 }
 
 extension CGFloat {
-    func stSmallerValue(byAspectRatio ratio: STAspectRatio) -> CGFloat {
+    public func stSmallerValue(byAspectRatio ratio: STAspectRatio) -> CGFloat {
         switch ratio {
         case .sixteenByNine:
             return (9.0 / 16.0) * self
@@ -23,7 +23,7 @@ extension CGFloat {
         }
     }
     
-    func stLargerValue(byAspectRatio ratio: STAspectRatio) -> CGFloat {
+    public func stLargerValue(byAspectRatio ratio: STAspectRatio) -> CGFloat {
         switch ratio {
         case .sixteenByNine:
             return (16.0 / 9.0) * self

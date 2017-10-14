@@ -10,14 +10,14 @@ import Foundation
 
 extension Date {
     
-    static func date(fromString str: String) -> Date? {
+    public static func date(fromString str: String) -> Date? {
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
         let date = df.date(from: str)
         return date
     }
     
-    var toTimestamp: String {
+    public var toTimestamp: String {
         let f = DateFormatter()
         f.dateFormat = "yyyy/MM/dd HH:mm:ss.SSS"
         return f.string(from: self)

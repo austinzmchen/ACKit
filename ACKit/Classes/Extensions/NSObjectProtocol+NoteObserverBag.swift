@@ -9,7 +9,7 @@
 import Foundation
 
 extension NSObjectProtocol {
-    func addDisposableToken(to noteObserverBag: ACNoteObserverTokenBag) {
+    public func addDisposableToken(to noteObserverBag: ACNoteObserverTokenBag) {
         noteObserverBag.addToken(self)
     }
 }

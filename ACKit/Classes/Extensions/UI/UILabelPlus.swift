@@ -9,7 +9,7 @@
 import UIKit
 
 extension UILabel {
-    var attributedTextRaw: String? {
+    open var attributedTextRaw: String? {
         get {
             return attributedText?.string
         }

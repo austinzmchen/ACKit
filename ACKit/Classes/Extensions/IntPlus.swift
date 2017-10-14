@@ -9,7 +9,7 @@
 import Foundation
 
 extension Int {
-    func secondsToTimeString() -> String {
+    public func secondsToTimeString() -> String {
         let seconds = self % 60
         let minutes = (self / 60) % 60
         let hours = self / (60 * 60)
@@ -24,7 +24,7 @@ extension Int {
 }
 
 extension Integer { // Int, Int64, etc
-    var toString: String {
+    public var toString: String {
         return String(describing: self)
     }
 }

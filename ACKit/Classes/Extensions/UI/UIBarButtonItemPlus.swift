@@ -9,7 +9,7 @@
 import Foundation
 
 extension UIBarButtonItem {
-    static func barButtonItem(withImageName name: String, forTarget target: Any?, action: Selector) -> UIBarButtonItem {
+    open static func barButtonItem(withImageName name: String, forTarget target: Any?, action: Selector) -> UIBarButtonItem {
         // set up image
         let img = UIImage(named: name)?.withRenderingMode(.alwaysOriginal) // the image has to be masked properly
         

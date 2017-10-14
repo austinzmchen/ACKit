@@ -10,36 +10,36 @@ import Foundation
 
 extension UIView {
     
-    func snapTopBottom(toView view: UIView) {
+    open func snapTopBottom(toView view: UIView) {
         self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         self.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
-    func snapLeadTrail(toView view: UIView) {
+    open func snapLeadTrail(toView view: UIView) {
         self.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
     }
     
-    func snapAll(toView view: UIView) {
+    open func snapAll(toView view: UIView) {
         snapTopBottom(toView: view)
         snapLeadTrail(toView: view)
     }
     
-    func snapTopBottomToSuperview() {
+    open func snapTopBottomToSuperview() {
         guard let sv = self.superview
             else { return }
         
         snapTopBottom(toView: sv)
     }
     
-    func snapLeadTrailToSuperview() {
+    open func snapLeadTrailToSuperview() {
         guard let sv = self.superview
             else { return }
         
         snapLeadTrail(toView: sv)
     }
     
-    func snapAllToSuperview() {
+    open func snapAllToSuperview() {
         snapTopBottomToSuperview()
         snapLeadTrailToSuperview()
     }
