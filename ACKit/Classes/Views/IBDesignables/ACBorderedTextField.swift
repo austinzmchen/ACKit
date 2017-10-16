@@ -54,10 +54,9 @@ open class ACBorderedTextField: UITextField {
             let phc = placeholderFontColor
         {
             self.attributedPlaceholder = NSAttributedString(string: ph, attributes:
-                [NSFontAttributeName : UIFont.systemFont(ofSize: placeholderFontSize, weight: UIFontWeightRegular),
-                 NSForegroundColorAttributeName: phc])
+                [NSAttributedStringKey.font : UIFont.systemFont(ofSize: placeholderFontSize, weight: UIFont.Weight.regular),
+                 NSAttributedStringKey.foregroundColor: phc])
             isAttributedPlaceholderSet = true
         }
-        
     }
 }
