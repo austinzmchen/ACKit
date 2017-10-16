@@ -9,7 +9,7 @@
 import Foundation
 
 extension UINavigationController {
-    var rootViewController: UIViewController? {
+    open var rootViewController: UIViewController? {
         if self.viewControllers.count > 0 {
             return self.viewControllers[0]
         } else {

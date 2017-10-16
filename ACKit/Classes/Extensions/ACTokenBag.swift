@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol ACTokenBagType {
+public protocol ACTokenBagType {
     func addToken(_ token: NSObjectProtocol)
     func removeAllTokens()
 }
 
-class ACTokenBag {
+open class ACTokenBag {
     var tokens: [NSObjectProtocol] = [] //< The tokens registered with NSNotificationCenter
     
     deinit {

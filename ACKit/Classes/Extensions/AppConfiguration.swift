@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol AppConfiguratorType {
+public protocol AppConfiguratorType {
     var remoteSession: ACRemoteSession? {get set}
     var syncCoordinator: ACSyncCoordinator? {get set}
     func configure() -> AppConfiguration?
 }
 
-struct AppConfigurator: AppConfiguratorType {
+public struct AppConfigurator: AppConfiguratorType {
     // builder properties
-    var remoteSession: ACRemoteSession?
-    var syncCoordinator: ACSyncCoordinator?
+    public var remoteSession: ACRemoteSession?
+    public var syncCoordinator: ACSyncCoordinator?
     
     public func configure() -> AppConfiguration? {
         guard let rs = self.remoteSession else {
@@ -35,11 +35,11 @@ struct AppConfigurator: AppConfiguratorType {
 let kAppConfigurationRemoteSession = "remoteSession"
 let kAppConfigurationSyncCoordinator = "syncCoordinator"
 
-typealias AppConfiguration = NSMutableDictionary // subclass dictionary would require override methods
+public typealias AppConfiguration = NSMutableDictionary // subclass dictionary would require override methods
 
 extension AppConfiguration {
     
-    var isValid: Bool {
+    open var isValid: Bool {
         get {
             if let _ = self[kAppConfigurationRemoteSession] as? ACRemoteSession,
                 let _ = self[kAppConfigurationSyncCoordinator] as? ACSyncCoordinator
@@ -51,15 +51,15 @@ extension AppConfiguration {
         }
     }
     
-    static func appVersion() -> String {
+    open static func appVersion() -> String {
         return Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
     }
     
-    static func appBuild() -> String {
+    open static func appBuild() -> String {
         return Bundle.main.infoDictionary!["CFBundleVersion"] as! String
     }
     
-    static func versionWithBuild() -> String {
+    open static func versionWithBuild() -> String {
         return String(format: "%@ (%@)", self.appVersion(), self.appBuild())
     }
 }

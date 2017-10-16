@@ -5,7 +5,7 @@ import UIKit
 
 extension UIApplication {
     
-    func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
+    open func topViewController(_ viewController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
     {
         if let nav = viewController as? UINavigationController {
             return topViewController(nav.visibleViewController)

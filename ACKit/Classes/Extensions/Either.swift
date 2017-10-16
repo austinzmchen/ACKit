@@ -8,20 +8,20 @@
 
 import Foundation
 
-enum Either<T1, T2> {
+public enum Either<T1, T2> {
     case left(T1)
     case right(T2)
 }
 
 extension Either {
-    var leftValue: T1? {
+    public var leftValue: T1? {
         if case .left(let v) = self {
             return v
         }
         return nil
     }
     
-    var rightValue: T2? {
+    public var rightValue: T2? {
         if case .right(let v) = self {
             return v
         }

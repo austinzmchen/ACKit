@@ -95,7 +95,6 @@
 		C4A317A01F91527B007FDB56 /* UIBarButtonItemPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317831F91527B007FDB56 /* UIBarButtonItemPlus.swift */; };
 		C4A317A11F91527B007FDB56 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317841F91527B007FDB56 /* UITableViewExtension.swift */; };
 		C4A317A21F91527B007FDB56 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317851F91527B007FDB56 /* UIView+Constraints.swift */; };
-		C4A317A31F91527B007FDB56 /* UIColorPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317861F91527B007FDB56 /* UIColorPlus.swift */; };
 		C4A317A41F91527B007FDB56 /* UIApplication+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317871F91527B007FDB56 /* UIApplication+Loading.swift */; };
 		C4A317A51F91527B007FDB56 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317881F91527B007FDB56 /* Either.swift */; };
 		C4A317A61F91527B007FDB56 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A317891F91527B007FDB56 /* String+Localizable.swift */; };
@@ -325,7 +324,6 @@
 		C4A317831F91527B007FDB56 /* UIBarButtonItemPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemPlus.swift; sourceTree = "<group>"; };
 		C4A317841F91527B007FDB56 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		C4A317851F91527B007FDB56 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
-		C4A317861F91527B007FDB56 /* UIColorPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorPlus.swift; sourceTree = "<group>"; };
 		C4A317871F91527B007FDB56 /* UIApplication+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Loading.swift"; sourceTree = "<group>"; };
 		C4A317881F91527B007FDB56 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		C4A317891F91527B007FDB56 /* String+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
@@ -803,7 +801,6 @@
 				C4A317831F91527B007FDB56 /* UIBarButtonItemPlus.swift */,
 				C4A317841F91527B007FDB56 /* UITableViewExtension.swift */,
 				C4A317851F91527B007FDB56 /* UIView+Constraints.swift */,
-				C4A317861F91527B007FDB56 /* UIColorPlus.swift */,
 				C4A317871F91527B007FDB56 /* UIApplication+Loading.swift */,
 			);
 			path = UI;
@@ -1169,7 +1166,6 @@
 				C41258341F9154C5000F01C3 /* ACHost.swift in Sources */,
 				7495AB12067B12166FEF8A7E1803B53B /* ACBorderedLabel.swift in Sources */,
 				F9686552C1B81E4BEB96EEF9B308DFC2 /* ACBorderedTextField.swift in Sources */,
-				C4A317A31F91527B007FDB56 /* UIColorPlus.swift in Sources */,
 				6F395B15EEF45DBC499B34D34C2BD0FA /* ACBorderedView.swift in Sources */,
 				C4A317A61F91527B007FDB56 /* String+Localizable.swift in Sources */,
 				EE833E063D0C6C74471035F716AC6812 /* ACCoreDataStack.swift in Sources */,

@@ -8,16 +8,16 @@
 
 import Foundation
 
-struct ACHost {
+public struct ACHost {
     let name: String
     let domain: String
 }
 
 extension ACHost {
-    static let hosts: [ACHost] = [ACHost(name: "Prod", domain: "prod.com"),
+    public static let hosts: [ACHost] = [ACHost(name: "Prod", domain: "prod.com"),
                                   ACHost(name: "Staging", domain: "staging.com")]
     
-    var prefixUrl: String {
+    public var prefixUrl: String {
         return "http://" + domain + "/suffix/"
     }
 }

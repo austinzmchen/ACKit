@@ -5,7 +5,7 @@
 import UIKit
 
 extension UIImage {
-    func trim(trimRect :CGRect) -> UIImage {
+    open func trim(trimRect :CGRect) -> UIImage {
         if CGRect(origin: CGPoint.zero, size: self.size).contains(trimRect) {
             if let imageRef = (self.cgImage)?.cropping(to: trimRect) {
                 return UIImage(cgImage: imageRef)
@@ -22,7 +22,7 @@ extension UIImage {
         return image
     }
     
-    func resizedImage(byWidth newWidth: CGFloat) -> UIImage {
+    open func resizedImage(byWidth newWidth: CGFloat) -> UIImage {
         let scale = newWidth / self.size.width
         let newHeight = self.size.height * scale
         UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))

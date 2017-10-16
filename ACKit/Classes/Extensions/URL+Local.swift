@@ -9,14 +9,15 @@
 import Foundation
 
 extension URL {
-    static func temporaryURL() -> URL {
+    public static func temporaryURL() -> URL {
         let url = try! FileManager.default.url(for: FileManager.SearchPathDirectory.cachesDirectory,
                                                in: .userDomainMask,
                                                appropriateFor: nil,
                                                create: true)
         return url.appendingPathComponent(UUID().uuidString)
     }
-    static var documentsURL: URL {
+    
+    public static var documentsURL: URL {
         return try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     }
 }

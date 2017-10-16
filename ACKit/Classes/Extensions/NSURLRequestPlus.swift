@@ -9,7 +9,7 @@
 import Foundation
 
 extension NSURLRequest {
-    var toMd5: String {
+    open var toMd5: String {
 //        NSString *md5String = [NSString stringWithFormat:@"url:%@",[self.URL.absoluteString md5Signature]];
 //        md5String = [md5String stringByAppendingFormat:@".method:%@",[self.HTTPMethod md5Signature]];
 //        md5String = [md5String stringByAppendingFormat:@".body:%@",[self.body md5Signature]];

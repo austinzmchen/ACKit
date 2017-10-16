@@ -8,9 +8,8 @@
 
 import Foundation
 
-class ACNoteObserverTokenBag: ACTokenBag {
-    
-    override func removeAllTokens() {
+open class ACNoteObserverTokenBag: ACTokenBag {
+    open override func removeAllTokens() {
         super.removeAllTokens()
         
         tokens.forEach({

@@ -8,9 +8,9 @@
 
 import Foundation
 
-class ACSettings {
+open class ACSettings {
     
-    static let shared: ACSettings = {
+    open static let shared: ACSettings = {
         let instance = ACSettings()
         
         // setup code
@@ -19,7 +19,7 @@ class ACSettings {
         return instance
     }()
     
-    var uniqueAppId: String = { // created once per install; AppStore forbids UDID;
+    open var uniqueAppId: String = { // created once per install; AppStore forbids UDID;
         let k = "kKeyAppUniqueId"
         if UserDefaults.standard.object(forKey: k) == nil {
             UserDefaults.standard.set(UUID().uuidString, forKey: k)
@@ -28,7 +28,7 @@ class ACSettings {
         return UserDefaults.standard.object(forKey: k) as! String
     }()
     
-    var locale: String {
+    open var locale: String {
         var l = "en-ca"
         if let lang = NSLocale.preferredLanguages.first,
             lang.contains("fr")
@@ -44,7 +44,7 @@ class ACSettings {
 // in-app settings
 
 extension ACSettings {
-    var host: ACHost {
+    open var host: ACHost {
         set {
             let s = newValue.name + "@" + newValue.domain
             UserDefaults.standard.set(s, forKey: kKeyHost)
@@ -67,7 +67,7 @@ extension ACSettings {
 // debug settings
 fileprivate let kKeyHost = "kACSettingsKeyHost"
 
-protocol ACSettingsBundleType {
+public protocol ACSettingsBundleType {
     func registerDefaultSettings()
     func isDebugEnabled() -> Bool
 }
@@ -78,7 +78,7 @@ protocol ACSettingsBundleType {
  */
 extension ACSettings: ACSettingsBundleType {
     
-    func registerDefaultSettings() {
+    open func registerDefaultSettings() {
         let defaults = UserDefaults.standard
         let settingsDict = [kIdContextualDebugging: "NO"]
         
@@ -86,7 +86,7 @@ extension ACSettings: ACSettingsBundleType {
         defaults.synchronize()
     }
     
-    func isDebugEnabled() -> Bool {
+    open func isDebugEnabled() -> Bool {
         let bool = UserDefaults.standard.bool(forKey: kIdContextualDebugging)
         return bool
     }
