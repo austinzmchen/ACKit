@@ -9,52 +9,50 @@
 import Foundation
 
 extension UIFont {
-    open class func montserratFont(ofSize fontSize: CGFloat, weight: CGFloat? = nil) -> UIFont {
+    
+    open class func montserratFont(ofSize fontSize: CGFloat, weight: UIFont.Weight? = nil) -> UIFont {
         var weightStr = "Regular"
-        
         if let w = weight {
             switch w {
-            case UIFontWeightUltraLight:
+            case .ultraLight:
                 weightStr = "UltraLight"
-            case UIFontWeightThin:
+            case .thin:
                 weightStr = "Thin"
-            case UIFontWeightLight:
+            case .light:
                 weightStr = "Light"
-            case UIFontWeightRegular:
+            case .regular:
                 weightStr = "Regular"
-            case UIFontWeightMedium:
+            case .medium:
                 weightStr = "Medium"
-            case UIFontWeightSemibold:
+            case .semibold:
                 weightStr = "Semibold"
-            case UIFontWeightBold:
+            case .bold:
                 weightStr = "Bold"
-            case UIFontWeightBlack:
+            case .black:
                 weightStr = "Black"
             default:
                 break
             }
         }
-        
         return UIFont(name: "Montserrat-" + weightStr, size: fontSize)!
     }
-    open class func gothamFont(ofSize fontSize: CGFloat, weight: CGFloat? = nil) -> UIFont {
+    
+    open class func gothamFont(ofSize fontSize: CGFloat, weight: UIFont.Weight? = nil) -> UIFont {
         var weightStr = "Regular"
-        
         if let w = weight {
             switch w {
-            case UIFontWeightRegular:
+            case .regular:
                 weightStr = "Book" //"Regular"
-            case UIFontWeightBold:
+            case .bold:
                 weightStr = "Bold"
-            case UIFontWeightLight:
+            case .light:
                 weightStr = "Light"
-            case UIFontWeightMedium:
+            case .medium:
                 weightStr = "Medium"
             default:
                 break
             }
         }
-        
         return UIFont(name: "Gotham-" + weightStr, size: fontSize)!
     }
 }

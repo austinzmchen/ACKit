@@ -9,20 +9,22 @@
 import Foundation
 import CoreData
 
-protocol ACFetchedResultsControllerProtocol {
-    static func instantiate(entityName: String,
-                            predicate: NSPredicate?,
-                            managedObjectContext: NSManagedObjectContext?,
-                            fetchOffset: Int,
-                            fetchLimit: Int,
-                            sortDescriptors: [NSSortDescriptor],
-                            delegate: NSFetchedResultsControllerDelegate?,
-                            sectionNameKeyPath: String?,
-                            cacheName: String?) -> NSFetchedResultsController<NSManagedObject>?
-}
+//protocol ACFetchedResultsControllerProtocol {
+//    static func instantiate(entityName: String,
+//                            predicate: NSPredicate?,
+//                            managedObjectContext: NSManagedObjectContext?,
+//                            fetchOffset: Int,
+//                            fetchLimit: Int,
+//                            sortDescriptors: [NSSortDescriptor],
+//                            delegate: NSFetchedResultsControllerDelegate?,
+//                            sectionNameKeyPath: String?,
+//                            cacheName: String?) -> NSFetchedResultsController<NSManagedObject>?
+//}
+//
+//extension NSFetchedResultsController: ACFetchedResultsControllerProtocol {
 
-extension NSFetchedResultsController: ACFetchedResultsControllerProtocol {
-    static func instantiate(entityName: String,
+extension NSFetchedResultsController {
+    @objc static func instantiate(entityName: String,
                             predicate: NSPredicate?,
                             managedObjectContext: NSManagedObjectContext?,
                             fetchOffset: Int = 0,

@@ -23,7 +23,7 @@ extension Int {
     }
 }
 
-extension Integer { // Int, Int64, etc
+extension Int { // Int, Int64, etc
     var toString: String {
         return String(describing: self)
     }
