@@ -30,7 +30,7 @@ class SampleTransition2FromViewController: UIViewController {
         self.view.addGestureRecognizer(panGesture)
     }
     
-    func slide(recognizer: UILongPressGestureRecognizer) {
+    @objc func slide(recognizer: UILongPressGestureRecognizer) {
         switch recognizer.state {
         case .began:
             p = recognizer.location(in: self.view)

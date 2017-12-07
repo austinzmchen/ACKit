@@ -85,17 +85,17 @@ class ACElasticView: UIView {
         didSet {
             switch elasticStyle {
             case .none:
-                eViewTopConstraint.priority = 999
-                eViewHeightConstraint.priority = 999
-                eViewEqualHeightToContentViewConstraint.priority = 1
-                eViewCenterYConstraint.priority = 1
+                eViewTopConstraint.priority = UILayoutPriority(rawValue: 999)
+                eViewHeightConstraint.priority = UILayoutPriority(rawValue: 999)
+                eViewEqualHeightToContentViewConstraint.priority = UILayoutPriority(rawValue: 1)
+                eViewCenterYConstraint.priority = UILayoutPriority(rawValue: 1)
                 return // exit early
             case .topFixed:
-                eViewTopConstraint.priority = 999
-                eViewCenterYConstraint.priority = 1
+                eViewTopConstraint.priority = UILayoutPriority(rawValue: 999)
+                eViewCenterYConstraint.priority = UILayoutPriority(rawValue: 1)
             case .centerFixed:
-                eViewTopConstraint.priority = 1
-                eViewCenterYConstraint.priority = 999
+                eViewTopConstraint.priority = UILayoutPriority(rawValue: 1)
+                eViewCenterYConstraint.priority = UILayoutPriority(rawValue: 999)
             }
             
             eViewEqualHeightToContentViewConstraint.constant = elasticZoomConstant
@@ -110,33 +110,33 @@ class ACElasticView: UIView {
         didSet {
             if cHeight >= maxExpandableHeight { // elasticity
                 // turn off shift
-                eViewBottomConstraint.priority = 1
-                eViewHeightConstraint.priority = 1
+                eViewBottomConstraint.priority = UILayoutPriority(rawValue: 1)
+                eViewHeightConstraint.priority = UILayoutPriority(rawValue: 1)
                 
                 // turn on scale
-                eViewEqualHeightToContentViewConstraint.priority = 999
-                eViewCenterYConstraint.priority = 1
+                eViewEqualHeightToContentViewConstraint.priority = UILayoutPriority(rawValue: 999)
+                eViewCenterYConstraint.priority = UILayoutPriority(rawValue: 1)
             } else { // expand & shrink
                 switch expandStyle {
                 case .none:
-                    eViewTopConstraint.priority = 999
-                    eViewHeightConstraint.priority = 999
+                    eViewTopConstraint.priority = UILayoutPriority(rawValue: 999)
+                    eViewHeightConstraint.priority = UILayoutPriority(rawValue: 999)
                     
-                    eViewBottomConstraint.priority = 1
-                    eViewEqualHeightToContentViewConstraint.priority = 1
-                    eViewCenterYConstraint.priority = 1
+                    eViewBottomConstraint.priority = UILayoutPriority(rawValue: 1)
+                    eViewEqualHeightToContentViewConstraint.priority = UILayoutPriority(rawValue: 1)
+                    eViewCenterYConstraint.priority = UILayoutPriority(rawValue: 1)
                 case .scale:
-                    eViewBottomConstraint.priority = 1
-                    eViewHeightConstraint.priority = 1
+                    eViewBottomConstraint.priority = UILayoutPriority(rawValue: 1)
+                    eViewHeightConstraint.priority = UILayoutPriority(rawValue: 1)
                     
-                    eViewEqualHeightToContentViewConstraint.priority = 999
+                    eViewEqualHeightToContentViewConstraint.priority = UILayoutPriority(rawValue: 999)
                 case .bottomShift:
                     // turn on shift
-                    eViewBottomConstraint.priority = 999
-                    eViewHeightConstraint.priority = 999
+                    eViewBottomConstraint.priority = UILayoutPriority(rawValue: 999)
+                    eViewHeightConstraint.priority = UILayoutPriority(rawValue: 999)
                     
                     // turn off scale
-                    eViewEqualHeightToContentViewConstraint.priority = 1
+                    eViewEqualHeightToContentViewConstraint.priority = UILayoutPriority(rawValue: 1)
                 }
             }
             
@@ -157,3 +157,4 @@ class ACElasticView: UIView {
 }
 
 fileprivate var kDefaultMaxExpandableHeight: CGFloat = 300
+
