@@ -1,5 +1,5 @@
 //
-//  ACGradientBorderedView.swift
+//  ACGradientView.swift
 //  <?>App
 //
 //  Created by Austin Chen on 2016-08-15.
@@ -11,7 +11,7 @@ import UIKit
 // Vertical gradient only
 
 @IBDesignable
-open class ACGradientBorderedView: ACBorderedView {
+open class ACGradientView: ACView {
 
     @IBInspectable var colorA: UIColor?
     @IBInspectable var colorB: UIColor?

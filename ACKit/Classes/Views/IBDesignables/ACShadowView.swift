@@ -25,9 +25,9 @@ open class ACShadowView: UIView {
 
     @IBInspectable var foregroundColor: UIColor? = nil
     
-    @IBInspectable var borderColor: UIColor? = nil
-    @IBInspectable var borderWidth: CGFloat = 0
-    @IBInspectable var cornerRadius: CGFloat = 0
+    @IBInspectable var _borderColor: UIColor? = nil
+    @IBInspectable var _borderWidth: CGFloat = 0
+    @IBInspectable var _cornerRadius: CGFloat = 0
     
     @IBInspectable var shadowColor: UIColor? = nil
     @IBInspectable var shadowOffset: CGSize = CGSize.zero
@@ -50,9 +50,9 @@ open class ACShadowView: UIView {
         if borderView.superview == nil {
             borderView.frame = self.bounds
             borderView.backgroundColor = foregroundColor
-            borderView.layer.cornerRadius = cornerRadius
-            borderView.layer.borderColor = borderColor?.cgColor
-            borderView.layer.borderWidth = borderWidth
+            borderView.layer.cornerRadius = _cornerRadius
+            borderView.layer.borderColor = _borderColor?.cgColor
+            borderView.layer.borderWidth = _borderWidth
             borderView.layer.masksToBounds = true
             self.addSubview(borderView)
         }

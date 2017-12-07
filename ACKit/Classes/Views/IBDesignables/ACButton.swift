@@ -1,5 +1,5 @@
 //
-//  ACBorderedButton.swift
+//  ACButton.swift
 //  <?>App
 //
 //  Created by Austin Chen on 2016-08-12.
@@ -9,39 +9,10 @@
 import UIKit
 
 @IBDesignable
-open class ACBorderedButton: UIButton {
-    
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = cornerRadius > 0
-        }
-    }
+open class ACButton: UIButton {
     
     // override cornerRadius to allow resizable circular corner, eg percentage based constraint for height
     @IBInspectable var circularCorner: Bool = false
-    
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    @IBInspectable var borderColor: UIColor? {
-        didSet {
-            layer.borderColor = borderColor?.cgColor
-        }
-    }
-    
-    // @IBInspectable UIEdgeInsets is not supported yet, so workaround like below
-    @IBInspectable var textInsets: CGRect = CGRect() {
-        didSet {
-            let insets = UIEdgeInsets(top: textInsets.origin.x,
-                                      left: textInsets.origin.y,
-                                      bottom: textInsets.size.width,
-                                      right: textInsets.size.height)
-            self.contentEdgeInsets = insets
-        }
-    }
 
     open var bgColor: UIColor? = nil
     @IBInspectable open var hightlightBGColor: UIColor?
@@ -80,5 +51,4 @@ open class ACBorderedButton: UIButton {
             self.cornerRadius = self.bounds.height / 2.0 // radius == half height, for circular corner
         }
     }
-    
 }

@@ -1,5 +1,5 @@
 //
-//  ACBorderedTextField.swift
+//  ACTextField.swift
 //  <?>App
 //
 //  Created by Austin Chen on 2016-08-12.
@@ -9,24 +9,7 @@
 import UIKit
 
 @IBDesignable
-open class ACBorderedTextField: UITextField {
-    
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = cornerRadius > 0
-        }
-    }
-    @IBInspectable var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    @IBInspectable var borderColor: UIColor? {
-        didSet {
-            layer.borderColor = borderColor?.cgColor
-        }
-    }
+open class ACTextField: UITextField {
     
     // @IBInspectable UIEdgeInsets is not supported yet, so workaround like below
     @IBInspectable var textInsets: CGRect = CGRect()
