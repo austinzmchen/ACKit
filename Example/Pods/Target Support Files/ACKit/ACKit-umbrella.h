@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIApplication+Swizzle.h"
 
 FOUNDATION_EXPORT double ACKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ACKitVersionString[];
