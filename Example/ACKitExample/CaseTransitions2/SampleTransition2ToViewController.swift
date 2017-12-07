@@ -25,7 +25,7 @@ class SampleTransition2ToViewController: UIViewController {
         self.view.addGestureRecognizer(panGesture)
     }
     
-    func slide(recognizer: UIPanGestureRecognizer) {
+    @objc func slide(recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
         case .began:
             break

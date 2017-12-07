@@ -23,7 +23,7 @@ class CaseUIViewWillMoveViewController2: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    func dismiss(_ target: Any?) {
+    @objc func dismiss(_ target: Any?) {
         self.dismiss(animated: true, completion: nil)
     }
 
