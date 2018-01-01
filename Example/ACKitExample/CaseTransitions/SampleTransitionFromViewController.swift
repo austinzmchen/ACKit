@@ -24,7 +24,7 @@ class SampleTransitionFromViewController: UIViewController {
         
         // use LongPress gesture to sub panGesture because UIPanGesture has initial delay
         let panGesture = UILongPressGestureRecognizer(target: self, action: #selector(slide(recognizer:)))
-        panGesture.minimumPressDuration = 0.0
+        panGesture.minimumPressDuration = 0.5 // 0.0 prevent dismiss button to work; fine tune this value
         panGesture.allowableMovement = CGFloat.infinity
         self.view.addGestureRecognizer(panGesture)
     }
