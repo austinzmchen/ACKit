@@ -10,7 +10,7 @@ import UIKit
 
 class CaseElasticViewController: UIViewController {
 
-    @IBOutlet weak var elasticHeaderView: ACElasticView!
+    @IBOutlet weak var elasticHeaderView: ElasticView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
