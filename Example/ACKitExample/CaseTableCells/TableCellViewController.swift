@@ -17,11 +17,9 @@ class TableCellViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        tableView.register(UINib(nibName: "SampleTableViewCell1", bundle: nil), forCellReuseIdentifier: "kSampleTableViewCell1")
+        tableView.registerCellNib(SampleTableViewCell1.self)
 //        tableView.register(UINib(nibName: "SampleHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "kSampleHeaderView")
     }
-
-
 }
 
 extension TableCellViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,9 +41,11 @@ extension TableCellViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            return tableView.dequeueReusableCell(withIdentifier: "kSampleTableViewCell1") as! SampleTableViewCell1
+            let cell: SampleTableViewCell1 = tableView.dequeueReusableCell(for: indexPath)
+            return cell
         } else {
-            return tableView.dequeueReusableCell(withIdentifier: "kSampleTableViewCell2") as! SampleTableViewCell2
+            let cell: SampleTableViewCell2 = tableView.dequeueReusableCell(for: indexPath)
+            return cell
         }
     }
 }
