@@ -39,7 +39,7 @@ class SampleTransitionFromViewController: UIViewController {
             if t.x < p.x,
                 !transitionManager.interactiveTransition.hasStarted
             {
-                self.performSegue(withIdentifier: "gestureTransitionToVC", sender: nil)
+                performSegue(withSegueIdentifier: .gestureTransitionToVC, sender: nil)
                 transitionManager.interactiveTransition.hasStarted = true
             }
             
@@ -72,13 +72,67 @@ class SampleTransitionFromViewController: UIViewController {
             break
         }
     }
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "gestureTransitionToVC",
-            let toVC = segue.destination as? SampleTransitionToViewController {
-            toVC.transitionManager = transitionManager
-            toVC.transitioningDelegate = transitionManager
+        guard let i = segue.identifier,
+            let segueId = SegueIdentifier(rawValue: i)
+            else {return}
+        
+        switch segueId {
+        case .gestureTransitionToVC:
+            if let toVC = segue.destination as? SampleTransitionToViewController {
+                toVC.transitionManager = transitionManager
+                toVC.transitioningDelegate = transitionManager
+            }
+        default:
+            break
         }
     }
 }
+
+
+enum SegueIdentifier: String {
+    case gestureTransitionToVC
+}
+
+// option 1
+/* regular extenion methods
+ pro: easy, methods added to all UIViewController instance
+ con:
+ */
+extension UIViewController {
+    func performSegue(withSegueIdentifier id: SegueIdentifier, sender: Any?) {
+        performSegue(withIdentifier: id.rawValue, sender: sender)
+    }
+    
+    func segueIdentifierFor(segue: UIStoryboardSegue) -> SegueIdentifier? {
+        guard let i = segue.identifier,
+            let segueId = SegueIdentifier(rawValue: i)
+            else { return nil }
+        return segueId
+    }
+}
+
+// option 2
+/* protocol extenion methods
+ pro: finer control, UIViewController/subclasses can subscribe to the methods by extending the protocol
+ con: methods added to all UIViewController instance, whether UIViewController/subclasses likes or not
+ */
+protocol SegueHandleType {
+}
+
+extension SegueHandleType where Self: UIViewController {
+    func performSegue(withSegueIdentifier id: SegueIdentifier, sender: Any?) {
+        performSegue(withIdentifier: id.rawValue, sender: sender)
+    }
+    
+    func segueIdentifierFor(segue: UIStoryboardSegue) -> SegueIdentifier? {
+        guard let i = segue.identifier,
+            let segueId = SegueIdentifier(rawValue: i)
+            else { return nil }
+        return segueId
+    }
+}
+
+extension UIViewController: SegueHandleType {}
+
