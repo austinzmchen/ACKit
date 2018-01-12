@@ -41,7 +41,7 @@ extension NSAttributedString {
     
     // MARK:
     open class func attributesForFont(_ fontSize: CGFloat, weight: UIFont.Weight, color: UIColor) -> [NSAttributedStringKey: AnyObject] {
-        return [NSAttributedStringKey.font : UIFont.gothamFont(ofSize: fontSize, weight: weight),
+        return [NSAttributedStringKey.font : UIFont.systemFont(ofSize: fontSize, weight: weight),
                 NSAttributedStringKey.foregroundColor: color]
     }
 }

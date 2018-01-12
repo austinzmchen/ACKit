@@ -8,9 +8,12 @@
 
 import Foundation
 
-extension UIFont {
+public extension UIFont {
+    enum ACCustomFontFamily: String {
+        case titillium = "Titillium"
+    }
     
-    open class func montserratFont(ofSize fontSize: CGFloat, weight: UIFont.Weight? = nil) -> UIFont {
+    public class func customFont(ofFamily family: ACCustomFontFamily, size fontSize: CGFloat, weight: UIFont.Weight? = nil) -> UIFont {
         var weightStr = "Regular"
         if let w = weight {
             switch w {
@@ -34,25 +37,6 @@ extension UIFont {
                 break
             }
         }
-        return UIFont(name: "Montserrat-" + weightStr, size: fontSize)!
-    }
-    
-    open class func gothamFont(ofSize fontSize: CGFloat, weight: UIFont.Weight? = nil) -> UIFont {
-        var weightStr = "Regular"
-        if let w = weight {
-            switch w {
-            case .regular:
-                weightStr = "Book" //"Regular"
-            case .bold:
-                weightStr = "Bold"
-            case .light:
-                weightStr = "Light"
-            case .medium:
-                weightStr = "Medium"
-            default:
-                break
-            }
-        }
-        return UIFont(name: "Gotham-" + weightStr, size: fontSize)!
+        return UIFont(name: "\(family.rawValue.capitalized)-" + weightStr, size: fontSize)!
     }
 }
