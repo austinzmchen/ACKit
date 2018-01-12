@@ -1,6 +1,6 @@
 //
-//  TableViewExtension.swift
-//  SlideMenuControllerSwift
+//  UITableViewExtension.swift
+//  <?>App
 //
 import UIKit
 
