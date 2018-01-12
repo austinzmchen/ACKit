@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CaseElasticSampleView: ACElasticView {
+class CaseElasticSampleView: ElasticView {
     
     @IBOutlet var subContentView: UIView!
     

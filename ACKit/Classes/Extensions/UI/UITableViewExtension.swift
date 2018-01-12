@@ -1,30 +1,35 @@
 //
-//  TableViewExtension.swift
-//  SlideMenuControllerSwift
+//  UITableViewExtension.swift
+//  <?>App
 //
 import UIKit
 
+// reuseIdentifier: MyTableViewCell -> kMyTableViewCell
 public extension UITableView {
     
-    open func registerCellClass(_ cellClass: AnyClass) {
+    public func registerCellClass(_ cellClass: AnyClass) {
         let identifier = String.className(cellClass)
-        self.register(cellClass, forCellReuseIdentifier: identifier)
+        self.register(cellClass, forCellReuseIdentifier: "k\(identifier)")
     }
     
-    open func registerCellNib(_ cellClass: AnyClass) {
+    public func registerCellNib(_ cellClass: AnyClass) {
         let identifier = String.className(cellClass)
         let nib = UINib(nibName: identifier, bundle: nil)
-        self.register(nib, forCellReuseIdentifier: identifier)
+        self.register(nib, forCellReuseIdentifier: "k\(identifier)")
     }
     
-    open func registerHeaderFooterViewClass(_ viewClass: AnyClass) {
+    public func registerHeaderFooterViewClass(_ viewClass: AnyClass) {
         let identifier = String.className(viewClass)
-        self.register(viewClass, forHeaderFooterViewReuseIdentifier: identifier)
+        self.register(viewClass, forHeaderFooterViewReuseIdentifier: "k\(identifier)")
     }
     
-    open func registerHeaderFooterViewNib(_ viewClass: AnyClass) {
+    public func registerHeaderFooterViewNib(_ viewClass: AnyClass) {
         let identifier = String.className(viewClass)
         let nib = UINib(nibName: identifier, bundle: nil)
-        self.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+        self.register(nib, forHeaderFooterViewReuseIdentifier: "k\(identifier)")
+    }
+    
+    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: "k\(String(describing: T.self))", for: indexPath) as! T
     }
 }

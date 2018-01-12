@@ -1,5 +1,5 @@
 //
-//  ACElasticView.swift
+//  ElasticView.swift
 //  ACKit
 //
 //  Created by Austin Chen on 2017-09-05.
@@ -20,7 +20,7 @@ enum ACElasticViewExpandStyle {
     case bottomShift
 }
 
-class ACElasticView: UIView {
+class ElasticView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var eView: UIView!

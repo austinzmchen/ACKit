@@ -22,7 +22,7 @@ pod "ACKit"
 
 ## Author
 
-austinzmchen, austin@hubub.com
+austinzmchen, austin.zm@gmail.com
 
 ## License
 
