@@ -31,7 +31,7 @@ open class ACShadowView: UIView {
     
     @IBInspectable var shadowColor: UIColor? = nil
     @IBInspectable var shadowOffset: CGSize = CGSize.zero
-    @IBInspectable var shadowBlurRadius: CGFloat = 0
+    @IBInspectable var shadowRadius: CGFloat = 0
     @IBInspectable var shadowOpacity: CGFloat = 1
     
     private var borderView = UIView()
@@ -44,7 +44,7 @@ open class ACShadowView: UIView {
         self.layer.shadowColor = shadowColor?.cgColor
         self.layer.shadowOffset = shadowOffset
         self.layer.shadowOpacity = Float(shadowOpacity)
-        self.layer.shadowRadius = shadowBlurRadius
+        self.layer.shadowRadius = shadowRadius
         self.layer.masksToBounds = false
         
         if borderView.superview == nil {

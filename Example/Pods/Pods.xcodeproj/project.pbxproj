@@ -47,7 +47,6 @@
 		50FCEFC4FE6D6B6BE6F11DBCFCC28383 /* UIImagePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03F9A8F2411653AE0B73EDBF1682CB0 /* UIImagePlus.swift */; };
 		525CD8BD1EB821F4D3D75BA098AF30A5 /* NSKeyValueObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB586E0F3A6473AC7C75FE2A51A52101 /* NSKeyValueObservation.swift */; };
 		531100899D52D6DF8CAB3A1A88C73C78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8C126AD6709F6BCCC5DA5BF73AFEA3 /* Foundation.framework */; };
-		574C14277D99B7FA0F0D7F54BAB63C4A /* ACHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4208D0F815868C0C579B97C317548881 /* ACHost.swift */; };
 		583456E7AC2454179B8476B80131BE69 /* AlamofireObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF54625A4DEFD8C62BD62E98ABF3964 /* AlamofireObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CE86D460329D0BF5FCEE26F722FF353 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF6916D13AB7FD63E2FD155102F52DA /* DataTransform.swift */; };
 		5D2A9028BDC8C9731CA60BC00438DFCD /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134430AD6BCC02A45AD7C4DBAF50C6A0 /* SessionManager.swift */; };
@@ -136,7 +135,6 @@
 		F8FF3DF362A28EC1E36843110A4CDE1E /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E4BD5634AA3F7F9790B3737626EC4 /* SessionDelegate.swift */; };
 		F925E55C6ED51E315E495CA2770714CD /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADDCC5720720B7AA5CFF0DC72F3B3F9 /* CustomDateFormatTransform.swift */; };
 		FA0AFA419108284ED5DAB63DB066A3EA /* UIBarButtonItemPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3A360FA1676CF943319016E727B64 /* UIBarButtonItemPlus.swift */; };
-		FD1F27F651993AB3C397A32D8B6FB8CD /* ACSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED1C39FFD7EF82990EA04BFCA58235A /* ACSettings.swift */; };
 		FD884123001B22170707D44CE92D024E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F45218D36108E9B8FC8CBC403F9567 /* Validation.swift */; };
 		FE52778F29D964BFA7F45956DA2EED43 /* StringPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223279BBFDC989FB3B7019EF30B8D86E /* StringPlus.swift */; };
 		FF70E8F46812587F85C24B35DB7F5FD9 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58842F94DB5A654A43E36EB229E104C5 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -250,7 +248,6 @@
 		4003A7AEB9FA526D04DC74236EA7B6F6 /* NSManagedObjectContext+Observers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Observers.swift"; sourceTree = "<group>"; };
 		4064FE87F0BAB08283C72F7B90B98EB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40E85602775D62B1F6118974F3964D37 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
-		4208D0F815868C0C579B97C317548881 /* ACHost.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACHost.swift; sourceTree = "<group>"; };
 		4346DC0F70670E43D243E81034F72E54 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		44B17300A8E05962CAC389FE141002E3 /* URL+Local.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "URL+Local.swift"; sourceTree = "<group>"; };
 		4511FBBABA0EE15C1359415A52A0DDB3 /* ACTokenBag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACTokenBag.swift; sourceTree = "<group>"; };
@@ -348,7 +345,6 @@
 		CDE2FB1CB544D67C7A28A45356A6569E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		CE8C126AD6709F6BCCC5DA5BF73AFEA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CECEC5C14CA136B8DC4630A769BC9D1E /* UIApplication+Loading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+Loading.swift"; sourceTree = "<group>"; };
-		CED1C39FFD7EF82990EA04BFCA58235A /* ACSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACSettings.swift; sourceTree = "<group>"; };
 		D44C2E665C778A8D29DE438112172AAA /* ACSyncableJsonRecord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACSyncableJsonRecord.swift; sourceTree = "<group>"; };
 		D4635CC4564F9AEF3B1900D1C3AEF15E /* ACView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ACView.swift; sourceTree = "<group>"; };
 		D4EC58A271FB7EC2877AB71ED399BAAF /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
@@ -843,9 +839,7 @@
 		D10DC8C400CBA19027B3AC34A0CBA871 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4208D0F815868C0C579B97C317548881 /* ACHost.swift */,
 				67D7AE4A39E59FD22E8FC4FB03F76053 /* ACNoteObserverTokenBag.swift */,
-				CED1C39FFD7EF82990EA04BFCA58235A /* ACSettings.swift */,
 				4511FBBABA0EE15C1359415A52A0DDB3 /* ACTokenBag.swift */,
 				699633B294E6F7D8F5BF6FCD0873DC36 /* ACUtils.swift */,
 				78C683CF9E1424EBDFB4B870EF60F1C8 /* AppConfiguration.swift */,
@@ -1169,7 +1163,6 @@
 				356750B9C4C8ECDD4FA4F0C6DB51F33E /* ACError.swift in Sources */,
 				7DB34C4BC366B2EAC4284447E856391B /* ACGradientView.swift in Sources */,
 				C2F24CD257DB76A4D793BEB983D532D4 /* ACHideableViewType.swift in Sources */,
-				574C14277D99B7FA0F0D7F54BAB63C4A /* ACHost.swift in Sources */,
 				C4DD073F2008058A00295119 /* UICollectionViewExtension.swift in Sources */,
 				012CFE3F635BE9153EFC3C48EB0C6E53 /* ACJsonReplaceMe.swift in Sources */,
 				BCA75F0FA6F6E7319D8D6D51F707C8CB /* ACJsonReplaceMeTransformer.swift in Sources */,
@@ -1187,7 +1180,6 @@
 				92124E838C15EB94DBB7EAF801EADF63 /* ACReplaceMeRemote.swift in Sources */,
 				89E785498C914D169818B730973CFB9A /* ACScrollViewDelegate.swift in Sources */,
 				69ED003F880264D2743829767DA3280D /* ACSessionManager.swift in Sources */,
-				FD1F27F651993AB3C397A32D8B6FB8CD /* ACSettings.swift in Sources */,
 				20B039C21ED8306088B1299636AC6C55 /* ACShadowView.swift in Sources */,
 				A335E75496FFC0635699D6DBD47DE393 /* ACSyncableJsonRecord.swift in Sources */,
 				A5B6459F093EB726FC1E0B0EEC5F86C5 /* ACSyncableProcessorType.swift in Sources */,
