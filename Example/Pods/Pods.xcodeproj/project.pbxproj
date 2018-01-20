@@ -48,6 +48,7 @@
 		B123999E2BDD7DE61D6FCED05E54FD62 /* DatePlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B7E90548872E4C14EB746F1DE7357D /* DatePlus.swift */; };
 		B15B146B9FFD73965B0756F86F1CEE71 /* ACGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B8EE810188212C2F270ADD74EEB4F /* ACGradientView.swift */; };
 		B492F153DC2ACB14C8B811B54122AF6B /* UIApplication+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D701B137ABA02FCBA19D445F5AE4CD77 /* UIApplication+Swizzle.m */; };
+		C4CCBBC72013B52F00E7115F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCBBC62013B52F00E7115F /* UIView+Border.swift */; };
 		C5BFF912B0E38FF0DFD9F3E326864CDF /* ACLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDEBC63462A52658E03067B302CF976 /* ACLog.swift */; };
 		CA9CFEAB4381C91C612BEE27D088302A /* ACShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F12284C158AB4C6119CCB59E5B37B /* ACShadowView.swift */; };
 		CEC6C5B57A3BE72BE359A028EF646E68 /* UIApplicationPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA382E1B638D383D27B79253766240 /* UIApplicationPlus.swift */; };
@@ -127,6 +128,7 @@
 		C0FB5CEDC2AA1F4520800F7FD4BB6A33 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		C18B1152218486852ECCDF35225C4949 /* Pods-ACKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACKit_Example.modulemap"; sourceTree = "<group>"; };
 		C3914808FC572252E6D7F215E0086C7B /* Pods-ACKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ACKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4CCBBC62013B52F00E7115F /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		C5B41A8A00313CC82415743AF8779E80 /* StringPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringPlus.swift; sourceTree = "<group>"; };
 		CA502D78449041C97CDC05B6E73E09C2 /* ACKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACKit.xcconfig; sourceTree = "<group>"; };
 		CBDC62BDB698302E6D4FC02658F8592E /* UILabelPlus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILabelPlus.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				3DF1268861CC2E88B0C99CA21BD30C6A /* ACView.swift */,
 				E07F069272EB320E2D87C840203B453A /* UIButton+TextInsets.swift */,
 				1B274BDDA24D96A9C227858D031C156B /* UIImageView+EdgeInsets.swift */,
+				C4CCBBC62013B52F00E7115F /* UIView+Border.swift */,
 			);
 			path = IBDesignables;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				A4CE73EEB39FA18F56B7D8F324388EBF /* ACUtils.swift in Sources */,
 				7AFF9EC1AC044BC7C0C070BC73D0536B /* ACView.swift in Sources */,
 				886CB3C290A3C5CD0C692D412E5BA2CB /* CGFloatPlus.swift in Sources */,
+				C4CCBBC72013B52F00E7115F /* UIView+Border.swift in Sources */,
 				B123999E2BDD7DE61D6FCED05E54FD62 /* DatePlus.swift in Sources */,
 				1F7058986B9CD0247D2ABEF113CC92CA /* Either.swift in Sources */,
 				532417A381930B9379C0DC44E298E1A2 /* IntPlus.swift in Sources */,
