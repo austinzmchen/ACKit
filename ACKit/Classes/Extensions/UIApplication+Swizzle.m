@@ -7,42 +7,18 @@
 //
 
 #import "UIApplication+Swizzle.h"
-#import <objc/runtime.h>
+#import "ACSwizzle.h"
 
 @implementation UIApplication (Swizzle)
 
 -(void)swizzleStatusBar {
-    Class class = [self class];
-    
-    SEL originalSelector = @selector(setStatusBarHidden:);
-    SEL swizzledSelector = @selector(newSetStatusBarHidden:);
-    
-    Method originalMethod = class_getInstanceMethod(class, originalSelector);
-    Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
-    
-    // When swizzling a class method, use the following:
-    // Class class = object_getClass((id)self);
-    // ...
-    // Method originalMethod = class_getClassMethod(class, originalSelector);
-    // Method swizzledMethod = class_getClassMethod(class, swizzledSelector);
-    
-    BOOL didAddMethod =
-    class_addMethod(class,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
-    
-    if (didAddMethod) {
-        class_replaceMethod(class,
-                            swizzledSelector,
-                            method_getImplementation(originalMethod),
-                            method_getTypeEncoding(originalMethod));
-    } else {
-        method_exchangeImplementations(originalMethod, swizzledMethod);
-    }
+    [ACSwizzle swizzleSelector:@selector(setStatusBarHidden:) withNewSelector:@selector(newSetStatusBarHidden:) onObject: self];
 }
 
+#pragma mark - example method
+
 -(void) newSetStatusBarHidden:(BOOL)hidden {
-    NSLog(@"reach ac");
+    NSLog(@"reach ac"); // so anyone who try to hide status bar would not work
 }
+
 @end

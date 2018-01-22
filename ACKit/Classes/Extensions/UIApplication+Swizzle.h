@@ -12,4 +12,5 @@
 
 // swizzle so when framework try to hide status bar, it does not nothing
 -(void)swizzleStatusBar;
+
 @end
