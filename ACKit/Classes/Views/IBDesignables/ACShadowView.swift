@@ -58,7 +58,7 @@ open class ACShadowView: UIView {
         }
         
         // Adding rounded corners and shadows can be a performance hit. You can improve performance by using a predefined path for the shadow and also specifying that it be rasterized. The following code can be added to the example above.
-        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: cornerRadius).cgPath
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: _cornerRadius).cgPath
         self.layer.shouldRasterize = true
         self.layer.rasterizationScale = UIScreen.main.scale
     }
