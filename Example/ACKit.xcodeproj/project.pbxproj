@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		138C320C52179B393EB5DE5F /* Pods_ACKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EDEB491C4267B8470A5F0F /* Pods_ACKit_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D6D2016EB7C009B651F /* MainViewController.swift */; };
+		C4065D702016EB87009B651F /* SubMain1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */; };
 		C41522061F84832800490662 /* CaseUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41522051F84832800490662 /* CaseUI.storyboard */; };
 		C41B491B1F5F53CD00F0F99D /* CaseElasticHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */; };
 		C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */; };
@@ -44,7 +46,7 @@
 		C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */; };
 		C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7661F53521100AF5FC9 /* Images.xcassets */; };
 		C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7671F53521100AF5FC9 /* Info.plist */; };
-		C44CB77D1F53521100AF5FC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* MainViewController.swift */; };
+		C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */; };
 		C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */; };
 		C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */; };
 		C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */; };
@@ -109,6 +111,8 @@
 		9473BBA84E5B146F7B4369C0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C37B466CA7225E3A11A3A2 /* Pods-ACKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Tests/Pods-ACKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4065D6D2016EB7C009B651F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMain1ViewController.swift; sourceTree = "<group>"; };
 		C41522051F84832800490662 /* CaseUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseUI.storyboard; sourceTree = "<group>"; };
 		C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader.storyboard; sourceTree = "<group>"; };
 		C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +149,7 @@
 		C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
 		C44CB7661F53521100AF5FC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C44CB7671F53521100AF5FC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C44CB7681F53521100AF5FC9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMain3ViewController.swift; sourceTree = "<group>"; };
 		C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseNavigationController.storyboard; sourceTree = "<group>"; };
 		C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavFirstViewController.swift; sourceTree = "<group>"; };
 		C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavMainViewController.swift; sourceTree = "<group>"; };
@@ -301,7 +305,9 @@
 				C4A317781F91281A007FDB56 /* CaseStackview */,
 				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
 				C44CB7671F53521100AF5FC9 /* Info.plist */,
-				C44CB7681F53521100AF5FC9 /* MainViewController.swift */,
+				C4065D6D2016EB7C009B651F /* MainViewController.swift */,
+				C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */,
+				C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */,
 				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
 			);
 			path = ACKitExample;
@@ -775,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */,
+				C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */,
 				C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */,
 				C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */,
 				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
@@ -791,7 +798,7 @@
 				C45D67FA1F73F802001144B3 /* TableHeaderViewController1.swift in Sources */,
 				C48CE6221F62E7BB00C5BF59 /* CaseOrientationView1.swift in Sources */,
 				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
-				C44CB77D1F53521100AF5FC9 /* MainViewController.swift in Sources */,
+				C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */,
 				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
 				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
@@ -804,6 +811,7 @@
 				C4A060E01FFAF05000796F8B /* ElasticView.swift in Sources */,
 				C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */,
 				C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */,
+				C4065D702016EB87009B651F /* SubMain1ViewController.swift in Sources */,
 				C47121091F7D6B5400A885BC /* CaseEmbedViewController.swift in Sources */,
 				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
 				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,

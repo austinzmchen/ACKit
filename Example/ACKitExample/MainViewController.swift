@@ -1,20 +1,17 @@
 //
 //  MainViewController.swift
-//  ACKit
+//  ACKit_Example
 //
-//  Created by austinzmchen on 07/23/2017.
-//  Copyright (c) 2017 austinzmchen. All rights reserved.
+//  Created by Austin Chen on 2018-01-22.
+//  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
 class MainViewController: UITableViewController {
     
-    @IBAction func unwindToMain(segue: UIStoryboardSegue) {}
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
+        print("unwindToMain")
     }
+    
 }
-
