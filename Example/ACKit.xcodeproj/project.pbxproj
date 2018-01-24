@@ -11,80 +11,80 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D6D2016EB7C009B651F /* MainViewController.swift */; };
 		C4065D702016EB87009B651F /* SubMain1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */; };
-		C41522061F84832800490662 /* CaseUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41522051F84832800490662 /* CaseUI.storyboard */; };
-		C41B491B1F5F53CD00F0F99D /* CaseElasticHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */; };
-		C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */; };
-		C41B491F1F5F574900F0F99D /* CaseScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */; };
-		C41B49211F5F576200F0F99D /* CaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */; };
-		C41B492B1F5FA8F600F0F99D /* CaseElasticSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B492A1F5FA8F600F0F99D /* CaseElasticSampleView.swift */; };
-		C41B492D1F5FA90800F0F99D /* CaseElasticSampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C41B492C1F5FA90800F0F99D /* CaseElasticSampleView.xib */; };
-		C42665A01F86CEBF00735F0D /* CaseBlurModalMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C426659F1F86CEBF00735F0D /* CaseBlurModalMainViewController.swift */; };
-		C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */; };
-		C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */; };
-		C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */; };
-		C43C625A1F83F19000C885D4 /* ACBlurInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C62581F83F19000C885D4 /* ACBlurInAnimator.swift */; };
-		C43C625B1F83F19000C885D4 /* ACBlurOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C62591F83F19000C885D4 /* ACBlurOutAnimator.swift */; };
-		C43C625D1F83F1C500C885D4 /* CaseBlurModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43C625C1F83F1C500C885D4 /* CaseBlurModal.storyboard */; };
-		C43C625F1F83FEC600C885D4 /* CaseBlurModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C625E1F83FEC600C885D4 /* CaseBlurModalViewController.swift */; };
+		C4065DD920184159009B651F /* CaseUnwindViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D7F20184159009B651F /* CaseUnwindViewController1.swift */; };
+		C4065DDA20184159009B651F /* CaseUnwindViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8020184159009B651F /* CaseUnwindViewController2.swift */; };
+		C4065DDB20184159009B651F /* CaseUnwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D8120184159009B651F /* CaseUnwind.storyboard */; };
+		C4065DDC20184159009B651F /* CaseEmbed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D8320184159009B651F /* CaseEmbed.storyboard */; };
+		C4065DDD20184159009B651F /* CaseEmbedVCByCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065D8420184159009B651F /* CaseEmbedVCByCode.xib */; };
+		C4065DDE20184159009B651F /* CaseEmbedVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8520184159009B651F /* CaseEmbedVCByCode.swift */; };
+		C4065DDF20184159009B651F /* CaseEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8620184159009B651F /* CaseEmbedViewController.swift */; };
+		C4065DE020184159009B651F /* CaseEmbedSubVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8720184159009B651F /* CaseEmbedSubVCByCode.swift */; };
+		C4065DE120184159009B651F /* CaseTransitions2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D8920184159009B651F /* CaseTransitions2.storyboard */; };
+		C4065DE220184159009B651F /* SampleTransition2FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8A20184159009B651F /* SampleTransition2FromViewController.swift */; };
+		C4065DE320184159009B651F /* SampleTransition2ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8B20184159009B651F /* SampleTransition2ToViewController.swift */; };
+		C4065DE420184159009B651F /* CaseOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D8D20184159009B651F /* CaseOrientation.storyboard */; };
+		C4065DE520184159009B651F /* CaseOrientationView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D8E20184159009B651F /* CaseOrientationView1.swift */; };
+		C4065DE620184159009B651F /* CaseTransitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D9020184159009B651F /* CaseTransitions.storyboard */; };
+		C4065DE720184159009B651F /* SampleTransitionFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9120184159009B651F /* SampleTransitionFromViewController.swift */; };
+		C4065DE820184159009B651F /* ACHorizontalTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9320184159009B651F /* ACHorizontalTransitionManager.swift */; };
+		C4065DE920184159009B651F /* ACHorizontalSlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9420184159009B651F /* ACHorizontalSlideInAnimator.swift */; };
+		C4065DEA20184159009B651F /* ACHorizontalSlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9520184159009B651F /* ACHorizontalSlideOutAnimator.swift */; };
+		C4065DEB20184159009B651F /* ACHorizontalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9620184159009B651F /* ACHorizontalInteractiveTransition.swift */; };
+		C4065DEC20184159009B651F /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9720184159009B651F /* SampleTransitionToViewController.swift */; };
+		C4065DED20184159009B651F /* CaseSwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9A20184159009B651F /* CaseSwizzleViewController.swift */; };
+		C4065DEE20184159009B651F /* CaseSwizzleSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D9B20184159009B651F /* CaseSwizzleSegue.storyboard */; };
+		C4065DEF20184159009B651F /* SampleNavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9D20184159009B651F /* SampleNavFirstViewController.swift */; };
+		C4065DF020184159009B651F /* CaseNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065D9E20184159009B651F /* CaseNavigationController.storyboard */; };
+		C4065DF120184159009B651F /* SampleNavMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065D9F20184159009B651F /* SampleNavMainViewController.swift */; };
+		C4065DF220184159009B651F /* CaseParallax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DA220184159009B651F /* CaseParallax.storyboard */; };
+		C4065DF320184159009B651F /* ACParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DA320184159009B651F /* ACParallaxView.swift */; };
+		C4065DF420184159009B651F /* KCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4065DA420184159009B651F /* KCParallaxView.m */; };
+		C4065DF520184159009B651F /* ACParallaxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DA520184159009B651F /* ACParallaxView.xib */; };
+		C4065DF620184159009B651F /* CaseParallaxMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DA720184159009B651F /* CaseParallaxMainViewController.swift */; };
+		C4065DF720184159009B651F /* UIImageView+Aldo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4065DA820184159009B651F /* UIImageView+Aldo.m */; };
+		C4065DF820184159009B651F /* CaseStackview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DAA20184159009B651F /* CaseStackview.storyboard */; };
+		C4065DF920184159009B651F /* CaseWillMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DAC20184159009B651F /* CaseWillMoveView.swift */; };
+		C4065DFA2018415A009B651F /* CaseUIViewWillMove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DAD20184159009B651F /* CaseUIViewWillMove.storyboard */; };
+		C4065DFB2018415A009B651F /* CaseUIViewWillMoveViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DAE20184159009B651F /* CaseUIViewWillMoveViewController2.swift */; };
+		C4065DFC2018415A009B651F /* CaseUIViewWillMoveViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DAF20184159009B651F /* CaseUIViewWillMoveViewController1.swift */; };
+		C4065DFD2018415A009B651F /* CaseUIViewWillMoveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB020184159009B651F /* CaseUIViewWillMoveMainViewController.swift */; };
+		C4065DFE2018415A009B651F /* CaseBlurModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB220184159009B651F /* CaseBlurModalViewController.swift */; };
+		C4065DFF2018415A009B651F /* CaseBlurModal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DB320184159009B651F /* CaseBlurModal.storyboard */; };
+		C4065E002018415A009B651F /* ACBlurInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB420184159009B651F /* ACBlurInAnimator.swift */; };
+		C4065E012018415A009B651F /* CaseBlurModalMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB520184159009B651F /* CaseBlurModalMainViewController.swift */; };
+		C4065E022018415A009B651F /* ACBlurOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB620184159009B651F /* ACBlurOutAnimator.swift */; };
+		C4065E032018415A009B651F /* CaseAutolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DB820184159009B651F /* CaseAutolayout.storyboard */; };
+		C4065E042018415A009B651F /* CaseAutolayoutMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DB920184159009B651F /* CaseAutolayoutMainViewController.swift */; };
+		C4065E052018415A009B651F /* CaseUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DBB20184159009B651F /* CaseUI.storyboard */; };
+		C4065E062018415A009B651F /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DBE20184159009B651F /* ElasticView.swift */; };
+		C4065E072018415A009B651F /* CaseElasticSampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DBF20184159009B651F /* CaseElasticSampleView.xib */; };
+		C4065E082018415A009B651F /* CaseElasticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DC020184159009B651F /* CaseElasticViewController.swift */; };
+		C4065E092018415A009B651F /* CaseElasticHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DC120184159009B651F /* CaseElasticHeader.storyboard */; };
+		C4065E0A2018415A009B651F /* CaseElasticSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DC220184159009B651F /* CaseElasticSampleView.swift */; };
+		C4065E0B2018415A009B651F /* ElasticView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DC320184159009B651F /* ElasticView.xib */; };
+		C4065E0C2018415A009B651F /* TableHeaderViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DC520184159009B651F /* TableHeaderViewController2.swift */; };
+		C4065E0D2018415A009B651F /* SampleHeaderView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DC720184159009B651F /* SampleHeaderView1.xib */; };
+		C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DC820184159009B651F /* SampleHeaderView2.xib */; };
+		C4065E0F2018415A009B651F /* SampleHeaderView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DC920184159009B651F /* SampleHeaderView1.swift */; };
+		C4065E102018415A009B651F /* SampleHeaderView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DCA20184159009B651F /* SampleHeaderView2.swift */; };
+		C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DCB20184159009B651F /* SampleTableViewCell2.xib */; };
+		C4065E122018415A009B651F /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4065DCC20184159009B651F /* SampleTableViewCell1.xib */; };
+		C4065E132018415A009B651F /* TableHeaderViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DCD20184159009B651F /* TableHeaderViewController1.swift */; };
+		C4065E142018415A009B651F /* TableHeaderViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DCE20184159009B651F /* TableHeaderViewController3.swift */; };
+		C4065E152018415A009B651F /* CaseTableCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DCF20184159009B651F /* CaseTableCells.storyboard */; };
+		C4065E162018415A009B651F /* SampleTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD020184159009B651F /* SampleTableViewCell1.swift */; };
+		C4065E172018415A009B651F /* TableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD120184159009B651F /* TableCellViewController.swift */; };
+		C4065E182018415A009B651F /* SampleTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD220184159009B651F /* SampleTableViewCell2.swift */; };
+		C4065E192018415A009B651F /* CaseCollections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DD420184159009B651F /* CaseCollections.storyboard */; };
+		C4065E1A2018415A009B651F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD520184159009B651F /* CollectionViewController.swift */; };
+		C4065E1B2018415A009B651F /* CaseScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DD720184159009B651F /* CaseScroll.storyboard */; };
+		C4065E1C2018415A009B651F /* CaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD820184159009B651F /* CaseScrollViewController.swift */; };
 		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
-		C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */; };
-		C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */; };
-		C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */; };
-		C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */; };
-		C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */; };
-		C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */; };
-		C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */; };
-		C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */; };
-		C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */; };
-		C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */; };
-		C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */; };
-		C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */; };
-		C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */; };
-		C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */; };
-		C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */; };
 		C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7661F53521100AF5FC9 /* Images.xcassets */; };
 		C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7671F53521100AF5FC9 /* Info.plist */; };
 		C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */; };
-		C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */; };
-		C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */; };
-		C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */; };
-		C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */; };
-		C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */; };
-		C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */; };
-		C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */; };
-		C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */; };
-		C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */; };
-		C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */; };
-		C455F54E2015A29E000C3DED /* CaseSwizzleSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C455F54D2015A29E000C3DED /* CaseSwizzleSegue.storyboard */; };
-		C45D675D1F7191B2001144B3 /* SampleHeaderView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D675C1F7191B2001144B3 /* SampleHeaderView1.swift */; };
-		C45D675F1F7191BE001144B3 /* SampleHeaderView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */; };
-		C45D67FA1F73F802001144B3 /* TableHeaderViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */; };
-		C45D67FC1F7401C1001144B3 /* TableHeaderViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */; };
-		C45D67FE1F74058B001144B3 /* SampleHeaderView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */; };
-		C45D68001F740779001144B3 /* SampleHeaderView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */; };
-		C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */; };
-		C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */; };
-		C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */; };
-		C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */; };
-		C47121031F7D645800A885BC /* CaseEmbed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47121021F7D645800A885BC /* CaseEmbed.storyboard */; };
-		C47121051F7D647F00A885BC /* CaseEmbedVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */; };
-		C47121071F7D64AA00A885BC /* CaseEmbedVCByCode.xib in Resources */ = {isa = PBXBuildFile; fileRef = C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */; };
-		C47121091F7D6B5400A885BC /* CaseEmbedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */; };
-		C471210B1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */; };
-		C48CE6201F62E79000C5BF59 /* CaseOrientation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */; };
-		C48CE6221F62E7BB00C5BF59 /* CaseOrientationView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */; };
-		C4A060DF1FFAF05000796F8B /* ElasticView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4A060DD1FFAF05000796F8B /* ElasticView.xib */; };
-		C4A060E01FFAF05000796F8B /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A060DE1FFAF05000796F8B /* ElasticView.swift */; };
-		C4A3177A1F912834007FDB56 /* CaseStackview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A317791F912834007FDB56 /* CaseStackview.storyboard */; };
-		C4CCBBCC2015975900E7115F /* CaseSwizzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CCBBCB2015975900E7115F /* CaseSwizzleViewController.swift */; };
-		C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */; };
-		C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */; };
-		C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */; };
-		C4E0ADD71F589888004BCBA1 /* CaseParallaxMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */; };
-		C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */; };
-		C4E0ADDB1F58AFA6004BCBA1 /* ACParallaxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,83 +113,83 @@
 		A9C37B466CA7225E3A11A3A2 /* Pods-ACKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Tests/Pods-ACKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4065D6D2016EB7C009B651F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMain1ViewController.swift; sourceTree = "<group>"; };
-		C41522051F84832800490662 /* CaseUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseUI.storyboard; sourceTree = "<group>"; };
-		C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader.storyboard; sourceTree = "<group>"; };
-		C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticViewController.swift; sourceTree = "<group>"; };
-		C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseScroll.storyboard; sourceTree = "<group>"; };
-		C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseScrollViewController.swift; sourceTree = "<group>"; };
-		C41B492A1F5FA8F600F0F99D /* CaseElasticSampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticSampleView.swift; sourceTree = "<group>"; };
-		C41B492C1F5FA90800F0F99D /* CaseElasticSampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaseElasticSampleView.xib; sourceTree = "<group>"; };
-		C426659F1F86CEBF00735F0D /* CaseBlurModalMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseBlurModalMainViewController.swift; sourceTree = "<group>"; };
-		C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions2.storyboard; sourceTree = "<group>"; };
-		C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2FromViewController.swift; sourceTree = "<group>"; };
-		C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2ToViewController.swift; sourceTree = "<group>"; };
-		C43C62581F83F19000C885D4 /* ACBlurInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBlurInAnimator.swift; sourceTree = "<group>"; };
-		C43C62591F83F19000C885D4 /* ACBlurOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBlurOutAnimator.swift; sourceTree = "<group>"; };
-		C43C625C1F83F1C500C885D4 /* CaseBlurModal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseBlurModal.storyboard; sourceTree = "<group>"; };
-		C43C625E1F83FEC600C885D4 /* CaseBlurModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseBlurModalViewController.swift; sourceTree = "<group>"; };
+		C4065D7F20184159009B651F /* CaseUnwindViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController1.swift; sourceTree = "<group>"; };
+		C4065D8020184159009B651F /* CaseUnwindViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController2.swift; sourceTree = "<group>"; };
+		C4065D8120184159009B651F /* CaseUnwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUnwind.storyboard; sourceTree = "<group>"; };
+		C4065D8320184159009B651F /* CaseEmbed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseEmbed.storyboard; sourceTree = "<group>"; };
+		C4065D8420184159009B651F /* CaseEmbedVCByCode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaseEmbedVCByCode.xib; sourceTree = "<group>"; };
+		C4065D8520184159009B651F /* CaseEmbedVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedVCByCode.swift; sourceTree = "<group>"; };
+		C4065D8620184159009B651F /* CaseEmbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedViewController.swift; sourceTree = "<group>"; };
+		C4065D8720184159009B651F /* CaseEmbedSubVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedSubVCByCode.swift; sourceTree = "<group>"; };
+		C4065D8920184159009B651F /* CaseTransitions2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions2.storyboard; sourceTree = "<group>"; };
+		C4065D8A20184159009B651F /* SampleTransition2FromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2FromViewController.swift; sourceTree = "<group>"; };
+		C4065D8B20184159009B651F /* SampleTransition2ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransition2ToViewController.swift; sourceTree = "<group>"; };
+		C4065D8D20184159009B651F /* CaseOrientation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseOrientation.storyboard; sourceTree = "<group>"; };
+		C4065D8E20184159009B651F /* CaseOrientationView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOrientationView1.swift; sourceTree = "<group>"; };
+		C4065D9020184159009B651F /* CaseTransitions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions.storyboard; sourceTree = "<group>"; };
+		C4065D9120184159009B651F /* SampleTransitionFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionFromViewController.swift; sourceTree = "<group>"; };
+		C4065D9320184159009B651F /* ACHorizontalTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalTransitionManager.swift; sourceTree = "<group>"; };
+		C4065D9420184159009B651F /* ACHorizontalSlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideInAnimator.swift; sourceTree = "<group>"; };
+		C4065D9520184159009B651F /* ACHorizontalSlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideOutAnimator.swift; sourceTree = "<group>"; };
+		C4065D9620184159009B651F /* ACHorizontalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalInteractiveTransition.swift; sourceTree = "<group>"; };
+		C4065D9720184159009B651F /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
+		C4065D9A20184159009B651F /* CaseSwizzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseSwizzleViewController.swift; sourceTree = "<group>"; };
+		C4065D9B20184159009B651F /* CaseSwizzleSegue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseSwizzleSegue.storyboard; sourceTree = "<group>"; };
+		C4065D9D20184159009B651F /* SampleNavFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavFirstViewController.swift; sourceTree = "<group>"; };
+		C4065D9E20184159009B651F /* CaseNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseNavigationController.storyboard; sourceTree = "<group>"; };
+		C4065D9F20184159009B651F /* SampleNavMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavMainViewController.swift; sourceTree = "<group>"; };
+		C4065DA120184159009B651F /* UIImageView+Aldo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Aldo.h"; sourceTree = "<group>"; };
+		C4065DA220184159009B651F /* CaseParallax.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseParallax.storyboard; sourceTree = "<group>"; };
+		C4065DA320184159009B651F /* ACParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACParallaxView.swift; sourceTree = "<group>"; };
+		C4065DA420184159009B651F /* KCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParallaxView.m; sourceTree = "<group>"; };
+		C4065DA520184159009B651F /* ACParallaxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACParallaxView.xib; sourceTree = "<group>"; };
+		C4065DA620184159009B651F /* KCParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParallaxView.h; sourceTree = "<group>"; };
+		C4065DA720184159009B651F /* CaseParallaxMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseParallaxMainViewController.swift; sourceTree = "<group>"; };
+		C4065DA820184159009B651F /* UIImageView+Aldo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Aldo.m"; sourceTree = "<group>"; };
+		C4065DAA20184159009B651F /* CaseStackview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseStackview.storyboard; sourceTree = "<group>"; };
+		C4065DAC20184159009B651F /* CaseWillMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseWillMoveView.swift; sourceTree = "<group>"; };
+		C4065DAD20184159009B651F /* CaseUIViewWillMove.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUIViewWillMove.storyboard; sourceTree = "<group>"; };
+		C4065DAE20184159009B651F /* CaseUIViewWillMoveViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController2.swift; sourceTree = "<group>"; };
+		C4065DAF20184159009B651F /* CaseUIViewWillMoveViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController1.swift; sourceTree = "<group>"; };
+		C4065DB020184159009B651F /* CaseUIViewWillMoveMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveMainViewController.swift; sourceTree = "<group>"; };
+		C4065DB220184159009B651F /* CaseBlurModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseBlurModalViewController.swift; sourceTree = "<group>"; };
+		C4065DB320184159009B651F /* CaseBlurModal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseBlurModal.storyboard; sourceTree = "<group>"; };
+		C4065DB420184159009B651F /* ACBlurInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBlurInAnimator.swift; sourceTree = "<group>"; };
+		C4065DB520184159009B651F /* CaseBlurModalMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseBlurModalMainViewController.swift; sourceTree = "<group>"; };
+		C4065DB620184159009B651F /* ACBlurOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACBlurOutAnimator.swift; sourceTree = "<group>"; };
+		C4065DB820184159009B651F /* CaseAutolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseAutolayout.storyboard; sourceTree = "<group>"; };
+		C4065DB920184159009B651F /* CaseAutolayoutMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseAutolayoutMainViewController.swift; sourceTree = "<group>"; };
+		C4065DBB20184159009B651F /* CaseUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUI.storyboard; sourceTree = "<group>"; };
+		C4065DBE20184159009B651F /* ElasticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
+		C4065DBF20184159009B651F /* CaseElasticSampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaseElasticSampleView.xib; sourceTree = "<group>"; };
+		C4065DC020184159009B651F /* CaseElasticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticViewController.swift; sourceTree = "<group>"; };
+		C4065DC120184159009B651F /* CaseElasticHeader.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader.storyboard; sourceTree = "<group>"; };
+		C4065DC220184159009B651F /* CaseElasticSampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseElasticSampleView.swift; sourceTree = "<group>"; };
+		C4065DC320184159009B651F /* ElasticView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElasticView.xib; sourceTree = "<group>"; };
+		C4065DC520184159009B651F /* TableHeaderViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController2.swift; sourceTree = "<group>"; };
+		C4065DC720184159009B651F /* SampleHeaderView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView1.xib; sourceTree = "<group>"; };
+		C4065DC820184159009B651F /* SampleHeaderView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView2.xib; sourceTree = "<group>"; };
+		C4065DC920184159009B651F /* SampleHeaderView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView1.swift; sourceTree = "<group>"; };
+		C4065DCA20184159009B651F /* SampleHeaderView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView2.swift; sourceTree = "<group>"; };
+		C4065DCB20184159009B651F /* SampleTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell2.xib; sourceTree = "<group>"; };
+		C4065DCC20184159009B651F /* SampleTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell1.xib; sourceTree = "<group>"; };
+		C4065DCD20184159009B651F /* TableHeaderViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController1.swift; sourceTree = "<group>"; };
+		C4065DCE20184159009B651F /* TableHeaderViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController3.swift; sourceTree = "<group>"; };
+		C4065DCF20184159009B651F /* CaseTableCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTableCells.storyboard; sourceTree = "<group>"; };
+		C4065DD020184159009B651F /* SampleTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell1.swift; sourceTree = "<group>"; };
+		C4065DD120184159009B651F /* TableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellViewController.swift; sourceTree = "<group>"; };
+		C4065DD220184159009B651F /* SampleTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell2.swift; sourceTree = "<group>"; };
+		C4065DD420184159009B651F /* CaseCollections.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseCollections.storyboard; sourceTree = "<group>"; };
+		C4065DD520184159009B651F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		C4065DD720184159009B651F /* CaseScroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseScroll.storyboard; sourceTree = "<group>"; };
+		C4065DD820184159009B651F /* CaseScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseScrollViewController.swift; sourceTree = "<group>"; };
 		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		C44CB7521F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseCollections.storyboard; sourceTree = "<group>"; };
-		C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTableCells.storyboard; sourceTree = "<group>"; };
-		C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell1.swift; sourceTree = "<group>"; };
-		C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell1.xib; sourceTree = "<group>"; };
-		C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell2.swift; sourceTree = "<group>"; };
-		C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell2.xib; sourceTree = "<group>"; };
-		C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellViewController.swift; sourceTree = "<group>"; };
-		C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTransitions.storyboard; sourceTree = "<group>"; };
-		C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalInteractiveTransition.swift; sourceTree = "<group>"; };
-		C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideInAnimator.swift; sourceTree = "<group>"; };
-		C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalSlideOutAnimator.swift; sourceTree = "<group>"; };
-		C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACHorizontalTransitionManager.swift; sourceTree = "<group>"; };
-		C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionFromViewController.swift; sourceTree = "<group>"; };
-		C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTransitionToViewController.swift; sourceTree = "<group>"; };
 		C44CB7661F53521100AF5FC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C44CB7671F53521100AF5FC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMain3ViewController.swift; sourceTree = "<group>"; };
-		C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseNavigationController.storyboard; sourceTree = "<group>"; };
-		C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavFirstViewController.swift; sourceTree = "<group>"; };
-		C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleNavMainViewController.swift; sourceTree = "<group>"; };
-		C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUIViewWillMove.storyboard; sourceTree = "<group>"; };
-		C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveMainViewController.swift; sourceTree = "<group>"; };
-		C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseWillMoveView.swift; sourceTree = "<group>"; };
-		C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController1.swift; sourceTree = "<group>"; };
-		C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUIViewWillMoveViewController2.swift; sourceTree = "<group>"; };
-		C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseAutolayout.storyboard; sourceTree = "<group>"; };
-		C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseAutolayoutMainViewController.swift; sourceTree = "<group>"; };
-		C455F54D2015A29E000C3DED /* CaseSwizzleSegue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseSwizzleSegue.storyboard; sourceTree = "<group>"; };
-		C45D675C1F7191B2001144B3 /* SampleHeaderView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView1.swift; sourceTree = "<group>"; };
-		C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView1.xib; sourceTree = "<group>"; };
-		C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController1.swift; sourceTree = "<group>"; };
-		C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController2.swift; sourceTree = "<group>"; };
-		C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleHeaderView2.swift; sourceTree = "<group>"; };
-		C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleHeaderView2.xib; sourceTree = "<group>"; };
-		C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableHeaderViewController3.swift; sourceTree = "<group>"; };
-		C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseUnwind.storyboard; sourceTree = "<group>"; };
-		C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController1.swift; sourceTree = "<group>"; };
-		C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseUnwindViewController2.swift; sourceTree = "<group>"; };
-		C47121021F7D645800A885BC /* CaseEmbed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseEmbed.storyboard; sourceTree = "<group>"; };
-		C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedVCByCode.swift; sourceTree = "<group>"; };
-		C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaseEmbedVCByCode.xib; sourceTree = "<group>"; };
-		C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedViewController.swift; sourceTree = "<group>"; };
-		C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseEmbedSubVCByCode.swift; sourceTree = "<group>"; };
-		C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseOrientation.storyboard; sourceTree = "<group>"; };
-		C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseOrientationView1.swift; sourceTree = "<group>"; };
-		C4A060DD1FFAF05000796F8B /* ElasticView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElasticView.xib; sourceTree = "<group>"; };
-		C4A060DE1FFAF05000796F8B /* ElasticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
-		C4A317791F912834007FDB56 /* CaseStackview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseStackview.storyboard; sourceTree = "<group>"; };
-		C4CCBBCB2015975900E7115F /* CaseSwizzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseSwizzleViewController.swift; sourceTree = "<group>"; };
-		C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseParallax.storyboard; sourceTree = "<group>"; };
-		C4E0ADD01F5893D0004BCBA1 /* KCParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParallaxView.h; sourceTree = "<group>"; };
-		C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParallaxView.m; sourceTree = "<group>"; };
-		C4E0ADD31F58940F004BCBA1 /* UIImageView+Aldo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Aldo.h"; sourceTree = "<group>"; };
-		C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Aldo.m"; sourceTree = "<group>"; };
-		C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseParallaxMainViewController.swift; sourceTree = "<group>"; };
-		C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACParallaxView.swift; sourceTree = "<group>"; };
-		C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACParallaxView.xib; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,88 +281,265 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C40C2E011F36911100B04BA8 /* ACKitExample */ = {
+		C4065D7D20184159009B651F /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
-				C4CCBBCA2015973A00E7115F /* CaseSwizzleSegue */,
-				C41522041F84830E00490662 /* CaseUI */,
-				C41B491D1F5F573300F0F99D /* CaseScroll */,
-				C41B49141F5F53CD00F0F99D /* CaseElasticHeader */,
-				C4E0ADCD1F58933F004BCBA1 /* CaseParallax */,
-				C460FE3E1F574A1100676FCB /* CaseUnwind */,
-				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
-				C44E72701F565B6100F9EE81 /* CaseAutolayout */,
-				C44CB7531F53521100AF5FC9 /* CaseCollections */,
-				C44CB7561F53521100AF5FC9 /* CaseTableCells */,
-				C43C62571F83F14C00C885D4 /* CaseBlurModal */,
-				C44CB75D1F53521100AF5FC9 /* CaseTransitions */,
-				C4383A801F5E5CAA00DD2A10 /* CaseTransitions2 */,
-				C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */,
-				C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */,
-				C48CE61C1F62E75600C5BF59 /* CaseOrientation */,
-				C47121011F7D63FF00A885BC /* CaseEmbed */,
-				C4A317781F91281A007FDB56 /* CaseStackview */,
-				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
-				C44CB7671F53521100AF5FC9 /* Info.plist */,
-				C4065D6D2016EB7C009B651F /* MainViewController.swift */,
-				C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */,
-				C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */,
-				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
+				C4065D7E20184159009B651F /* CaseUnwind */,
+				C4065D8220184159009B651F /* CaseEmbed */,
+				C4065D8820184159009B651F /* CaseTransitions2 */,
+				C4065D8C20184159009B651F /* CaseOrientation */,
+				C4065D8F20184159009B651F /* CaseTransitions */,
+				C4065D9920184159009B651F /* CaseSwizzleSegue */,
 			);
-			path = ACKitExample;
+			path = Transitions;
 			sourceTree = "<group>";
 		};
-		C41522041F84830E00490662 /* CaseUI */ = {
+		C4065D7E20184159009B651F /* CaseUnwind */ = {
 			isa = PBXGroup;
 			children = (
-				C41522051F84832800490662 /* CaseUI.storyboard */,
+				C4065D7F20184159009B651F /* CaseUnwindViewController1.swift */,
+				C4065D8020184159009B651F /* CaseUnwindViewController2.swift */,
+				C4065D8120184159009B651F /* CaseUnwind.storyboard */,
 			);
-			path = CaseUI;
+			path = CaseUnwind;
 			sourceTree = "<group>";
 		};
-		C41B49141F5F53CD00F0F99D /* CaseElasticHeader */ = {
+		C4065D8220184159009B651F /* CaseEmbed */ = {
 			isa = PBXGroup;
 			children = (
-				C4A060DE1FFAF05000796F8B /* ElasticView.swift */,
-				C4A060DD1FFAF05000796F8B /* ElasticView.xib */,
-				C41B49171F5F53CD00F0F99D /* CaseElasticHeader.storyboard */,
-				C41B49181F5F53CD00F0F99D /* CaseElasticViewController.swift */,
-				C41B492C1F5FA90800F0F99D /* CaseElasticSampleView.xib */,
-				C41B492A1F5FA8F600F0F99D /* CaseElasticSampleView.swift */,
+				C4065D8320184159009B651F /* CaseEmbed.storyboard */,
+				C4065D8420184159009B651F /* CaseEmbedVCByCode.xib */,
+				C4065D8520184159009B651F /* CaseEmbedVCByCode.swift */,
+				C4065D8620184159009B651F /* CaseEmbedViewController.swift */,
+				C4065D8720184159009B651F /* CaseEmbedSubVCByCode.swift */,
 			);
-			path = CaseElasticHeader;
+			path = CaseEmbed;
 			sourceTree = "<group>";
 		};
-		C41B491D1F5F573300F0F99D /* CaseScroll */ = {
+		C4065D8820184159009B651F /* CaseTransitions2 */ = {
 			isa = PBXGroup;
 			children = (
-				C41B491E1F5F574900F0F99D /* CaseScroll.storyboard */,
-				C41B49201F5F576200F0F99D /* CaseScrollViewController.swift */,
-			);
-			path = CaseScroll;
-			sourceTree = "<group>";
-		};
-		C4383A801F5E5CAA00DD2A10 /* CaseTransitions2 */ = {
-			isa = PBXGroup;
-			children = (
-				C4383A811F5E5CBE00DD2A10 /* CaseTransitions2.storyboard */,
-				C4383A831F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift */,
-				C4383A841F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift */,
+				C4065D8920184159009B651F /* CaseTransitions2.storyboard */,
+				C4065D8A20184159009B651F /* SampleTransition2FromViewController.swift */,
+				C4065D8B20184159009B651F /* SampleTransition2ToViewController.swift */,
 			);
 			path = CaseTransitions2;
 			sourceTree = "<group>";
 		};
-		C43C62571F83F14C00C885D4 /* CaseBlurModal */ = {
+		C4065D8C20184159009B651F /* CaseOrientation */ = {
 			isa = PBXGroup;
 			children = (
-				C43C625C1F83F1C500C885D4 /* CaseBlurModal.storyboard */,
-				C43C625E1F83FEC600C885D4 /* CaseBlurModalViewController.swift */,
-				C43C62581F83F19000C885D4 /* ACBlurInAnimator.swift */,
-				C43C62591F83F19000C885D4 /* ACBlurOutAnimator.swift */,
-				C426659F1F86CEBF00735F0D /* CaseBlurModalMainViewController.swift */,
+				C4065D8D20184159009B651F /* CaseOrientation.storyboard */,
+				C4065D8E20184159009B651F /* CaseOrientationView1.swift */,
+			);
+			path = CaseOrientation;
+			sourceTree = "<group>";
+		};
+		C4065D8F20184159009B651F /* CaseTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				C4065D9020184159009B651F /* CaseTransitions.storyboard */,
+				C4065D9120184159009B651F /* SampleTransitionFromViewController.swift */,
+				C4065D9220184159009B651F /* ProfilePageTransition */,
+				C4065D9720184159009B651F /* SampleTransitionToViewController.swift */,
+			);
+			path = CaseTransitions;
+			sourceTree = "<group>";
+		};
+		C4065D9220184159009B651F /* ProfilePageTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C4065D9320184159009B651F /* ACHorizontalTransitionManager.swift */,
+				C4065D9420184159009B651F /* ACHorizontalSlideInAnimator.swift */,
+				C4065D9520184159009B651F /* ACHorizontalSlideOutAnimator.swift */,
+				C4065D9620184159009B651F /* ACHorizontalInteractiveTransition.swift */,
+			);
+			path = ProfilePageTransition;
+			sourceTree = "<group>";
+		};
+		C4065D9820184159009B651F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				C4065D9C20184159009B651F /* CaseComplexHierachy */,
+				C4065DA920184159009B651F /* CaseStackview */,
+				C4065DAB20184159009B651F /* CaseUIViewWillMove */,
+				C4065DB120184159009B651F /* CaseBlurModal */,
+				C4065DB720184159009B651F /* CaseAutolayout */,
+				C4065DBA20184159009B651F /* CaseUI */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		C4065D9920184159009B651F /* CaseSwizzleSegue */ = {
+			isa = PBXGroup;
+			children = (
+				C4065D9A20184159009B651F /* CaseSwizzleViewController.swift */,
+				C4065D9B20184159009B651F /* CaseSwizzleSegue.storyboard */,
+			);
+			path = CaseSwizzleSegue;
+			sourceTree = "<group>";
+		};
+		C4065D9C20184159009B651F /* CaseComplexHierachy */ = {
+			isa = PBXGroup;
+			children = (
+				C4065D9D20184159009B651F /* SampleNavFirstViewController.swift */,
+				C4065D9E20184159009B651F /* CaseNavigationController.storyboard */,
+				C4065D9F20184159009B651F /* SampleNavMainViewController.swift */,
+			);
+			path = CaseComplexHierachy;
+			sourceTree = "<group>";
+		};
+		C4065DA020184159009B651F /* CaseParallax */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DA120184159009B651F /* UIImageView+Aldo.h */,
+				C4065DA220184159009B651F /* CaseParallax.storyboard */,
+				C4065DA320184159009B651F /* ACParallaxView.swift */,
+				C4065DA420184159009B651F /* KCParallaxView.m */,
+				C4065DA520184159009B651F /* ACParallaxView.xib */,
+				C4065DA620184159009B651F /* KCParallaxView.h */,
+				C4065DA720184159009B651F /* CaseParallaxMainViewController.swift */,
+				C4065DA820184159009B651F /* UIImageView+Aldo.m */,
+			);
+			path = CaseParallax;
+			sourceTree = "<group>";
+		};
+		C4065DA920184159009B651F /* CaseStackview */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DAA20184159009B651F /* CaseStackview.storyboard */,
+			);
+			path = CaseStackview;
+			sourceTree = "<group>";
+		};
+		C4065DAB20184159009B651F /* CaseUIViewWillMove */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DAC20184159009B651F /* CaseWillMoveView.swift */,
+				C4065DAD20184159009B651F /* CaseUIViewWillMove.storyboard */,
+				C4065DAE20184159009B651F /* CaseUIViewWillMoveViewController2.swift */,
+				C4065DAF20184159009B651F /* CaseUIViewWillMoveViewController1.swift */,
+				C4065DB020184159009B651F /* CaseUIViewWillMoveMainViewController.swift */,
+			);
+			path = CaseUIViewWillMove;
+			sourceTree = "<group>";
+		};
+		C4065DB120184159009B651F /* CaseBlurModal */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DB220184159009B651F /* CaseBlurModalViewController.swift */,
+				C4065DB320184159009B651F /* CaseBlurModal.storyboard */,
+				C4065DB420184159009B651F /* ACBlurInAnimator.swift */,
+				C4065DB520184159009B651F /* CaseBlurModalMainViewController.swift */,
+				C4065DB620184159009B651F /* ACBlurOutAnimator.swift */,
 			);
 			path = CaseBlurModal;
+			sourceTree = "<group>";
+		};
+		C4065DB720184159009B651F /* CaseAutolayout */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DB820184159009B651F /* CaseAutolayout.storyboard */,
+				C4065DB920184159009B651F /* CaseAutolayoutMainViewController.swift */,
+			);
+			path = CaseAutolayout;
+			sourceTree = "<group>";
+		};
+		C4065DBA20184159009B651F /* CaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DBB20184159009B651F /* CaseUI.storyboard */,
+			);
+			path = CaseUI;
+			sourceTree = "<group>";
+		};
+		C4065DBC20184159009B651F /* ScrollViewBased */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DA020184159009B651F /* CaseParallax */,
+				C4065DBD20184159009B651F /* CaseElasticHeader */,
+				C4065DC420184159009B651F /* CaseTableCells */,
+				C4065DD320184159009B651F /* CaseCollections */,
+				C4065DD620184159009B651F /* CaseScroll */,
+			);
+			path = ScrollViewBased;
+			sourceTree = "<group>";
+		};
+		C4065DBD20184159009B651F /* CaseElasticHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DBE20184159009B651F /* ElasticView.swift */,
+				C4065DBF20184159009B651F /* CaseElasticSampleView.xib */,
+				C4065DC020184159009B651F /* CaseElasticViewController.swift */,
+				C4065DC120184159009B651F /* CaseElasticHeader.storyboard */,
+				C4065DC220184159009B651F /* CaseElasticSampleView.swift */,
+				C4065DC320184159009B651F /* ElasticView.xib */,
+			);
+			path = CaseElasticHeader;
+			sourceTree = "<group>";
+		};
+		C4065DC420184159009B651F /* CaseTableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DC520184159009B651F /* TableHeaderViewController2.swift */,
+				C4065DC620184159009B651F /* Misc */,
+				C4065DCB20184159009B651F /* SampleTableViewCell2.xib */,
+				C4065DCC20184159009B651F /* SampleTableViewCell1.xib */,
+				C4065DCD20184159009B651F /* TableHeaderViewController1.swift */,
+				C4065DCE20184159009B651F /* TableHeaderViewController3.swift */,
+				C4065DCF20184159009B651F /* CaseTableCells.storyboard */,
+				C4065DD020184159009B651F /* SampleTableViewCell1.swift */,
+				C4065DD120184159009B651F /* TableCellViewController.swift */,
+				C4065DD220184159009B651F /* SampleTableViewCell2.swift */,
+			);
+			path = CaseTableCells;
+			sourceTree = "<group>";
+		};
+		C4065DC620184159009B651F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DC720184159009B651F /* SampleHeaderView1.xib */,
+				C4065DC820184159009B651F /* SampleHeaderView2.xib */,
+				C4065DC920184159009B651F /* SampleHeaderView1.swift */,
+				C4065DCA20184159009B651F /* SampleHeaderView2.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		C4065DD320184159009B651F /* CaseCollections */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DD420184159009B651F /* CaseCollections.storyboard */,
+				C4065DD520184159009B651F /* CollectionViewController.swift */,
+			);
+			path = CaseCollections;
+			sourceTree = "<group>";
+		};
+		C4065DD620184159009B651F /* CaseScroll */ = {
+			isa = PBXGroup;
+			children = (
+				C4065DD720184159009B651F /* CaseScroll.storyboard */,
+				C4065DD820184159009B651F /* CaseScrollViewController.swift */,
+			);
+			path = CaseScroll;
+			sourceTree = "<group>";
+		};
+		C40C2E011F36911100B04BA8 /* ACKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */,
+				C4065D6D2016EB7C009B651F /* MainViewController.swift */,
+				C4065D6F2016EB87009B651F /* SubMain1ViewController.swift */,
+				C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */,
+				C4065D7D20184159009B651F /* Transitions */,
+				C4065D9820184159009B651F /* Misc */,
+				C4065DBC20184159009B651F /* ScrollViewBased */,
+				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
+				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
+				C44CB7671F53521100AF5FC9 /* Info.plist */,
+				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
+			);
+			path = ACKitExample;
 			sourceTree = "<group>";
 		};
 		C44CB74E1F53521100AF5FC9 /* Base.lproj */ = {
@@ -372,159 +549,6 @@
 				C44CB7511F53521100AF5FC9 /* Main.storyboard */,
 			);
 			path = Base.lproj;
-			sourceTree = "<group>";
-		};
-		C44CB7531F53521100AF5FC9 /* CaseCollections */ = {
-			isa = PBXGroup;
-			children = (
-				C44CB7541F53521100AF5FC9 /* CaseCollections.storyboard */,
-				C44CB7551F53521100AF5FC9 /* CollectionViewController.swift */,
-			);
-			path = CaseCollections;
-			sourceTree = "<group>";
-		};
-		C44CB7561F53521100AF5FC9 /* CaseTableCells */ = {
-			isa = PBXGroup;
-			children = (
-				C45D675B1F71919B001144B3 /* Misc */,
-				C44CB7571F53521100AF5FC9 /* CaseTableCells.storyboard */,
-				C44CB7581F53521100AF5FC9 /* SampleTableViewCell1.swift */,
-				C44CB7591F53521100AF5FC9 /* SampleTableViewCell1.xib */,
-				C44CB75A1F53521100AF5FC9 /* SampleTableViewCell2.swift */,
-				C44CB75B1F53521100AF5FC9 /* SampleTableViewCell2.xib */,
-				C44CB75C1F53521100AF5FC9 /* TableCellViewController.swift */,
-				C45D67F91F73F802001144B3 /* TableHeaderViewController1.swift */,
-				C45D67FB1F7401C1001144B3 /* TableHeaderViewController2.swift */,
-				C45D68011F7408FD001144B3 /* TableHeaderViewController3.swift */,
-			);
-			path = CaseTableCells;
-			sourceTree = "<group>";
-		};
-		C44CB75D1F53521100AF5FC9 /* CaseTransitions */ = {
-			isa = PBXGroup;
-			children = (
-				C44CB75E1F53521100AF5FC9 /* CaseTransitions.storyboard */,
-				C44CB75F1F53521100AF5FC9 /* ProfilePageTransition */,
-				C44CB7641F53521100AF5FC9 /* SampleTransitionFromViewController.swift */,
-				C44CB7651F53521100AF5FC9 /* SampleTransitionToViewController.swift */,
-			);
-			path = CaseTransitions;
-			sourceTree = "<group>";
-		};
-		C44CB75F1F53521100AF5FC9 /* ProfilePageTransition */ = {
-			isa = PBXGroup;
-			children = (
-				C44CB7601F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift */,
-				C44CB7611F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift */,
-				C44CB7621F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift */,
-				C44CB7631F53521100AF5FC9 /* ACHorizontalTransitionManager.swift */,
-			);
-			path = ProfilePageTransition;
-			sourceTree = "<group>";
-		};
-		C44CB7881F535E0E00AF5FC9 /* CaseComplexHierachy */ = {
-			isa = PBXGroup;
-			children = (
-				C44CB7891F535E0E00AF5FC9 /* CaseNavigationController.storyboard */,
-				C44CB78A1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift */,
-				C44CB78B1F535E0E00AF5FC9 /* SampleNavMainViewController.swift */,
-			);
-			path = CaseComplexHierachy;
-			sourceTree = "<group>";
-		};
-		C44CB78F1F535E8500AF5FC9 /* CaseUIViewWillMove */ = {
-			isa = PBXGroup;
-			children = (
-				C44CB7901F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard */,
-				C44CB7921F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift */,
-				C44CB7981F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift */,
-				C44CB79A1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift */,
-				C44CB7961F5360C900AF5FC9 /* CaseWillMoveView.swift */,
-			);
-			path = CaseUIViewWillMove;
-			sourceTree = "<group>";
-		};
-		C44E72701F565B6100F9EE81 /* CaseAutolayout */ = {
-			isa = PBXGroup;
-			children = (
-				C44E72711F565B9100F9EE81 /* CaseAutolayout.storyboard */,
-				C44E72731F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift */,
-			);
-			path = CaseAutolayout;
-			sourceTree = "<group>";
-		};
-		C45D675B1F71919B001144B3 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				C45D675C1F7191B2001144B3 /* SampleHeaderView1.swift */,
-				C45D675E1F7191BE001144B3 /* SampleHeaderView1.xib */,
-				C45D67FD1F74058B001144B3 /* SampleHeaderView2.swift */,
-				C45D67FF1F740779001144B3 /* SampleHeaderView2.xib */,
-			);
-			path = Misc;
-			sourceTree = "<group>";
-		};
-		C460FE3E1F574A1100676FCB /* CaseUnwind */ = {
-			isa = PBXGroup;
-			children = (
-				C460FE3F1F574A1100676FCB /* CaseUnwind.storyboard */,
-				C460FE401F574A1100676FCB /* CaseUnwindViewController1.swift */,
-				C460FE411F574A1100676FCB /* CaseUnwindViewController2.swift */,
-			);
-			path = CaseUnwind;
-			sourceTree = "<group>";
-		};
-		C47121011F7D63FF00A885BC /* CaseEmbed */ = {
-			isa = PBXGroup;
-			children = (
-				C47121021F7D645800A885BC /* CaseEmbed.storyboard */,
-				C47121081F7D6B5400A885BC /* CaseEmbedViewController.swift */,
-				C47121041F7D647F00A885BC /* CaseEmbedVCByCode.swift */,
-				C47121061F7D64AA00A885BC /* CaseEmbedVCByCode.xib */,
-				C471210A1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift */,
-			);
-			path = CaseEmbed;
-			sourceTree = "<group>";
-		};
-		C48CE61C1F62E75600C5BF59 /* CaseOrientation */ = {
-			isa = PBXGroup;
-			children = (
-				C48CE61F1F62E79000C5BF59 /* CaseOrientation.storyboard */,
-				C48CE6211F62E7BB00C5BF59 /* CaseOrientationView1.swift */,
-			);
-			path = CaseOrientation;
-			sourceTree = "<group>";
-		};
-		C4A317781F91281A007FDB56 /* CaseStackview */ = {
-			isa = PBXGroup;
-			children = (
-				C4A317791F912834007FDB56 /* CaseStackview.storyboard */,
-			);
-			path = CaseStackview;
-			sourceTree = "<group>";
-		};
-		C4CCBBCA2015973A00E7115F /* CaseSwizzleSegue */ = {
-			isa = PBXGroup;
-			children = (
-				C4CCBBCB2015975900E7115F /* CaseSwizzleViewController.swift */,
-				C455F54D2015A29E000C3DED /* CaseSwizzleSegue.storyboard */,
-			);
-			path = CaseSwizzleSegue;
-			sourceTree = "<group>";
-		};
-		C4E0ADCD1F58933F004BCBA1 /* CaseParallax */ = {
-			isa = PBXGroup;
-			children = (
-				C4E0ADCE1F589350004BCBA1 /* CaseParallax.storyboard */,
-				C4E0ADD61F589888004BCBA1 /* CaseParallaxMainViewController.swift */,
-				C4E0ADD81F58AF9B004BCBA1 /* ACParallaxView.swift */,
-				C4E0ADDA1F58AFA6004BCBA1 /* ACParallaxView.xib */,
-				C4E0ADD01F5893D0004BCBA1 /* KCParallaxView.h */,
-				C4E0ADD11F5893D0004BCBA1 /* KCParallaxView.m */,
-				C4E0ADD31F58940F004BCBA1 /* UIImageView+Aldo.h */,
-				C4E0ADD41F58940F004BCBA1 /* UIImageView+Aldo.m */,
-			);
-			path = CaseParallax;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,35 +642,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44CB78C1F535E0E00AF5FC9 /* CaseNavigationController.storyboard in Resources */,
-				C45D68001F740779001144B3 /* SampleHeaderView2.xib in Resources */,
-				C4A060DF1FFAF05000796F8B /* ElasticView.xib in Resources */,
-				C47121071F7D64AA00A885BC /* CaseEmbedVCByCode.xib in Resources */,
-				C45D675F1F7191BE001144B3 /* SampleHeaderView1.xib in Resources */,
-				C47121031F7D645800A885BC /* CaseEmbed.storyboard in Resources */,
-				C455F54E2015A29E000C3DED /* CaseSwizzleSegue.storyboard in Resources */,
-				C44CB7721F53521100AF5FC9 /* SampleTableViewCell2.xib in Resources */,
-				C460FE421F574A1100676FCB /* CaseUnwind.storyboard in Resources */,
+				C4065E192018415A009B651F /* CaseCollections.storyboard in Resources */,
+				C4065DDD20184159009B651F /* CaseEmbedVCByCode.xib in Resources */,
+				C4065E152018415A009B651F /* CaseTableCells.storyboard in Resources */,
+				C4065E032018415A009B651F /* CaseAutolayout.storyboard in Resources */,
+				C4065DDB20184159009B651F /* CaseUnwind.storyboard in Resources */,
+				C4065DFF2018415A009B651F /* CaseBlurModal.storyboard in Resources */,
 				C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */,
-				C48CE6201F62E79000C5BF59 /* CaseOrientation.storyboard in Resources */,
+				C4065DF520184159009B651F /* ACParallaxView.xib in Resources */,
+				C4065DDC20184159009B651F /* CaseEmbed.storyboard in Resources */,
+				C4065DF220184159009B651F /* CaseParallax.storyboard in Resources */,
+				C4065E0D2018415A009B651F /* SampleHeaderView1.xib in Resources */,
+				C4065E1B2018415A009B651F /* CaseScroll.storyboard in Resources */,
+				C4065E072018415A009B651F /* CaseElasticSampleView.xib in Resources */,
+				C4065DE420184159009B651F /* CaseOrientation.storyboard in Resources */,
+				C4065E0B2018415A009B651F /* ElasticView.xib in Resources */,
+				C4065DEE20184159009B651F /* CaseSwizzleSegue.storyboard in Resources */,
+				C4065E122018415A009B651F /* SampleTableViewCell1.xib in Resources */,
+				C4065DFA2018415A009B651F /* CaseUIViewWillMove.storyboard in Resources */,
+				C4065E052018415A009B651F /* CaseUI.storyboard in Resources */,
 				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
-				C44CB7911F535EA000AF5FC9 /* CaseUIViewWillMove.storyboard in Resources */,
+				C4065E092018415A009B651F /* CaseElasticHeader.storyboard in Resources */,
 				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
+				C4065DE120184159009B651F /* CaseTransitions2.storyboard in Resources */,
 				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
-				C41522061F84832800490662 /* CaseUI.storyboard in Resources */,
-				C41B492D1F5FA90800F0F99D /* CaseElasticSampleView.xib in Resources */,
-				C44E72721F565B9100F9EE81 /* CaseAutolayout.storyboard in Resources */,
-				C4A3177A1F912834007FDB56 /* CaseStackview.storyboard in Resources */,
-				C43C625D1F83F1C500C885D4 /* CaseBlurModal.storyboard in Resources */,
-				C44CB7701F53521100AF5FC9 /* SampleTableViewCell1.xib in Resources */,
-				C44CB7741F53521100AF5FC9 /* CaseTransitions.storyboard in Resources */,
-				C41B491B1F5F53CD00F0F99D /* CaseElasticHeader.storyboard in Resources */,
-				C4E0ADDB1F58AFA6004BCBA1 /* ACParallaxView.xib in Resources */,
-				C41B491F1F5F574900F0F99D /* CaseScroll.storyboard in Resources */,
-				C4E0ADCF1F589350004BCBA1 /* CaseParallax.storyboard in Resources */,
-				C44CB76C1F53521100AF5FC9 /* CaseCollections.storyboard in Resources */,
-				C4383A821F5E5CBF00DD2A10 /* CaseTransitions2.storyboard in Resources */,
-				C44CB76E1F53521100AF5FC9 /* CaseTableCells.storyboard in Resources */,
+				C4065DF820184159009B651F /* CaseStackview.storyboard in Resources */,
+				C4065DF020184159009B651F /* CaseNavigationController.storyboard in Resources */,
+				C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */,
+				C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */,
+				C4065DE620184159009B651F /* CaseTransitions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,53 +804,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C44CB7711F53521100AF5FC9 /* SampleTableViewCell2.swift in Sources */,
+				C4065E1A2018415A009B651F /* CollectionViewController.swift in Sources */,
+				C4065E022018415A009B651F /* ACBlurOutAnimator.swift in Sources */,
+				C4065DDF20184159009B651F /* CaseEmbedViewController.swift in Sources */,
+				C4065DE920184159009B651F /* ACHorizontalSlideInAnimator.swift in Sources */,
+				C4065E012018415A009B651F /* CaseBlurModalMainViewController.swift in Sources */,
+				C4065E142018415A009B651F /* TableHeaderViewController3.swift in Sources */,
+				C4065DFC2018415A009B651F /* CaseUIViewWillMoveViewController1.swift in Sources */,
+				C4065DEB20184159009B651F /* ACHorizontalInteractiveTransition.swift in Sources */,
+				C4065E1C2018415A009B651F /* CaseScrollViewController.swift in Sources */,
+				C4065DF120184159009B651F /* SampleNavMainViewController.swift in Sources */,
+				C4065E002018415A009B651F /* ACBlurInAnimator.swift in Sources */,
+				C4065DE520184159009B651F /* CaseOrientationView1.swift in Sources */,
+				C4065DD920184159009B651F /* CaseUnwindViewController1.swift in Sources */,
+				C4065DE220184159009B651F /* SampleTransition2FromViewController.swift in Sources */,
+				C4065DE320184159009B651F /* SampleTransition2ToViewController.swift in Sources */,
 				C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */,
-				C4383A861F5E5D4F00DD2A10 /* SampleTransition2ToViewController.swift in Sources */,
-				C44CB78D1F535E0E00AF5FC9 /* SampleNavFirstViewController.swift in Sources */,
-				C44CB76D1F53521100AF5FC9 /* CollectionViewController.swift in Sources */,
-				C44CB7991F53A07100AF5FC9 /* CaseUIViewWillMoveViewController1.swift in Sources */,
-				C44CB78E1F535E0E00AF5FC9 /* SampleNavMainViewController.swift in Sources */,
-				C43C625A1F83F19000C885D4 /* ACBlurInAnimator.swift in Sources */,
-				C4CCBBCC2015975900E7115F /* CaseSwizzleViewController.swift in Sources */,
-				C471210B1F7D73BC00A885BC /* CaseEmbedSubVCByCode.swift in Sources */,
-				C44CB7971F5360C900AF5FC9 /* CaseWillMoveView.swift in Sources */,
-				C42665A01F86CEBF00735F0D /* CaseBlurModalMainViewController.swift in Sources */,
-				C4E0ADD71F589888004BCBA1 /* CaseParallaxMainViewController.swift in Sources */,
-				C45D675D1F7191B2001144B3 /* SampleHeaderView1.swift in Sources */,
-				C43C625B1F83F19000C885D4 /* ACBlurOutAnimator.swift in Sources */,
-				C45D67FA1F73F802001144B3 /* TableHeaderViewController1.swift in Sources */,
-				C48CE6221F62E7BB00C5BF59 /* CaseOrientationView1.swift in Sources */,
+				C4065DFD2018415A009B651F /* CaseUIViewWillMoveMainViewController.swift in Sources */,
+				C4065E0A2018415A009B651F /* CaseElasticSampleView.swift in Sources */,
+				C4065E182018415A009B651F /* SampleTableViewCell2.swift in Sources */,
+				C4065E042018415A009B651F /* CaseAutolayoutMainViewController.swift in Sources */,
+				C4065E0F2018415A009B651F /* SampleHeaderView1.swift in Sources */,
+				C4065E0C2018415A009B651F /* TableHeaderViewController2.swift in Sources */,
+				C4065E162018415A009B651F /* SampleTableViewCell1.swift in Sources */,
 				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
+				C4065DED20184159009B651F /* CaseSwizzleViewController.swift in Sources */,
+				C4065E062018415A009B651F /* ElasticView.swift in Sources */,
+				C4065DE720184159009B651F /* SampleTransitionFromViewController.swift in Sources */,
+				C4065DF620184159009B651F /* CaseParallaxMainViewController.swift in Sources */,
+				C4065DF920184159009B651F /* CaseWillMoveView.swift in Sources */,
+				C4065DEF20184159009B651F /* SampleNavFirstViewController.swift in Sources */,
+				C4065E172018415A009B651F /* TableCellViewController.swift in Sources */,
+				C4065DF420184159009B651F /* KCParallaxView.m in Sources */,
+				C4065DE820184159009B651F /* ACHorizontalTransitionManager.swift in Sources */,
 				C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */,
-				C44CB7791F53521100AF5FC9 /* SampleTransitionFromViewController.swift in Sources */,
-				C44CB7771F53521100AF5FC9 /* ACHorizontalSlideOutAnimator.swift in Sources */,
-				C44CB7781F53521100AF5FC9 /* ACHorizontalTransitionManager.swift in Sources */,
-				C47121051F7D647F00A885BC /* CaseEmbedVCByCode.swift in Sources */,
-				C43C625F1F83FEC600C885D4 /* CaseBlurModalViewController.swift in Sources */,
-				C4E0ADD91F58AF9B004BCBA1 /* ACParallaxView.swift in Sources */,
-				C41B492B1F5FA8F600F0F99D /* CaseElasticSampleView.swift in Sources */,
-				C4E0ADD51F58940F004BCBA1 /* UIImageView+Aldo.m in Sources */,
-				C44E72741F565BC900F9EE81 /* CaseAutolayoutMainViewController.swift in Sources */,
-				C4A060E01FFAF05000796F8B /* ElasticView.swift in Sources */,
-				C45D68021F7408FD001144B3 /* TableHeaderViewController3.swift in Sources */,
-				C41B491C1F5F53CD00F0F99D /* CaseElasticViewController.swift in Sources */,
+				C4065DEC20184159009B651F /* SampleTransitionToViewController.swift in Sources */,
+				C4065DEA20184159009B651F /* ACHorizontalSlideOutAnimator.swift in Sources */,
+				C4065DDA20184159009B651F /* CaseUnwindViewController2.swift in Sources */,
+				C4065DFE2018415A009B651F /* CaseBlurModalViewController.swift in Sources */,
 				C4065D702016EB87009B651F /* SubMain1ViewController.swift in Sources */,
-				C47121091F7D6B5400A885BC /* CaseEmbedViewController.swift in Sources */,
-				C4E0ADD21F5893D0004BCBA1 /* KCParallaxView.m in Sources */,
-				C44CB7931F535EE600AF5FC9 /* CaseUIViewWillMoveMainViewController.swift in Sources */,
-				C44CB76F1F53521100AF5FC9 /* SampleTableViewCell1.swift in Sources */,
-				C44CB7731F53521100AF5FC9 /* TableCellViewController.swift in Sources */,
-				C45D67FE1F74058B001144B3 /* SampleHeaderView2.swift in Sources */,
-				C460FE431F574A1100676FCB /* CaseUnwindViewController1.swift in Sources */,
-				C45D67FC1F7401C1001144B3 /* TableHeaderViewController2.swift in Sources */,
-				C44CB7751F53521100AF5FC9 /* ACHorizontalInteractiveTransition.swift in Sources */,
-				C460FE441F574A1100676FCB /* CaseUnwindViewController2.swift in Sources */,
-				C44CB77A1F53521100AF5FC9 /* SampleTransitionToViewController.swift in Sources */,
-				C44CB79B1F53A08500AF5FC9 /* CaseUIViewWillMoveViewController2.swift in Sources */,
-				C41B49211F5F576200F0F99D /* CaseScrollViewController.swift in Sources */,
-				C4383A851F5E5D4F00DD2A10 /* SampleTransition2FromViewController.swift in Sources */,
-				C44CB7761F53521100AF5FC9 /* ACHorizontalSlideInAnimator.swift in Sources */,
+				C4065E082018415A009B651F /* CaseElasticViewController.swift in Sources */,
+				C4065E102018415A009B651F /* SampleHeaderView2.swift in Sources */,
+				C4065E132018415A009B651F /* TableHeaderViewController1.swift in Sources */,
+				C4065DE020184159009B651F /* CaseEmbedSubVCByCode.swift in Sources */,
+				C4065DDE20184159009B651F /* CaseEmbedVCByCode.swift in Sources */,
+				C4065DF320184159009B651F /* ACParallaxView.swift in Sources */,
+				C4065DFB2018415A009B651F /* CaseUIViewWillMoveViewController2.swift in Sources */,
+				C4065DF720184159009B651F /* UIImageView+Aldo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
