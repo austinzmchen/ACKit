@@ -12,7 +12,7 @@ import UIKit
 open class ACTextField: UITextField {
     
     // @IBInspectable UIEdgeInsets is not supported yet, so workaround like below
-    @IBInspectable var textInsets: CGRect = CGRect()
+    @IBInspectable open var textInsets: CGRect = CGRect()
     
     // placeholder position
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -24,8 +24,8 @@ open class ACTextField: UITextField {
         return bounds.insetBy(dx: textInsets.origin.y, dy: textInsets.size.height);
     }
     
-    @IBInspectable var placeholderFontColor: UIColor?
-    @IBInspectable var placeholderFontSize: CGFloat = 0
+    @IBInspectable open var placeholderFontColor: UIColor?
+    @IBInspectable open var placeholderFontSize: CGFloat = 0
     private var isAttributedPlaceholderSet = false // prevent repeated setting placehoder, as it causes crash for ios 9
     
     // MARK: life cycle 

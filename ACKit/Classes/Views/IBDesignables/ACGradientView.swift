@@ -13,9 +13,9 @@ import UIKit
 @IBDesignable
 open class ACGradientView: ACView {
 
-    @IBInspectable var colorA: UIColor?
-    @IBInspectable var colorB: UIColor?
-    @IBInspectable var vertical: Bool = true
+    @IBInspectable open var colorA: UIColor?
+    @IBInspectable open var colorB: UIColor?
+    @IBInspectable open var vertical: Bool = true
     
     var gradientLayer = CAGradientLayer()
     

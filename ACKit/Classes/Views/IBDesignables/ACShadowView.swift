@@ -23,16 +23,16 @@ import UIKit
 @IBDesignable
 open class ACShadowView: UIView {
 
-    @IBInspectable var foregroundColor: UIColor? = nil
+    @IBInspectable open var foregroundColor: UIColor? = nil
     
-    @IBInspectable var _borderColor: UIColor? = nil
-    @IBInspectable var _borderWidth: CGFloat = 0
-    @IBInspectable var _cornerRadius: CGFloat = 0
+    @IBInspectable open var _borderColor: UIColor? = nil
+    @IBInspectable open var _borderWidth: CGFloat = 0
+    @IBInspectable open var _cornerRadius: CGFloat = 0
     
-    @IBInspectable var shadowColor: UIColor? = nil
-    @IBInspectable var shadowOffset: CGSize = CGSize.zero
-    @IBInspectable var shadowRadius: CGFloat = 0
-    @IBInspectable var shadowOpacity: CGFloat = 1
+    @IBInspectable open var shadowColor: UIColor? = nil
+    @IBInspectable open var shadowOffset: CGSize = CGSize.zero
+    @IBInspectable open var shadowRadius: CGFloat = 0
+    @IBInspectable open var shadowOpacity: CGFloat = 1
     
     private var borderView = UIView()
 

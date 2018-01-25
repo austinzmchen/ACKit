@@ -12,7 +12,7 @@ import UIKit
 open class ACLabel: UILabel {
     
     // @IBInspectable UIEdgeInsets is not supported yet, so workaround like below
-    @IBInspectable var textInsets: CGRect = CGRect()
+    @IBInspectable open var textInsets: CGRect = CGRect()
     
     // to add a content insets
     override open func draw(_ rect: CGRect) {
