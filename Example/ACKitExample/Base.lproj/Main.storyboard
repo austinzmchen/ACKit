@@ -131,6 +131,26 @@
                                             <segue destination="myu-7m-j0c" kind="show" id="UOG-Cr-g1q"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="oEq-6l-6PI" style="IBUITableViewCellStyleDefault" id="UUP-kg-PDF">
+                                        <rect key="frame" x="0.0" y="456" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UUP-kg-PDF" id="Sdb-kM-eAv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Accessibility Elements Ordering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oEq-6l-6PI">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="79.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="III-F7-TJ2" kind="show" id="7pl-Wi-Jpn"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -191,7 +211,15 @@
                 <viewControllerPlaceholder storyboardName="CaseElasticHeader" id="RkU-XB-ecK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDI-qe-gW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="-645"/>
+            <point key="canvasLocation" x="1666" y="-814"/>
+        </scene>
+        <!--CaseTableAutoHeight-->
+        <scene sceneID="2bO-ia-Tla">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseTableAutoHeight" id="n8W-No-EIf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JU7-aW-7wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="-749"/>
         </scene>
         <!--CaseScroll-->
         <scene sceneID="cKF-TM-RVa">
@@ -199,7 +227,7 @@
                 <viewControllerPlaceholder storyboardName="CaseScroll" id="Szs-4s-EMp" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzc-Km-9Sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="-815"/>
+            <point key="canvasLocation" x="1640" y="-902"/>
         </scene>
         <!--CaseOrientation-->
         <scene sceneID="Rrd-DW-0Pg">
@@ -215,7 +243,7 @@
                 <viewControllerPlaceholder storyboardName="CaseParallax" id="k5O-ZN-e8U" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zq6-1N-XmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="-732"/>
+            <point key="canvasLocation" x="1650" y="-854"/>
         </scene>
         <!--CaseEmbed-->
         <scene sceneID="t2j-eF-Del">
@@ -240,6 +268,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9EK-KY-eOk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528" y="7"/>
+        </scene>
+        <!--CaseAccessbility-->
+        <scene sceneID="3g2-sN-0fK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseAccessbility" id="III-F7-TJ2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7L9-ei-IgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="94"/>
         </scene>
         <!--CaseAutolayout-->
         <scene sceneID="7vW-yk-iZQ">
@@ -603,6 +639,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="RkU-XB-ecK" kind="show" id="qnz-dM-fZ9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="utG-MD-32t" style="IBUITableViewCellStyleDefault" id="daA-kx-07a">
+                                        <rect key="frame" x="0.0" y="400" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="daA-kx-07a" id="lXL-1V-eaK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="TableCell Auto Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="utG-MD-32t">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="79.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="n8W-No-EIf" kind="show" id="Ulk-MA-TXE"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

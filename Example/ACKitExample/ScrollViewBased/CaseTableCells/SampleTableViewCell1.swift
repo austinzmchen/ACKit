@@ -21,4 +21,15 @@ class SampleTableViewCell1: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        if isHighlighted {
+            UIView.animate(withDuration: 0.1, animations: {
+                self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+            })
+        } else {
+            UIView.animate(withDuration: 0.1, animations: {
+                self.transform = CGAffineTransform.identity
+            })
+        }
+    }
 }
