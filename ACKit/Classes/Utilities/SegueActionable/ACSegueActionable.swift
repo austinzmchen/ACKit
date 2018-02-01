@@ -20,17 +20,16 @@ extension ACSegueActionable where Self: UIViewController {
             var segueActionDict: SegueActionDict = [:]
             segueActionDict[identifier] = action
             associatedObject = segueActionDict
+            
+            // swizzle performSegue
+            ACSwizzle.swizzleSelector(#selector(prepare(for:sender:)), withNewSelector: #selector(swizzledPrepare(for:sender:)), on: self)
         } else {
             var segueActionDict: SegueActionDict = associatedObject as! SegueActionDict
             segueActionDict[identifier] = action
         }
         
-        // swizzle performSegue
-        ACSwizzle.swizzleSelector(#selector(prepare(for:sender:)), withNewSelector: #selector(swizzledPrepare(for:sender:)), on: self)
-        
         // proceed
         performSegue(withIdentifier: identifier, sender: nil)
     }
-    
 }
 
