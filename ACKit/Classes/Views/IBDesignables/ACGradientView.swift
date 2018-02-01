@@ -8,14 +8,25 @@
 
 import UIKit
 
-// Vertical gradient only
 
 @IBDesignable
 open class ACGradientView: ACView {
-
+    
+    public enum GradientDirection {
+        case vertical
+        case horizontal
+        case diagonal
+    }
+    
     @IBInspectable open var colorA: UIColor?
     @IBInspectable open var colorB: UIColor?
-    @IBInspectable open var vertical: Bool = true
+    
+    /// Set this gradient direction in viewWillAppear or similar, before the view has displayed. Defaults to vertical.
+    public var gradientDirection: GradientDirection = .vertical {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     
     var gradientLayer = CAGradientLayer()
     
@@ -29,13 +40,15 @@ open class ACGradientView: ACView {
         gradientLayer.removeFromSuperlayer()
         
         // set up header view
-        
         gradientLayer.frame = self.bounds;
         
-        // set horizontal gradient
-        if !vertical {
-            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5) // mid left
-            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5) // mid right
+        switch gradientDirection {
+        case .horizontal:
+            drawHorizontal()
+        case .diagonal:
+            drawDiagonal()
+        default:
+            drawVertical()
         }
         
         var gradientColors: [AnyObject] = []
@@ -46,7 +59,28 @@ open class ACGradientView: ACView {
             gradientColors.append(cB.cgColor)
         }
         gradientLayer.colors = gradientColors
+        
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
-
 }
+
+extension ACGradientView {
+    
+    func drawVertical() {
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+    }
+    
+    func drawHorizontal() {
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5) // mid left
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5) // mid right
+    }
+    
+    func drawDiagonal() {
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+    }
+    
+}
+
+
