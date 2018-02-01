@@ -20,9 +20,10 @@ open class ACGradientView: ACView {
     
     @IBInspectable open var colorA: UIColor?
     @IBInspectable open var colorB: UIColor?
-    
+    @IBInspectable open var vertical: Bool = true
+
     /// Set this gradient direction in viewWillAppear or similar, before the view has displayed. Defaults to vertical.
-    public var gradientDirection: GradientDirection = .vertical {
+    public var gradientDirection: GradientDirection? = .vertical {
         didSet {
             setNeedsDisplay()
         }
@@ -42,13 +43,22 @@ open class ACGradientView: ACView {
         // set up header view
         gradientLayer.frame = self.bounds;
         
-        switch gradientDirection {
-        case .horizontal:
-            drawHorizontal()
-        case .diagonal:
-            drawDiagonal()
-        default:
-            drawVertical()
+        // let gradientDirection override vertical
+        if let gd = gradientDirection {
+            switch gd {
+            case .horizontal:
+                drawHorizontal()
+            case .diagonal:
+                drawDiagonal()
+            default:
+                drawVertical()
+            }
+        } else {
+            if vertical {
+                drawVertical()
+            } else {
+                drawHorizontal()
+            }
         }
         
         var gradientColors: [AnyObject] = []
