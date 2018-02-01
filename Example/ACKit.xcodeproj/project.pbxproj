@@ -79,12 +79,19 @@
 		C4065E1A2018415A009B651F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD520184159009B651F /* CollectionViewController.swift */; };
 		C4065E1B2018415A009B651F /* CaseScroll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4065DD720184159009B651F /* CaseScroll.storyboard */; };
 		C4065E1C2018415A009B651F /* CaseScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4065DD820184159009B651F /* CaseScrollViewController.swift */; };
+		C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */; };
+		C406D4DE201FA4DA00268161 /* CaseAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */; };
+		C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */; };
 		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
 		C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7661F53521100AF5FC9 /* Images.xcassets */; };
 		C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7671F53521100AF5FC9 /* Info.plist */; };
 		C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */; };
+		C453BFD12020E74D00D6AD00 /* CaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD02020E74D00D6AD00 /* CaseCollectionCell.swift */; };
+		C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */; };
+		C453BFD820223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */; };
+		C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */; };
 		EEAF5AD6B36510AB6B8D439B /* Pods_ACKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBBD66DCD4C4EC76608D242 /* Pods_ACKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +190,9 @@
 		C4065DD520184159009B651F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C4065DD720184159009B651F /* CaseScroll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseScroll.storyboard; sourceTree = "<group>"; };
 		C4065DD820184159009B651F /* CaseScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseScrollViewController.swift; sourceTree = "<group>"; };
+		C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseAccessbility.storyboard; sourceTree = "<group>"; };
+		C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityViewController.swift; sourceTree = "<group>"; };
+		C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityView.swift; sourceTree = "<group>"; };
 		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -190,6 +200,10 @@
 		C44CB7661F53521100AF5FC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C44CB7671F53521100AF5FC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubMain3ViewController.swift; sourceTree = "<group>"; };
+		C453BFD02020E74D00D6AD00 /* CaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCollectionCell.swift; sourceTree = "<group>"; };
+		C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseTableAutoHeight.storyboard; sourceTree = "<group>"; };
+		C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightViewController.swift; sourceTree = "<group>"; };
+		C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightCell.swift; sourceTree = "<group>"; };
 		E6FB10FA44AD738F032FD834 /* Pods-ACKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACKit_Example/Pods-ACKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -366,6 +380,7 @@
 				C4065DB120184159009B651F /* CaseBlurModal */,
 				C4065DB720184159009B651F /* CaseAutolayout */,
 				C4065DBA20184159009B651F /* CaseUI */,
+				C406D4DA201FA1BD00268161 /* CaseAccessibility */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -456,6 +471,7 @@
 		C4065DBC20184159009B651F /* ScrollViewBased */ = {
 			isa = PBXGroup;
 			children = (
+				C453BFD420223E6F00D6AD00 /* CaseTableAutoHeight */,
 				C4065DA020184159009B651F /* CaseParallax */,
 				C4065DBD20184159009B651F /* CaseElasticHeader */,
 				C4065DC420184159009B651F /* CaseTableCells */,
@@ -489,8 +505,8 @@
 				C4065DCE20184159009B651F /* TableHeaderViewController3.swift */,
 				C4065DCF20184159009B651F /* CaseTableCells.storyboard */,
 				C4065DD020184159009B651F /* SampleTableViewCell1.swift */,
-				C4065DD120184159009B651F /* TableCellViewController.swift */,
 				C4065DD220184159009B651F /* SampleTableViewCell2.swift */,
+				C4065DD120184159009B651F /* TableCellViewController.swift */,
 			);
 			path = CaseTableCells;
 			sourceTree = "<group>";
@@ -498,10 +514,10 @@
 		C4065DC620184159009B651F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				C4065DC720184159009B651F /* SampleHeaderView1.xib */,
-				C4065DC820184159009B651F /* SampleHeaderView2.xib */,
 				C4065DC920184159009B651F /* SampleHeaderView1.swift */,
+				C4065DC720184159009B651F /* SampleHeaderView1.xib */,
 				C4065DCA20184159009B651F /* SampleHeaderView2.swift */,
+				C4065DC820184159009B651F /* SampleHeaderView2.xib */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -509,6 +525,7 @@
 		C4065DD320184159009B651F /* CaseCollections */ = {
 			isa = PBXGroup;
 			children = (
+				C453BFD02020E74D00D6AD00 /* CaseCollectionCell.swift */,
 				C4065DD420184159009B651F /* CaseCollections.storyboard */,
 				C4065DD520184159009B651F /* CollectionViewController.swift */,
 			);
@@ -522,6 +539,16 @@
 				C4065DD820184159009B651F /* CaseScrollViewController.swift */,
 			);
 			path = CaseScroll;
+			sourceTree = "<group>";
+		};
+		C406D4DA201FA1BD00268161 /* CaseAccessibility */ = {
+			isa = PBXGroup;
+			children = (
+				C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */,
+				C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */,
+				C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */,
+			);
+			path = CaseAccessibility;
 			sourceTree = "<group>";
 		};
 		C40C2E011F36911100B04BA8 /* ACKitExample */ = {
@@ -549,6 +576,16 @@
 				C44CB7511F53521100AF5FC9 /* Main.storyboard */,
 			);
 			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		C453BFD420223E6F00D6AD00 /* CaseTableAutoHeight */ = {
+			isa = PBXGroup;
+			children = (
+				C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */,
+				C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */,
+				C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */,
+			);
+			path = CaseTableAutoHeight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,11 +702,13 @@
 				C4065E092018415A009B651F /* CaseElasticHeader.storyboard in Resources */,
 				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
 				C4065DE120184159009B651F /* CaseTransitions2.storyboard in Resources */,
+				C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */,
 				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
 				C4065DF820184159009B651F /* CaseStackview.storyboard in Resources */,
 				C4065DF020184159009B651F /* CaseNavigationController.storyboard in Resources */,
 				C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */,
 				C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */,
+				C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */,
 				C4065DE620184159009B651F /* CaseTransitions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,7 +849,9 @@
 				C4065DE920184159009B651F /* ACHorizontalSlideInAnimator.swift in Sources */,
 				C4065E012018415A009B651F /* CaseBlurModalMainViewController.swift in Sources */,
 				C4065E142018415A009B651F /* TableHeaderViewController3.swift in Sources */,
+				C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */,
 				C4065DFC2018415A009B651F /* CaseUIViewWillMoveViewController1.swift in Sources */,
+				C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */,
 				C4065DEB20184159009B651F /* ACHorizontalInteractiveTransition.swift in Sources */,
 				C4065E1C2018415A009B651F /* CaseScrollViewController.swift in Sources */,
 				C4065DF120184159009B651F /* SampleNavMainViewController.swift in Sources */,
@@ -820,9 +861,11 @@
 				C4065DE220184159009B651F /* SampleTransition2FromViewController.swift in Sources */,
 				C4065DE320184159009B651F /* SampleTransition2ToViewController.swift in Sources */,
 				C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */,
+				C453BFD820223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift in Sources */,
 				C4065DFD2018415A009B651F /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C4065E0A2018415A009B651F /* CaseElasticSampleView.swift in Sources */,
 				C4065E182018415A009B651F /* SampleTableViewCell2.swift in Sources */,
+				C406D4DE201FA4DA00268161 /* CaseAccessibilityViewController.swift in Sources */,
 				C4065E042018415A009B651F /* CaseAutolayoutMainViewController.swift in Sources */,
 				C4065E0F2018415A009B651F /* SampleHeaderView1.swift in Sources */,
 				C4065E0C2018415A009B651F /* TableHeaderViewController2.swift in Sources */,
@@ -851,6 +894,7 @@
 				C4065DF320184159009B651F /* ACParallaxView.swift in Sources */,
 				C4065DFB2018415A009B651F /* CaseUIViewWillMoveViewController2.swift in Sources */,
 				C4065DF720184159009B651F /* UIImageView+Aldo.m in Sources */,
+				C453BFD12020E74D00D6AD00 /* CaseCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

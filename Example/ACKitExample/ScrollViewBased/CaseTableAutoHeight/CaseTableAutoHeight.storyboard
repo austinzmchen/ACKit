@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HSY-WI-fbp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Case Table Auto Height View Controller-->
+        <scene sceneID="qva-S9-5h3">
+            <objects>
+                <viewController id="HSY-WI-fbp" customClass="CaseTableAutoHeightViewController" customModule="ACKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="He8-Hz-nIh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-NX-X4b">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kCaseTableAutoHeightCell" id="Mpd-pB-sBs" customClass="CaseTableAutoHeightCell" customModule="ACKit_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mpd-pB-sBs" id="7vg-tp-XkV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-o2-qGp">
+                                                    <rect key="frame" x="30" y="10" width="315" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="FeH-o2-qGp" secondAttribute="trailing" constant="30" id="9yv-Fa-j58"/>
+                                                <constraint firstAttribute="bottom" secondItem="FeH-o2-qGp" secondAttribute="bottom" constant="10" id="Bwv-f6-r0d"/>
+                                                <constraint firstItem="FeH-o2-qGp" firstAttribute="top" secondItem="7vg-tp-XkV" secondAttribute="top" constant="10" id="NVx-RN-MFQ"/>
+                                                <constraint firstItem="FeH-o2-qGp" firstAttribute="leading" secondItem="7vg-tp-XkV" secondAttribute="leading" constant="30" id="tpH-Mj-hrG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="FeH-o2-qGp" id="dxt-ry-Wi8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HSY-WI-fbp" id="EkP-WB-Rix"/>
+                                    <outlet property="delegate" destination="HSY-WI-fbp" id="5Jc-Zt-Ois"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZIE-QQ-G0H" firstAttribute="trailing" secondItem="mdd-NX-X4b" secondAttribute="trailing" id="5pF-YO-MqF"/>
+                            <constraint firstItem="mdd-NX-X4b" firstAttribute="leading" secondItem="ZIE-QQ-G0H" secondAttribute="leading" id="GwX-kI-M2G"/>
+                            <constraint firstItem="mdd-NX-X4b" firstAttribute="top" secondItem="ZIE-QQ-G0H" secondAttribute="top" id="SS9-S0-KTQ"/>
+                            <constraint firstItem="ZIE-QQ-G0H" firstAttribute="bottom" secondItem="mdd-NX-X4b" secondAttribute="bottom" id="iNK-wT-Ru1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZIE-QQ-G0H"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mdd-NX-X4b" id="syY-4W-Ot5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4e7-92-nfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="134"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 extension UIImageView {
-    @IBInspectable var edgeInsets: CGRect {
+    @IBInspectable open var edgeInsets: CGRect {
         set {
             let insets = UIEdgeInsets(top: newValue.origin.x,
                                       left: newValue.origin.y,

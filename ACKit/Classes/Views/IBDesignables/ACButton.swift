@@ -12,7 +12,7 @@ import UIKit
 open class ACButton: UIButton {
     
     // override cornerRadius to allow resizable circular corner, eg percentage based constraint for height
-    @IBInspectable var circularCorner: Bool = false
+    @IBInspectable open var circularCorner: Bool = false
 
     open var bgColor: UIColor? = nil
     @IBInspectable open var hightlightBGColor: UIColor?

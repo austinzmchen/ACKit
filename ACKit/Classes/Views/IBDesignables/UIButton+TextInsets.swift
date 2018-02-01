@@ -11,7 +11,7 @@ import Foundation
 extension UIButton {
     
     // @IBInspectable UIEdgeInsets is not supported yet, so workaround like below
-    @IBInspectable var textInsets: CGRect {
+    @IBInspectable open var textInsets: CGRect {
         set {
             let insets = UIEdgeInsets(top: newValue.origin.x,
                                       left: newValue.origin.y,
