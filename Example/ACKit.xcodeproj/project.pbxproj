@@ -485,11 +485,11 @@
 			isa = PBXGroup;
 			children = (
 				C4065DBE20184159009B651F /* ElasticView.swift */,
+				C4065DC320184159009B651F /* ElasticView.xib */,
+				C4065DC220184159009B651F /* CaseElasticSampleView.swift */,
 				C4065DBF20184159009B651F /* CaseElasticSampleView.xib */,
 				C4065DC020184159009B651F /* CaseElasticViewController.swift */,
 				C4065DC120184159009B651F /* CaseElasticHeader.storyboard */,
-				C4065DC220184159009B651F /* CaseElasticSampleView.swift */,
-				C4065DC320184159009B651F /* ElasticView.xib */,
 			);
 			path = CaseElasticHeader;
 			sourceTree = "<group>";
