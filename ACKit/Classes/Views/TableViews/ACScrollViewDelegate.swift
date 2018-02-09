@@ -38,7 +38,9 @@ extension ACScrollViewDelegate: UIScrollViewDelegate {
             } else {
                 _scrollDirection = .bounceDown
             }
-        } else if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.height {
+        } else if scrollView.contentOffset.y >=
+            scrollView.contentSize.height - scrollView.bounds.height
+        {
             // if bounce within bottom region
             
             if (_lastContentOffset < scrollView.contentOffset.y) {

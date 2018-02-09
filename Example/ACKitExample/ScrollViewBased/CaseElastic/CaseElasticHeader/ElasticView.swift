@@ -61,7 +61,7 @@ class ElasticView: UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        self.addSubview(contentView)
+        insertSubview(contentView, at: 0)
         
         // add the missing contrainst between xib contentView to self
         contentView.translatesAutoresizingMaskIntoConstraints = false
