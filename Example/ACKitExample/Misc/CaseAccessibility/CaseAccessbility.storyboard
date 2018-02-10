@@ -21,6 +21,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBA-UJ-LyZ" userLabel="ContainerView1" customClass="CaseAccessibilityView" customModule="ACKit_Example" customModuleProvider="target">
                                 <rect key="frame" x="50" y="70" width="275" height="547"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-si-8lZ">
+                                        <rect key="frame" x="117.5" y="200" width="40" height="40"/>
+                                        <accessibility key="accessibilityConfiguration" label="smile">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="aCM-cw-mES"/>
+                                            <constraint firstAttribute="width" constant="40" id="hms-8l-fds"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Lab 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJz-Cb-Hv1">
                                         <rect key="frame" x="17" y="124" width="102" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -64,11 +74,13 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iED-Lx-7Fc" secondAttribute="trailing" constant="8" id="UzO-ug-3hP"/>
+                                    <constraint firstItem="iCV-si-8lZ" firstAttribute="centerX" secondItem="qBA-UJ-LyZ" secondAttribute="centerX" id="WTV-6R-bL2"/>
                                     <constraint firstItem="MJz-Cb-Hv1" firstAttribute="top" secondItem="qBA-UJ-LyZ" secondAttribute="top" constant="124" id="aet-pJ-H4H"/>
                                     <constraint firstItem="MJz-Cb-Hv1" firstAttribute="leading" secondItem="qBA-UJ-LyZ" secondAttribute="leading" constant="17" id="dCs-f4-nMR"/>
                                     <constraint firstItem="iED-Lx-7Fc" firstAttribute="centerY" secondItem="MJz-Cb-Hv1" secondAttribute="centerY" id="e7t-n9-ZiP"/>
                                     <constraint firstItem="FGQ-SJ-U44" firstAttribute="centerX" secondItem="qBA-UJ-LyZ" secondAttribute="centerX" id="eZz-Qa-len"/>
                                     <constraint firstItem="FGQ-SJ-U44" firstAttribute="centerY" secondItem="qBA-UJ-LyZ" secondAttribute="centerY" constant="100" id="m90-p5-DPy"/>
+                                    <constraint firstItem="iCV-si-8lZ" firstAttribute="top" secondItem="qBA-UJ-LyZ" secondAttribute="top" constant="200" id="znO-Sw-rCr"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -95,4 +107,7 @@
             <point key="canvasLocation" x="-132" y="170.46476761619192"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smile" width="600" height="600"/>
+    </resources>
 </document>

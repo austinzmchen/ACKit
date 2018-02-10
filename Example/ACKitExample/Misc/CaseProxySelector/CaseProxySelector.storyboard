@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2QN-aU-Age">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Case Proxy Selector-->
+        <scene sceneID="DQx-uy-dfN">
+            <objects>
+                <viewController id="2QN-aU-Age" customClass="CaseProxySelector" customModule="ACKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLu-4M-5l2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldX-Bb-QjP">
+                                <rect key="frame" x="137" y="195" width="100" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8pY-II-xyr"/>
+                                    <constraint firstAttribute="height" constant="50" id="Jd5-WD-sld"/>
+                                </constraints>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="button1Tapped:" destination="2QN-aU-Age" eventType="touchUpInside" id="g2j-Av-NDJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b2-BR-8YR">
+                                <rect key="frame" x="137" y="337" width="100" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XP6-yG-qTn"/>
+                                    <constraint firstAttribute="width" constant="100" id="ya1-W7-jC0"/>
+                                </constraints>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="button2Tapped:" destination="2QN-aU-Age" eventType="touchUpInside" id="Ksm-8o-wbi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ldX-Bb-QjP" firstAttribute="top" secondItem="Dm2-aC-WQW" secondAttribute="top" constant="175" id="h6z-Nv-ifa"/>
+                            <constraint firstItem="7b2-BR-8YR" firstAttribute="centerX" secondItem="Dm2-aC-WQW" secondAttribute="centerX" id="uyZ-Fl-lYK"/>
+                            <constraint firstItem="ldX-Bb-QjP" firstAttribute="centerX" secondItem="Dm2-aC-WQW" secondAttribute="centerX" id="vaq-Fr-g7T"/>
+                            <constraint firstItem="7b2-BR-8YR" firstAttribute="top" secondItem="ldX-Bb-QjP" secondAttribute="bottom" constant="92" id="yeG-4g-wjr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dm2-aC-WQW"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="ldX-Bb-QjP" id="Mx9-Pj-ARG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agr-Pr-Izd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="148"/>
+        </scene>
+    </scenes>
+</document>

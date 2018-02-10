@@ -57,6 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="KqV-4l-VSO"/>
                     </view>
                     <connections>
+                        <outlet property="showSegueButton" destination="s9O-p9-rfJ" id="RVK-to-brb"/>
                         <segue destination="nEx-W1-wgM" kind="presentation" identifier="kPresentCaseSwizzleVC2" id="SRk-QF-bC3"/>
                         <segue destination="nEx-W1-wgM" kind="presentation" identifier="kPresentCaseSwizzleVC2_regular" id="n0U-fg-FoU"/>
                     </connections>

@@ -18,15 +18,15 @@ class CaseAccessibilityView: UIView {
         return [label1, label2, button3]
     }()
     
-    override func accessibilityElementCount() -> Int {
-        return 3
-    }
-    
-    override open func accessibilityElement(at index: Int) -> Any? {
-        return ablyElements[index]
-    }
-    
-    override func index(ofAccessibilityElement element: Any) -> Int {
-        return ablyElements.index{ $0 === (element as? AnyObject)}!
-    }
+//    override func accessibilityElementCount() -> Int {
+//        return 3
+//    }
+//    
+//    override open func accessibilityElement(at index: Int) -> Any? {
+//        return ablyElements[index]
+//    }
+//    
+//    override func index(ofAccessibilityElement element: Any) -> Int {
+//        return ablyElements.index{ $0 === (element as? AnyObject)} ?? Int.max
+//    }
 }

@@ -9,4 +9,7 @@
 
 @interface NSObject (AssociatedObject)
 @property (nonatomic, strong) id associatedObject;
+    
+// secondary 
+@property (nonatomic, strong) id secondaryAssociatedObject;
 @end

@@ -19,4 +19,13 @@
     return objc_getAssociatedObject(self, @selector(associatedObject));
 }
 
+// secondary
+- (void)setSecondaryAssociatedObject:(id)object {
+    objc_setAssociatedObject(self, @selector(secondaryAssociatedObject), object, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+    
+- (id)secondaryAssociatedObject {
+    return objc_getAssociatedObject(self, @selector(secondaryAssociatedObject));
+}
+
 @end

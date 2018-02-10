@@ -95,6 +95,9 @@
 		C4CFBBC6202D5A470020D060 /* CaseElastic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBC5202D5A470020D060 /* CaseElastic.storyboard */; };
 		C4CFBBCA202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBBC9202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift */; };
 		C4CFBBCC202D60E20020D060 /* CaseElasticHeader3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBCB202D60E20020D060 /* CaseElasticHeader3.storyboard */; };
+		C4CFBBD8202F9BBF0020D060 /* CaseProxySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBBD7202F9BBF0020D060 /* CaseProxySelector.swift */; };
+		C4CFBBDA202F9BE00020D060 /* CaseProxySelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBD9202F9BE00020D060 /* CaseProxySelector.storyboard */; };
+		C4CFBBDC202F9D750020D060 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBDB202F9D750020D060 /* Misc.storyboard */; };
 		C4E27FCA202B4A89006025BC /* CaseElasticHeader2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E27FC9202B4A89006025BC /* CaseElasticHeader2ViewController.swift */; };
 		C4E27FCC202B4AB9006025BC /* CaseElasticHeader2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E27FCB202B4AB9006025BC /* CaseElasticHeader2.storyboard */; };
 		C4E27FCF202B6FD4006025BC /* CaseTwitterLikeElasticHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E27FCE202B6FD4006025BC /* CaseTwitterLikeElasticHeader.storyboard */; };
@@ -217,6 +220,9 @@
 		C4CFBBC5202D5A470020D060 /* CaseElastic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseElastic.storyboard; sourceTree = "<group>"; };
 		C4CFBBC9202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTwitterLikeElasticHeader.swift; sourceTree = "<group>"; };
 		C4CFBBCB202D60E20020D060 /* CaseElasticHeader3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader3.storyboard; sourceTree = "<group>"; };
+		C4CFBBD7202F9BBF0020D060 /* CaseProxySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseProxySelector.swift; sourceTree = "<group>"; };
+		C4CFBBD9202F9BE00020D060 /* CaseProxySelector.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseProxySelector.storyboard; sourceTree = "<group>"; };
+		C4CFBBDB202F9D750020D060 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
 		C4E27FC9202B4A89006025BC /* CaseElasticHeader2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElasticHeader2ViewController.swift; sourceTree = "<group>"; };
 		C4E27FCB202B4AB9006025BC /* CaseElasticHeader2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseElasticHeader2.storyboard; sourceTree = "<group>"; };
 		C4E27FCE202B6FD4006025BC /* CaseTwitterLikeElasticHeader.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseTwitterLikeElasticHeader.storyboard; sourceTree = "<group>"; };
@@ -394,6 +400,7 @@
 		C4065D9820184159009B651F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				C4CFBBDB202F9D750020D060 /* Misc.storyboard */,
 				C4065D9C20184159009B651F /* CaseComplexHierachy */,
 				C4065DA920184159009B651F /* CaseStackview */,
 				C4065DAB20184159009B651F /* CaseUIViewWillMove */,
@@ -401,6 +408,7 @@
 				C4065DB720184159009B651F /* CaseAutolayout */,
 				C4065DBA20184159009B651F /* CaseUI */,
 				C406D4DA201FA1BD00268161 /* CaseAccessibility */,
+				C4CFBBD6202F9B850020D060 /* CaseProxySelector */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -629,6 +637,15 @@
 			path = CaseTwitterLikeElasticHeader;
 			sourceTree = "<group>";
 		};
+		C4CFBBD6202F9B850020D060 /* CaseProxySelector */ = {
+			isa = PBXGroup;
+			children = (
+				C4CFBBD7202F9BBF0020D060 /* CaseProxySelector.swift */,
+				C4CFBBD9202F9BE00020D060 /* CaseProxySelector.storyboard */,
+			);
+			path = CaseProxySelector;
+			sourceTree = "<group>";
+		};
 		C4E27FC8202B4A63006025BC /* CaseElasticHeader2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +778,7 @@
 				C4065DEE20184159009B651F /* CaseSwizzleSegue.storyboard in Resources */,
 				C4E27FCC202B4AB9006025BC /* CaseElasticHeader2.storyboard in Resources */,
 				C4065E122018415A009B651F /* SampleTableViewCell1.xib in Resources */,
+				C4CFBBDC202F9D750020D060 /* Misc.storyboard in Resources */,
 				C4065DFA2018415A009B651F /* CaseUIViewWillMove.storyboard in Resources */,
 				C4065E052018415A009B651F /* CaseUI.storyboard in Resources */,
 				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
@@ -771,6 +789,7 @@
 				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
 				C4065DF820184159009B651F /* CaseStackview.storyboard in Resources */,
 				C4065DF020184159009B651F /* CaseNavigationController.storyboard in Resources */,
+				C4CFBBDA202F9BE00020D060 /* CaseProxySelector.storyboard in Resources */,
 				C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */,
 				C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */,
 				C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */,
@@ -917,6 +936,7 @@
 				C4065E012018415A009B651F /* CaseBlurModalMainViewController.swift in Sources */,
 				C4065E142018415A009B651F /* TableHeaderViewController3.swift in Sources */,
 				C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */,
+				C4CFBBD8202F9BBF0020D060 /* CaseProxySelector.swift in Sources */,
 				C4E27FD6202B7409006025BC /* CaseElastic3SubVC1.swift in Sources */,
 				C4065DFC2018415A009B651F /* CaseUIViewWillMoveViewController1.swift in Sources */,
 				C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */,

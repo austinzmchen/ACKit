@@ -29,10 +29,23 @@ open class ACGradientView: ACView {
         }
     }
     
+    /* https://stackoverflow.com/a/13429206
+     With CALayers (the CA stands for core animation...) any change to an animatable property will be animated by default. This is called implicit animation. The default animation takes 0.25 seconds, so if you are updating it frequently, say during processing of touches, this will add up and cause a visible lag.
+     */
+    @IBInspectable open var disableImplicitLayerAnimation: Bool = false
+    
     var gradientLayer = CAGradientLayer()
     
     override open func layoutSubviews() {
         super.layoutSubviews()
+        
+        if disableImplicitLayerAnimation {
+            CATransaction.begin()
+            CATransaction.setDisableActions(true)
+            gradientLayer.frame = self.bounds;
+            CATransaction.commit()
+            return
+        }
         gradientLayer.frame = self.bounds;
     }
     

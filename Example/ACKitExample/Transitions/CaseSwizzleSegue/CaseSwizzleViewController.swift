@@ -11,6 +11,8 @@ import ACKit
 
 class CaseSwizzleViewController : UIViewController {
     
+    @IBOutlet weak var showSegueButton: UIButton!
+    
     // segueActionable
     @IBAction func showButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "kPresentCaseSwizzleVC2") { (segue) in
@@ -21,6 +23,14 @@ class CaseSwizzleViewController : UIViewController {
     // regular
     @IBAction func regularShowButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "kPresentCaseSwizzleVC2_regular", sender: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        showSegueButton.addAction(for: .touchUpInside) { sender in
+            print("data2: \(sender)")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
