@@ -26,6 +26,7 @@ extension ACSegueActionable where Self: UIViewController {
         } else {
             var segueActionDict: SegueActionDict = associatedObject as! SegueActionDict
             segueActionDict[identifier] = action
+            associatedObject = segueActionDict // needed otherwise action being performed uses old parameters
         }
         
         // proceed
