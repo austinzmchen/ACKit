@@ -1,6 +1,6 @@
 //
 //  CaseElastic3ViewController.swift
-//  MBNA
+//  <?>App
 //
 //  Created by Austin Chen on 2017-12-14.
 //  Copyright © 2017 Austin Chen. All rights reserved.
@@ -19,7 +19,7 @@ class CaseElastic3ViewController: UIViewController {
     @IBOutlet weak var elasticView1: ElasticView!
     @IBOutlet weak var containerView: UIView!
     
-    private var accountPageViewController: CaseElastic3PageViewController!
+    private var pageViewController: ACPageViewController!
     private var pageIdx = 0
     
     private var ac = false
@@ -37,21 +37,29 @@ class CaseElastic3ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        let tv = (accountPageViewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType).tableView!
+        let tv = (pageViewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType).tableView!
         print("cs1: \(tv.contentSize)")
         containerView.constraints.filter{$0.firstAttribute == .height}.first?.constant = tv.contentSize.height
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "embedVC" {
-            accountPageViewController = segue.destination as! CaseElastic3PageViewController
-            accountPageViewController.apDelegate = self
+            pageViewController = segue.destination as! ACPageViewController
+            let subVC1 =  storyboard?.instantiateViewController(withIdentifier: "subVC1") as! CaseElastic3SubVC1
+            let subVC2 =  storyboard?.instantiateViewController(withIdentifier: "subVC2") as! CaseElastic3SubVC2
+            pageViewController.orderedViewControllers = [subVC1, subVC2]
+            
+            pageViewController.apDelegate = self
         }
     }
 }
 
-extension CaseElastic3ViewController: CE3PageViewControllerDelegate {
-    func didUpdate(pageIndex: Int, viewController: CaseElastic3PageViewController) {
+extension CaseElastic3ViewController: ACPageViewControllerDelegate {
+    func willUpdate(pageIndex: Int, viewController: ACPageViewController) {
+        
+    }
+    
+    func didUpdate(pageIndex: Int, viewController: ACPageViewController) {
         self.pageIdx = pageIndex
         
         let vc = viewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType
@@ -77,7 +85,7 @@ extension CaseElastic3ViewController: CE3PageViewControllerDelegate {
         print("height: \(vc.tableView.contentSize.height)")
     }
     
-    func didUpdate(pageCount: Int, viewController: CaseElastic3PageViewController) {
+    func didUpdate(pageCount: Int, viewController: ACPageViewController) {
     }
 }
 

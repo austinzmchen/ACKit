@@ -1,6 +1,6 @@
 //
 //  ACNoteObserverTokenBag.swift
-//  HailApp
+//  <?>App
 //
 //  Created by Austin Chen on 2017-06-29.
 //  Copyright © 2017 10.1. All rights reserved.

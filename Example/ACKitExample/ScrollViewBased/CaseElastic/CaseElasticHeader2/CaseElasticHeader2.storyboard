@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="913" y="871"/>
         </scene>
-        <!--Case Elastic2 Page View Controller-->
+        <!--Page View Controller-->
         <scene sceneID="Lxp-FW-AFE">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fHb-io-wDq" customClass="CaseElastic2PageViewController" customModule="ACKit_Example" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="fHb-io-wDq" customClass="ACPageViewController" customModule="ACKit" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTp-yU-GRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="961" y="32"/>

@@ -31,8 +31,12 @@ class CaseElastic2ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "embedVC",
-            let pageVC = segue.destination as? CaseElastic2PageViewController
+            let pageVC = segue.destination as? ACPageViewController
         {
+            let subVC1 =  storyboard?.instantiateViewController(withIdentifier: "subVC1") as! CaseElastic2SubVC1
+            let subVC2 =  storyboard?.instantiateViewController(withIdentifier: "subVC2") as! CaseElastic2SubVC2
+            pageVC.orderedViewControllers = [subVC1, subVC2]
+            
             pageVC.orderedViewControllers.forEach{
                 ($0 as? MBSnapshotHeaderViewDelegateType)?.delegate = scrollDelegate
             }
@@ -41,17 +45,17 @@ class CaseElastic2ViewController: UIViewController {
     }
 }
 
-extension CaseElastic2ViewController: CE2PageViewControllerDelegate {
+extension CaseElastic2ViewController: ACPageViewControllerDelegate {
     
-    func willUpdate(pageIndex: Int, viewController: CaseElastic2PageViewController) {
+    func willUpdate(pageIndex: Int, viewController: ACPageViewController) {
         let vc = viewController.orderedViewControllers[pageIndex] as? MBSnapshotHeaderViewDelegateType
         vc?.tableView.setContentOffset(CGPoint.zero, animated: false)
     }
     
-    func didUpdate(pageIndex: Int, viewController: CaseElastic2PageViewController) {
+    func didUpdate(pageIndex: Int, viewController: ACPageViewController) {
     }
     
-    func didUpdate(pageCount: Int, viewController: CaseElastic2PageViewController) {
+    func didUpdate(pageCount: Int, viewController: ACPageViewController) {
     }
 }
 
