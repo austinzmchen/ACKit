@@ -9,7 +9,7 @@
 import UIKit
 import ACKit
 
-class CaseElastic3SubVC2: UIViewController {
+class CaseElastic3SubVC2: UIViewController, CaseElastic3SubVCType {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,14 +23,14 @@ class CaseElastic3SubVC2: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
+//        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
 //        tableView.isScrollEnabled = false
     }
 }
 
 extension CaseElastic3SubVC2: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return 20
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

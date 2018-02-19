@@ -20,11 +20,15 @@ class CaseElastic3ViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
     
     private var accountPageViewController: CaseElastic3PageViewController!
+    private var pageIdx = 0
+    
+    private var ac = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mainScrollView.delegate = self
+        mainScrollView.alwaysBounceVertical = true
         
         elasticView1.maxExpandableHeight = 300
         elasticView1.minExpandableHeight = 100
@@ -33,7 +37,7 @@ class CaseElastic3ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        let tv = (accountPageViewController.orderedViewControllers[0] as! CaseElastic3SubVC1).tableView!
+        let tv = (accountPageViewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType).tableView!
         print("cs1: \(tv.contentSize)")
         containerView.constraints.filter{$0.firstAttribute == .height}.first?.constant = tv.contentSize.height
     }
@@ -48,13 +52,29 @@ class CaseElastic3ViewController: UIViewController {
 
 extension CaseElastic3ViewController: CE3PageViewControllerDelegate {
     func didUpdate(pageIndex: Int, viewController: CaseElastic3PageViewController) {
-        if pageIndex == 0 {
-            let vc = viewController.orderedViewControllers[pageIndex] as! CaseElastic3SubVC1
-            containerView.constraints.filter{$0.firstAttribute == .height}.first?.constant = vc.tableView.contentSize.height
+        self.pageIdx = pageIndex
+        
+        let vc = viewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType
+        let tHeight = vc.tableView.contentSize.height
+        guard let containerViewHeight = containerView.constraints.filter({$0.firstAttribute == .height}).first else { return }
+        
+        if containerViewHeight.constant > tHeight {
+//            var y: CGFloat = mainScrollView.contentOffset.y - (containerViewHeight.constant - tHeight)
+//            y = max(y, 0)
+//            let yPoint = CGPoint(x: mainScrollView.contentOffset.x, y: y)
+//            mainScrollView.setContentOffset(yPoint, animated: true)
+            if pageIndex == 1 { ac = true }
+            
+            self.containerView.superview?.layoutIfNeeded()
+            containerViewHeight.constant = tHeight
+            UIView.animate(withDuration: 0.5, animations: {
+                self.containerView.superview?.layoutIfNeeded()
+            })
         } else {
-            let vc = viewController.orderedViewControllers[pageIndex] as! CaseElastic3SubVC2
-            containerView.constraints.filter{$0.firstAttribute == .height}.first?.constant = vc.tableView.contentSize.height
+            containerViewHeight.constant = tHeight
         }
+        
+        print("height: \(vc.tableView.contentSize.height)")
     }
     
     func didUpdate(pageCount: Int, viewController: CaseElastic3PageViewController) {
@@ -63,6 +83,8 @@ extension CaseElastic3ViewController: CE3PageViewControllerDelegate {
 
 extension CaseElastic3ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if ac { return }
+        
         // add expanding
         let offsetY = scrollView.contentOffset.y
         elasticView1.cOffsetY = offsetY

@@ -9,7 +9,11 @@
 import UIKit
 import ACKit
 
-class CaseElastic3SubVC1: UIViewController {
+protocol CaseElastic3SubVCType {
+    var tableView: UITableView! {get}
+}
+
+class CaseElastic3SubVC1: UIViewController, CaseElastic3SubVCType {
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -23,14 +27,14 @@ class CaseElastic3SubVC1: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
+//        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
 //        tableView.isScrollEnabled = false
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        print("cs: \(tableView.contentSize)")
+//        print("cs: \(tableView.contentSize)")
     }
 }
 

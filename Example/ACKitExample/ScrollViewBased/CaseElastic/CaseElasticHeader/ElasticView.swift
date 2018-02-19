@@ -79,7 +79,7 @@ class ElasticView: UIView {
     
     // MARK: elastic settings
     
-    var elasticStyle: ACElasticViewStyle = .topFixed
+    var elasticStyle: ACElasticViewStyle = .centerFixed
     
     var elasticZoomConstant: CGFloat = 0 {
         didSet {
