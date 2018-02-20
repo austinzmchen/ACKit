@@ -65,22 +65,7 @@ extension CaseElastic3ViewController: ACPageViewControllerDelegate {
         let vc = viewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType
         let tHeight = vc.tableView.contentSize.height
         guard let containerViewHeight = containerView.constraints.filter({$0.firstAttribute == .height}).first else { return }
-        
-        if containerViewHeight.constant > tHeight {
-//            var y: CGFloat = mainScrollView.contentOffset.y - (containerViewHeight.constant - tHeight)
-//            y = max(y, 0)
-//            let yPoint = CGPoint(x: mainScrollView.contentOffset.x, y: y)
-//            mainScrollView.setContentOffset(yPoint, animated: true)
-            if pageIndex == 1 { ac = true }
-            
-            self.containerView.superview?.layoutIfNeeded()
-            containerViewHeight.constant = tHeight
-            UIView.animate(withDuration: 0.5, animations: {
-                self.containerView.superview?.layoutIfNeeded()
-            })
-        } else {
-            containerViewHeight.constant = tHeight
-        }
+        containerViewHeight.constant = tHeight
         
         print("height: \(vc.tableView.contentSize.height)")
     }
