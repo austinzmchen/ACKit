@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ACTabsHeaderView" customModule="ACKit">
+            <connections>
+                <outlet property="collectionView" destination="Lf0-bV-cxj" id="k8T-fn-MHc"/>
+                <outlet property="contentView" destination="ne8-et-Ffr" id="4yU-W4-mBR"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="ne8-et-Ffr">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-bV-cxj">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="50" id="0IS-y8-dYD">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lf0-bV-cxj" secondAttribute="trailing" id="8JH-6K-XBr"/>
+                <constraint firstItem="Lf0-bV-cxj" firstAttribute="top" secondItem="ne8-et-Ffr" secondAttribute="top" id="FZh-y4-agp"/>
+                <constraint firstItem="Lf0-bV-cxj" firstAttribute="leading" secondItem="ne8-et-Ffr" secondAttribute="leading" id="XAn-OW-AaV"/>
+                <constraint firstAttribute="bottom" secondItem="Lf0-bV-cxj" secondAttribute="bottom" id="cGB-1J-Xhc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

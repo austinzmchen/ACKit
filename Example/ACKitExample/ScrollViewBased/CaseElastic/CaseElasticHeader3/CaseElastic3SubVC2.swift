@@ -30,7 +30,7 @@ class CaseElastic3SubVC2: UIViewController, CaseElastic3SubVCType {
 
 extension CaseElastic3SubVC2: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

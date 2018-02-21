@@ -42,20 +42,6 @@ class CaseElastic2SubVC1: UIViewController, CaseElastic3SubVCType, MBSnapshotHea
         tableView.panGestureRecognizer.addTarget(self, action: #selector(pan(recognizer:)))
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-//        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
-//        tableView.isScrollEnabled = false
-//        tableView.panGestureRecognizer.addTarget(self, action: #selector(pan(recognizer:)))
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        //        print("cs: \(tableView.contentSize)")
-    }
-    
     @objc func pan(recognizer: UIPanGestureRecognizer) {
         delegate?.verticalScrollViewDidPan(tableView, gestureRecognizer: recognizer)
     }
@@ -73,7 +59,6 @@ extension CaseElastic2SubVC1: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let alertVC = UIAlertController(title: "Title", message: "tap works!", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alertVC, animated: true, completion: nil)

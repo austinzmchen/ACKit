@@ -13,7 +13,6 @@ class CaseElastic2SubVC2: UIViewController, CaseElastic3SubVCType, MBSnapshotHea
     @IBOutlet weak var tableView: UITableView!
     
     weak var delegate: MBSnapshotHeaderViewDelegate?
-    private var panBeginY: CGFloat = 0
     
     lazy var tableDataDelegate: CE2ScrollViewDataDelegate = {
         let dd = CE2ScrollViewDataDelegate(viewController: self)
@@ -30,38 +29,8 @@ class CaseElastic2SubVC2: UIViewController, CaseElastic3SubVCType, MBSnapshotHea
         tableView.panGestureRecognizer.addTarget(self, action: #selector(pan(recognizer:)))
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-//        tableView.scrollRectToVisible(CGRect.init(x: 0, y: 0, width: 1, height: 1), animated: false)
-//        tableView.isScrollEnabled = false
-    }
-    
     @objc func pan(recognizer: UIPanGestureRecognizer) {
         delegate?.verticalScrollViewDidPan(tableView, gestureRecognizer: recognizer)
-        
-//        let t = recognizer.translation(in: recognizer.view?.superview)
-//        switch recognizer.state {
-//        case .began:
-//            panBeginY = t.y
-//            print("pan begin: \(panBeginY)")
-//        case .changed:
-//            guard tableView.contentOffset.y < 0 else {return}
-//            
-//            let v = recognizer.velocity(in: recognizer.view?.superview)
-//            if v.y > 0 {
-//                // pan down
-//            } else {
-//                // pan up
-//                return
-//            }
-//            
-//            print("pan: \(t.y - panBeginY), table: \(tableView.contentOffset.y)")
-//            let p = CGPoint(x: t.x, y: (t.y - panBeginY) / 2.0)
-//            delegate?.verticalScrollViewDidAC(p)
-//        default:
-//            break
-//        }
     }
 }
 

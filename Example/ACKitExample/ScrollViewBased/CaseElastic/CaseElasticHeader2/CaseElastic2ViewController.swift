@@ -12,11 +12,14 @@ import ACKit
 class CaseElastic2ViewController: UIViewController {
     
     @IBOutlet weak var headerView: ElasticView!
+    @IBOutlet weak var tabsHeaderView: ACTabsHeaderView!
     
     var isListeningToScroll = false
     var isListeningToPan = false
     var previousElasticHeight: CGFloat?
     var previvousOffsetY: CGFloat?
+    
+    var pageVC: ACPageViewController!
     
     lazy var scrollDelegate = {
         return CaseElastic2ScrollViewDelegate(vc: self)
@@ -27,12 +30,18 @@ class CaseElastic2ViewController: UIViewController {
         
         headerView.maxExpandableHeight = 300
         headerView.minExpandableHeight = 100
+        
+        // tabs header
+        (tabsHeaderView.dataDelegate as? ACTabsHeaderCollectionViewDataDelegate)?.tabTitles = ["Tab 1", "Tab 2"]
+        tabsHeaderView.cellWidth = UIScreen.main.bounds.width / 2.0
+        tabsHeaderView.delegate = self
+        tabsHeaderView.collectionView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "embedVC",
-            let pageVC = segue.destination as? ACPageViewController
-        {
+        if segue.identifier == "embedVC" {
+            pageVC = segue.destination as! ACPageViewController
+            
             let subVC1 =  storyboard?.instantiateViewController(withIdentifier: "subVC1") as! CaseElastic2SubVC1
             let subVC2 =  storyboard?.instantiateViewController(withIdentifier: "subVC2") as! CaseElastic2SubVC2
             pageVC.orderedViewControllers = [subVC1, subVC2]
@@ -42,6 +51,12 @@ class CaseElastic2ViewController: UIViewController {
             }
             pageVC.apDelegate = self
         }
+    }
+}
+
+extension CaseElastic2ViewController: ACTabsHeaderViewDelegate {
+    func didSelectTab(_ tabsHeader: ACTabsHeaderView, atIndex idx: Int, animated: Bool) {
+        pageVC.scrollToViewController(index: idx)
     }
 }
 

@@ -61,7 +61,7 @@ open class ACPageViewController: UIPageViewController {
     /**
      Scrolls to the next view controller.
      */
-    func scrollToNextViewController() {
+    public func scrollToNextViewController() {
         if let visibleViewController = viewControllers?.first,
             let nextViewController = pageViewController(self, viewControllerAfter: visibleViewController)
         {
