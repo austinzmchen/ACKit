@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ACKit/Classes/**/*.{m,h,mm,hpp,cpp,c,swift}'
   
-#s.resource_bundles = {
-#   'ACKit' => ['ACKit/Assets/*.xib']
-#  }
+  s.resource_bundles = {
+    'ACKit' => ['ACKit/**/*.xib']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'

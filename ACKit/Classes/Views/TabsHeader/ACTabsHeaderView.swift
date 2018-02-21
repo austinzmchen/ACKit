@@ -69,7 +69,12 @@ open class ACTabsHeaderView: UIView {
     }
     
     func loadNib() {
-        let bundle = Bundle(for: type(of: self))
+        /* START pod bundle */
+        let podBundle = Bundle(for: type(of: self))
+        let bundleURL = podBundle.url(forResource: "ACKit", withExtension: "bundle")
+        /* END pod bundle */
+        
+        let bundle = Bundle(url: bundleURL!)
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         insertSubview(contentView, at: 0)
@@ -85,11 +90,15 @@ open class ACTabsHeaderView: UIView {
         contentView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
 
-        /* set up default */
         // set up default datasource
         dataDelegate = ACTabsHeaderCollectionViewDataDelegate(fromTabsHeaderView: self)
         
-        collectionView.register(UINib(nibName: "ACTabHeaderCollectionCell", bundle: Bundle(for: type(of: self))),
+        /* START pod bundle */
+        let podBundle = Bundle(for: type(of: self))
+        let bundleURL = podBundle.url(forResource: "ACKit", withExtension: "bundle")
+        /* END pod bundle */
+        
+        collectionView.register(UINib(nibName: "ACTabHeaderCollectionCell", bundle: Bundle(url: bundleURL!)),
                                 forCellWithReuseIdentifier: "kACTabHeaderCollectionCell")
         
         if isSnapToPositionEnabled {

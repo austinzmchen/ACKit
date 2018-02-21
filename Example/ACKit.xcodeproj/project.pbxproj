@@ -82,12 +82,6 @@
 		C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */; };
 		C406D4DE201FA4DA00268161 /* CaseAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */; };
 		C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */; };
-		C444DF7A203DFFE200DDCB6C /* ACTabHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C444DF73203DFF8000DDCB6C /* ACTabHeaderCollectionCell.xib */; };
-		C444DF7B203DFFE200DDCB6C /* ACTabsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C444DF74203DFF8000DDCB6C /* ACTabsHeaderView.xib */; };
-		C444DF7C203DFFE200DDCB6C /* ACTabHeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444DF75203DFF8000DDCB6C /* ACTabHeaderCollectionCell.swift */; };
-		C444DF7D203DFFE200DDCB6C /* ACTabsHeaderCollectionViewDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444DF76203DFF8000DDCB6C /* ACTabsHeaderCollectionViewDataDelegate.swift */; };
-		C444DF7E203DFFE200DDCB6C /* ACTabsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444DF77203DFF8000DDCB6C /* ACTabsHeaderView.swift */; };
-		C444DF7F203DFFE200DDCB6C /* ACTabsHeaderView+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444DF78203DFF8000DDCB6C /* ACTabsHeaderView+Interactive.swift */; };
 		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
@@ -213,12 +207,6 @@
 		C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseAccessbility.storyboard; sourceTree = "<group>"; };
 		C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityViewController.swift; sourceTree = "<group>"; };
 		C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityView.swift; sourceTree = "<group>"; };
-		C444DF73203DFF8000DDCB6C /* ACTabHeaderCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACTabHeaderCollectionCell.xib; sourceTree = "<group>"; };
-		C444DF74203DFF8000DDCB6C /* ACTabsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACTabsHeaderView.xib; sourceTree = "<group>"; };
-		C444DF75203DFF8000DDCB6C /* ACTabHeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTabHeaderCollectionCell.swift; sourceTree = "<group>"; };
-		C444DF76203DFF8000DDCB6C /* ACTabsHeaderCollectionViewDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTabsHeaderCollectionViewDataDelegate.swift; sourceTree = "<group>"; };
-		C444DF77203DFF8000DDCB6C /* ACTabsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACTabsHeaderView.swift; sourceTree = "<group>"; };
-		C444DF78203DFF8000DDCB6C /* ACTabsHeaderView+Interactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ACTabsHeaderView+Interactive.swift"; sourceTree = "<group>"; };
 		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -611,19 +599,6 @@
 			path = ACKitExample;
 			sourceTree = "<group>";
 		};
-		C444DF79203DFF8000DDCB6C /* TabsHeader */ = {
-			isa = PBXGroup;
-			children = (
-				C444DF73203DFF8000DDCB6C /* ACTabHeaderCollectionCell.xib */,
-				C444DF74203DFF8000DDCB6C /* ACTabsHeaderView.xib */,
-				C444DF75203DFF8000DDCB6C /* ACTabHeaderCollectionCell.swift */,
-				C444DF76203DFF8000DDCB6C /* ACTabsHeaderCollectionViewDataDelegate.swift */,
-				C444DF77203DFF8000DDCB6C /* ACTabsHeaderView.swift */,
-				C444DF78203DFF8000DDCB6C /* ACTabsHeaderView+Interactive.swift */,
-			);
-			path = TabsHeader;
-			sourceTree = "<group>";
-		};
 		C44CB74E1F53521100AF5FC9 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -676,7 +651,6 @@
 		C4E27FC8202B4A63006025BC /* CaseElasticHeader2 */ = {
 			isa = PBXGroup;
 			children = (
-				C444DF79203DFF8000DDCB6C /* TabsHeader */,
 				C4E27FC9202B4A89006025BC /* CaseElastic2ViewController.swift */,
 				C4E27FCB202B4AB9006025BC /* CaseElasticHeader2.storyboard */,
 				C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */,
@@ -790,7 +764,6 @@
 				C4065E192018415A009B651F /* CaseCollections.storyboard in Resources */,
 				C4E27FCF202B6FD4006025BC /* CaseTwitterLikeElasticHeader.storyboard in Resources */,
 				C4065DDD20184159009B651F /* CaseEmbedVCByCode.xib in Resources */,
-				C444DF7B203DFFE200DDCB6C /* ACTabsHeaderView.xib in Resources */,
 				C4065E152018415A009B651F /* CaseTableCells.storyboard in Resources */,
 				C4065E032018415A009B651F /* CaseAutolayout.storyboard in Resources */,
 				C4065DDB20184159009B651F /* CaseUnwind.storyboard in Resources */,
@@ -822,7 +795,6 @@
 				C4CFBBDA202F9BE00020D060 /* CaseProxySelector.storyboard in Resources */,
 				C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */,
 				C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */,
-				C444DF7A203DFFE200DDCB6C /* ACTabHeaderCollectionCell.xib in Resources */,
 				C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */,
 				C4CFBBC6202D5A470020D060 /* CaseElastic.storyboard in Resources */,
 				C4065DE620184159009B651F /* CaseTransitions.storyboard in Resources */,
@@ -990,7 +962,6 @@
 				C4065E0F2018415A009B651F /* SampleHeaderView1.swift in Sources */,
 				C4065E0C2018415A009B651F /* TableHeaderViewController2.swift in Sources */,
 				C4065E162018415A009B651F /* SampleTableViewCell1.swift in Sources */,
-				C444DF7C203DFFE200DDCB6C /* ACTabHeaderCollectionCell.swift in Sources */,
 				C4E27FD7202B7409006025BC /* CaseElastic3SubVC2.swift in Sources */,
 				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
 				C4065DED20184159009B651F /* CaseSwizzleViewController.swift in Sources */,
@@ -1001,7 +972,6 @@
 				C4065DF920184159009B651F /* CaseWillMoveView.swift in Sources */,
 				C4065DEF20184159009B651F /* SampleNavFirstViewController.swift in Sources */,
 				C4065E172018415A009B651F /* TableCellViewController.swift in Sources */,
-				C444DF7D203DFFE200DDCB6C /* ACTabsHeaderCollectionViewDataDelegate.swift in Sources */,
 				C4065DF420184159009B651F /* KCParallaxView.m in Sources */,
 				C48690AC203759D600E04DD1 /* CaseElastic2SubVC1.swift in Sources */,
 				C4065DE820184159009B651F /* ACHorizontalTransitionManager.swift in Sources */,
@@ -1009,13 +979,11 @@
 				C4065DEC20184159009B651F /* SampleTransitionToViewController.swift in Sources */,
 				C4065DEA20184159009B651F /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C4065DDA20184159009B651F /* CaseUnwindViewController2.swift in Sources */,
-				C444DF7E203DFFE200DDCB6C /* ACTabsHeaderView.swift in Sources */,
 				C4065DFE2018415A009B651F /* CaseBlurModalViewController.swift in Sources */,
 				C4065D702016EB87009B651F /* SubMain1ViewController.swift in Sources */,
 				C4065E082018415A009B651F /* CaseElasticViewController.swift in Sources */,
 				C4065E102018415A009B651F /* SampleHeaderView2.swift in Sources */,
 				C4065E132018415A009B651F /* TableHeaderViewController1.swift in Sources */,
-				C444DF7F203DFFE200DDCB6C /* ACTabsHeaderView+Interactive.swift in Sources */,
 				C4065DE020184159009B651F /* CaseEmbedSubVCByCode.swift in Sources */,
 				C4E27FD4202B7409006025BC /* CaseElastic3ViewController.swift in Sources */,
 				C4065DDE20184159009B651F /* CaseEmbedVCByCode.swift in Sources */,
