@@ -31,6 +31,7 @@ public protocol ACPageViewControllerDelegate: class {
 
 open class ACPageViewController: UIPageViewController {
     @IBInspectable open var allowsLoopBack: Bool = true
+    @IBInspectable open var animatePageScroll: Bool = true
     
     open weak var apDelegate: ACPageViewControllerDelegate?
     open var orderedViewControllers: [UIViewController] = []
@@ -62,8 +63,8 @@ open class ACPageViewController: UIPageViewController {
      */
     func scrollToNextViewController() {
         if let visibleViewController = viewControllers?.first,
-            let nextViewController = pageViewController(self,
-                                                        viewControllerAfter: visibleViewController) {
+            let nextViewController = pageViewController(self, viewControllerAfter: visibleViewController)
+        {
             scrollToViewController(nextViewController)
         }
     }
@@ -74,7 +75,7 @@ open class ACPageViewController: UIPageViewController {
      
      - parameter newIndex: the new index to scroll to
      */
-    func scrollToViewController(index newIndex: Int) {
+    public func scrollToViewController(index newIndex: Int) {
         if let firstViewController = viewControllers?.first,
             let currentIndex = orderedViewControllers.index(of: firstViewController) {
             let direction: UIPageViewControllerNavigationDirection = newIndex >= currentIndex ? .forward : .reverse
@@ -100,12 +101,12 @@ open class ACPageViewController: UIPageViewController {
         willUpdateIndex(for: viewController)  // will update
         setViewControllers([viewController],
                            direction: direction,
-                           animated: true,
+                           animated: animatePageScroll,
                            completion: { (finished) -> Void in
-                            // Setting the view controller programmatically does not fire
-                            // any delegate methods, so we have to manually notify the
-                            // 'tutorialDelegate' of the new index.
-                            self.notifyDelegateOfNewIndex()
+            // Setting the view controller programmatically does not fire
+            // any delegate methods, so we have to manually notify the
+            // 'tutorialDelegate' of the new index.
+            self.notifyDelegateOfNewIndex()
         })
     }
     
