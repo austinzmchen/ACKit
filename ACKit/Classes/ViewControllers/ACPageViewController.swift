@@ -31,6 +31,7 @@ public protocol ACPageViewControllerDelegate: class {
 
 open class ACPageViewController: UIPageViewController {
     @IBInspectable open var allowsLoopBack: Bool = true
+    @IBInspectable open var allowsInteractivePageScroll: Bool = true
     @IBInspectable open var animatePageScroll: Bool = true
     
     open weak var apDelegate: ACPageViewControllerDelegate?
@@ -39,7 +40,8 @@ open class ACPageViewController: UIPageViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
-        dataSource = self
+        /* best wayt to turn off interactive scroll https://stackoverflow.com/a/24847685 */
+        if allowsInteractivePageScroll { dataSource = self }
         delegate = self
         
         if let initialViewController = orderedViewControllers.first {
@@ -91,7 +93,8 @@ open class ACPageViewController: UIPageViewController {
     
     /**
      Scrolls to the given 'viewController' page.
-     
+     bug: https://forums.developer.apple.com/thread/6554
+     make sure not setViewControllers again until animation finishes
      - parameter viewController: the view controller to show.
      */
     fileprivate func scrollToViewController(_ viewController: UIViewController,
