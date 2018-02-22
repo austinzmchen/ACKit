@@ -20,6 +20,7 @@ class CaseElastic2ViewController: UIViewController {
     var previvousOffsetY: CGFloat?
     
     var pageVC: ACPageViewController!
+    var pageIdx: Int = 0
     
     lazy var scrollDelegate = {
         return CaseElastic2ScrollViewDelegate(vc: self)
@@ -56,6 +57,7 @@ class CaseElastic2ViewController: UIViewController {
 
 extension CaseElastic2ViewController: ACTabsHeaderViewDelegate {
     func didSelectTab(_ tabsHeader: ACTabsHeaderView, atIndex idx: Int, animated: Bool) {
+        guard idx != self.pageIdx else {return}
         pageVC.scrollToViewController(index: idx)
     }
 }
@@ -68,6 +70,8 @@ extension CaseElastic2ViewController: ACPageViewControllerDelegate {
     }
     
     func didUpdate(pageIndex: Int, viewController: ACPageViewController) {
+        tabsHeaderView.animateScroll(toIndex: pageIndex)
+        self.pageIdx = pageIndex
     }
     
     func didUpdate(pageCount: Int, viewController: ACPageViewController) {
