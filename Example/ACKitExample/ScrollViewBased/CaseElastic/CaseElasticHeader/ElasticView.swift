@@ -37,7 +37,7 @@ class ElasticView: UIView {
     
     var maxExpandableHeight: CGFloat = kDefaultMaxExpandableHeight {
         didSet {
-            eView.constraints.filter {$0.firstAttribute == .height}.first?.constant = maxExpandableHeight
+            eView.constraints.front{$0.firstAttribute == .height}?.constant = maxExpandableHeight
             self.setNeedsUpdateConstraints()
         }
     }
@@ -140,7 +140,7 @@ class ElasticView: UIView {
                 }
             }
             
-            let h = constraints.filter{ $0.firstAttribute == .height }.first
+            let h = constraints.front{$0.firstAttribute == .height}
             h?.constant = cHeight
         }
     }

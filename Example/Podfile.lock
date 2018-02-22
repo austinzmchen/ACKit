@@ -1,5 +1,5 @@
 PODS:
-  - ACKit (1.0.6)
+  - ACKit (1.0.7)
 
 DEPENDENCIES:
   - ACKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ACKit: d4b6ab2880ace8095afce941f658920211977552
+  ACKit: 3b7b499b937b5bbd07adb32c75b06e5723b6c3bc
 
 PODFILE CHECKSUM: 0a8998ae6afe3569a8a11b89af0d31e325159bd8
 

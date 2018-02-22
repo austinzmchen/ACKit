@@ -104,7 +104,7 @@ extension CaseElastic2ScrollViewDelegate: MBSnapshotHeaderViewDelegate {
         if vc.isListeningToScroll == false {
             vc.isListeningToScroll = true
             vc.previvousOffsetY = scrollView.contentOffset.y
-            vc.previousElasticHeight = vc.headerView.constraints.filter({ $0.firstAttribute == .height}).first?.constant
+            vc.previousElasticHeight = vc.headerView.constraints.front{$0.firstAttribute == .height}?.constant
         }
         
         if vc.isListeningToScroll {
@@ -143,7 +143,8 @@ extension CaseElastic2ScrollViewDelegate: MBSnapshotHeaderViewDelegate {
             
             if vc.isListeningToPan == false {
                 vc.isListeningToPan = true
-                vc.previousElasticHeight = vc.headerView.constraints.filter({ $0.firstAttribute == .height}).first?.constant
+                vc.previousElasticHeight = vc.headerView.constraints.front{$0.firstAttribute == .height}?.constant
+                
             }
             
             let p = CGPoint(x: t.x, y: t.y)

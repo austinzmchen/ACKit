@@ -44,7 +44,7 @@ class CaseTwitterLikeElasticHeader: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        tableView.constraints.filter{$0.firstAttribute == .height}.first?.constant = tableView.contentSize.height
+        tableView.constraints.front{$0.firstAttribute == .height}?.constant = tableView.contentSize.height
     }
 }
 

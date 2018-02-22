@@ -39,7 +39,7 @@ class CaseElastic3ViewController: UIViewController {
         
         let tv = (pageViewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType).tableView!
         print("cs1: \(tv.contentSize)")
-        containerView.constraints.filter{$0.firstAttribute == .height}.first?.constant = tv.contentSize.height
+        containerView.constraints.front{$0.firstAttribute == .height}?.constant = tv.contentSize.height
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -64,7 +64,7 @@ extension CaseElastic3ViewController: ACPageViewControllerDelegate {
         
         let vc = viewController.orderedViewControllers[self.pageIdx] as! CaseElastic3SubVCType
         let tHeight = vc.tableView.contentSize.height
-        guard let containerViewHeight = containerView.constraints.filter({$0.firstAttribute == .height}).first else { return }
+        guard let containerViewHeight = containerView.constraints.front({$0.firstAttribute == .height}) else { return }
         containerViewHeight.constant = tHeight
         
         print("height: \(vc.tableView.contentSize.height)")

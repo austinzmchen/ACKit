@@ -21,7 +21,7 @@ extension ACView: ACHideableViewType {
                 return
             }
             
-            guard let heightConstraint = constraints.filter({$0.firstAttribute == .height}).first
+            guard let heightConstraint = constraints.front({$0.firstAttribute == .height})
                 else { return }
             
             if isHidden {
@@ -48,7 +48,7 @@ extension ACView: ACHideableViewType {
             return
         }
         
-        guard let heightConstraint = constraints.filter({$0.firstAttribute == .height}).first
+        guard let heightConstraint = constraints.front({$0.firstAttribute == .height})
             else { return }
         
         if hidden {
