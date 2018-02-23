@@ -11,6 +11,14 @@ import UIKit
 @IBDesignable
 open class ACView: UIView {
     
+    // intrinsic size, good for StackView's fill etc
+    @IBInspectable open var intrinsicWidth: CGFloat = 1.0
+    @IBInspectable open var intrinsicHeight: CGFloat = 1.0
+    
+    override open var intrinsicContentSize: CGSize {
+        return CGSize(width: intrinsicWidth, height: intrinsicHeight)
+    }
+    
     // MARK: hideable properties
     open var heightConstraint: NSLayoutConstraint?
     open var defaultHeight: CGFloat = 0

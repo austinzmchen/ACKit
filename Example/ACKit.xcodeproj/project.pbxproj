@@ -95,6 +95,7 @@
 		C48690AB203759D600E04DD1 /* CaseElastic2SubVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */; };
 		C48690AC203759D600E04DD1 /* CaseElastic2SubVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */; };
 		C4A5E2072031E7F8000B0A81 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A5E2062031E7F8000B0A81 /* Misc.storyboard */; };
+		C4B1F795203FC3F300CB513D /* CaseStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B1F794203FC3F300CB513D /* CaseStackViewController.swift */; };
 		C4CFBBC6202D5A470020D060 /* CaseElastic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBC5202D5A470020D060 /* CaseElastic.storyboard */; };
 		C4CFBBCA202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CFBBC9202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift */; };
 		C4CFBBCC202D60E20020D060 /* CaseElasticHeader3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CFBBCB202D60E20020D060 /* CaseElasticHeader3.storyboard */; };
@@ -221,6 +222,7 @@
 		C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC2.swift; sourceTree = "<group>"; };
 		C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC1.swift; sourceTree = "<group>"; };
 		C4A5E2062031E7F8000B0A81 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
+		C4B1F794203FC3F300CB513D /* CaseStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStackViewController.swift; sourceTree = "<group>"; };
 		C4CFBBC5202D5A470020D060 /* CaseElastic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseElastic.storyboard; sourceTree = "<group>"; };
 		C4CFBBC9202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTwitterLikeElasticHeader.swift; sourceTree = "<group>"; };
 		C4CFBBCB202D60E20020D060 /* CaseElasticHeader3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseElasticHeader3.storyboard; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				C4065DAA20184159009B651F /* CaseStackview.storyboard */,
+				C4B1F794203FC3F300CB513D /* CaseStackViewController.swift */,
 			);
 			path = CaseStackview;
 			sourceTree = "<group>";
@@ -937,6 +940,7 @@
 				C4CFBBCA202D5C000020D060 /* CaseTwitterLikeElasticHeader.swift in Sources */,
 				C4065DDF20184159009B651F /* CaseEmbedViewController.swift in Sources */,
 				C4065DE920184159009B651F /* ACHorizontalSlideInAnimator.swift in Sources */,
+				C4B1F795203FC3F300CB513D /* CaseStackViewController.swift in Sources */,
 				C4065E012018415A009B651F /* CaseBlurModalMainViewController.swift in Sources */,
 				C4065E142018415A009B651F /* TableHeaderViewController3.swift in Sources */,
 				C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */,

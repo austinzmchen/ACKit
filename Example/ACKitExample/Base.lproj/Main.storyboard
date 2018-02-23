@@ -39,7 +39,7 @@
                 <viewControllerPlaceholder storyboardName="CaseElastic" id="RkU-XB-ecK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDI-qe-gW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="-783"/>
+            <point key="canvasLocation" x="1611" y="-831"/>
         </scene>
         <!--CaseTableAutoHeight-->
         <scene sceneID="2bO-ia-Tla">
@@ -47,7 +47,7 @@
                 <viewControllerPlaceholder storyboardName="CaseTableAutoHeight" id="n8W-No-EIf" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JU7-aW-7wk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1687" y="-649"/>
+            <point key="canvasLocation" x="1620" y="-795"/>
         </scene>
         <!--CaseScroll-->
         <scene sceneID="cKF-TM-RVa">
@@ -55,7 +55,7 @@
                 <viewControllerPlaceholder storyboardName="CaseScroll" id="Szs-4s-EMp" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzc-Km-9Sk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1640" y="-902"/>
+            <point key="canvasLocation" x="1601" y="-918"/>
         </scene>
         <!--CaseOrientation-->
         <scene sceneID="Rrd-DW-0Pg">
@@ -71,7 +71,7 @@
                 <viewControllerPlaceholder storyboardName="CaseParallax" id="k5O-ZN-e8U" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zq6-1N-XmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="-854"/>
+            <point key="canvasLocation" x="1611" y="-876"/>
         </scene>
         <!--CaseEmbed-->
         <scene sceneID="t2j-eF-Del">
@@ -87,7 +87,7 @@
                 <viewControllerPlaceholder storyboardName="CaseTableCells" id="QHK-yn-J4C" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qId-jQ-JOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="-984"/>
+            <point key="canvasLocation" x="1620" y="-968"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="OpO-MD-GTD">
@@ -476,7 +476,7 @@
                 <viewControllerPlaceholder storyboardName="CaseCollections" id="8cv-Jo-clU" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9m-fo-ODo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="-1136"/>
+            <point key="canvasLocation" x="1610" y="-1005"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MXQ-BW-NWg">
