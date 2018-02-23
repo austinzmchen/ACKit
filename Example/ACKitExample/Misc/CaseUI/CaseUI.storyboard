@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--CaseUI View Controller-->
         <scene sceneID="Xz4-ww-oCR">
             <objects>
-                <viewController id="TUG-lU-iTc" sceneMemberID="viewController">
+                <viewController id="TUG-lU-iTc" customClass="CaseUIViewController" customModule="ACKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mfI-uX-xvA"/>
                         <viewControllerLayoutGuide type="bottom" id="kLL-mL-elX"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-pz-xCc" customClass="ACShadowView" customModule="ACKit">
-                                <rect key="frame" x="62" y="258.5" width="250" height="150"/>
+                                <rect key="frame" x="62" y="50" width="250" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="TBj-VG-ep0"/>
                                     <constraint firstAttribute="height" constant="150" id="cL0-Ra-oVg"/>
@@ -48,17 +48,81 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-XI-5Er">
+                                <rect key="frame" x="16" y="220" width="343" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbN-LE-aXy" userLabel="topView">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXO-jZ-qHX">
+                                                <rect key="frame" x="129" y="0.0" width="84" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Toggle Alert"/>
+                                                <connections>
+                                                    <action selector="toggleAlertButtonTapped:" destination="TUG-lU-iTc" eventType="touchUpInside" id="g5b-FJ-dto"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="JXO-jZ-qHX" firstAttribute="centerX" secondItem="ZbN-LE-aXy" secondAttribute="centerX" id="OJw-fF-c0u"/>
+                                            <constraint firstItem="JXO-jZ-qHX" firstAttribute="top" secondItem="ZbN-LE-aXy" secondAttribute="top" id="Odo-WC-AGV"/>
+                                            <constraint firstAttribute="height" constant="50" id="aj0-as-KqH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-E3-N7g" userLabel="alert" customClass="ACRetractableView" customModule="ACKit_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="343" height="60"/>
+                                        <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8ow-oa-SUt"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="defaultHeight">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="retractTop" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="normalHeight">
+                                                <real key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-Mu-KTl" userLabel="bottomView">
+                                        <rect key="frame" x="0.0" y="110" width="343" height="90"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZbN-LE-aXy" firstAttribute="leading" secondItem="MUm-XI-5Er" secondAttribute="leading" id="0j7-jw-4E3"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZbN-LE-aXy" secondAttribute="trailing" id="6vH-RV-jIK"/>
+                                    <constraint firstItem="Byi-Mu-KTl" firstAttribute="top" secondItem="3mg-E3-N7g" secondAttribute="bottom" id="8Tk-vU-cBV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Byi-Mu-KTl" secondAttribute="bottom" id="8bn-q3-94D"/>
+                                    <constraint firstItem="3mg-E3-N7g" firstAttribute="top" secondItem="ZbN-LE-aXy" secondAttribute="bottom" id="Bnd-Gi-tj8"/>
+                                    <constraint firstItem="3mg-E3-N7g" firstAttribute="leading" secondItem="MUm-XI-5Er" secondAttribute="leading" id="GFa-eU-aIQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="GHQ-T3-UZ9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Byi-Mu-KTl" secondAttribute="trailing" id="V3a-42-eeC"/>
+                                    <constraint firstItem="ZbN-LE-aXy" firstAttribute="top" secondItem="MUm-XI-5Er" secondAttribute="top" id="Xlk-x6-zau"/>
+                                    <constraint firstAttribute="trailing" secondItem="3mg-E3-N7g" secondAttribute="trailing" id="dTr-H7-v3m"/>
+                                    <constraint firstItem="Byi-Mu-KTl" firstAttribute="leading" secondItem="MUm-XI-5Er" secondAttribute="leading" id="xuT-pF-Qp6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DK8-pz-xCc" firstAttribute="centerY" secondItem="YbB-uW-xTb" secondAttribute="centerY" id="Nnz-Ee-hVS"/>
+                            <constraint firstItem="DK8-pz-xCc" firstAttribute="top" secondItem="mfI-uX-xvA" secondAttribute="bottom" constant="30" id="1sd-7e-h7r"/>
+                            <constraint firstItem="MUm-XI-5Er" firstAttribute="leading" secondItem="YbB-uW-xTb" secondAttribute="leading" constant="16" id="Axk-LJ-RcI"/>
+                            <constraint firstAttribute="trailing" secondItem="MUm-XI-5Er" secondAttribute="trailing" constant="16" id="N4p-tB-PhA"/>
+                            <constraint firstItem="MUm-XI-5Er" firstAttribute="top" secondItem="DK8-pz-xCc" secondAttribute="bottom" constant="20" id="Vb0-Zl-uCr"/>
                             <constraint firstItem="DK8-pz-xCc" firstAttribute="centerX" secondItem="YbB-uW-xTb" secondAttribute="centerX" id="ZgR-nv-DGK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="retractableView" destination="3mg-E3-N7g" id="Ygw-Ho-icN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrT-nq-479" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="44"/>
+            <point key="canvasLocation" x="-98.400000000000006" y="43.628185907046479"/>
         </scene>
     </scenes>
 </document>

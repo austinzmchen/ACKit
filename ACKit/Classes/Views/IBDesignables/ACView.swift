@@ -20,11 +20,9 @@ open class ACView: UIView {
     }
     
     // MARK: hideable properties
-    open var heightConstraint: NSLayoutConstraint?
-    open var defaultHeight: CGFloat = 0
+    @IBInspectable open var normalHeight: CGFloat = 0
     
     // MARK: shadow
-    
     @IBInspectable var shadowColor: UIColor? = nil
     @IBInspectable var shadowOffset: CGSize = CGSize(width: 0, height: 0)
     @IBInspectable var shadowOpacity: CGFloat = 1.0

@@ -92,6 +92,9 @@
 		C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */; };
 		C453BFD820223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */; };
 		C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */; };
+		C45D0EB42040B66B005EBC3D /* CaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */; };
+		C45D0EB62040B6B9005EBC3D /* ACRetractableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */; };
+		C45D0EB82040B730005EBC3D /* ACRetractableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D0EB72040B730005EBC3D /* ACRetractableView.xib */; };
 		C48690AB203759D600E04DD1 /* CaseElastic2SubVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */; };
 		C48690AC203759D600E04DD1 /* CaseElastic2SubVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */; };
 		C4A5E2072031E7F8000B0A81 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A5E2062031E7F8000B0A81 /* Misc.storyboard */; };
@@ -219,6 +222,9 @@
 		C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseTableAutoHeight.storyboard; sourceTree = "<group>"; };
 		C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightViewController.swift; sourceTree = "<group>"; };
 		C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightCell.swift; sourceTree = "<group>"; };
+		C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUIViewController.swift; sourceTree = "<group>"; };
+		C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRetractableView.swift; sourceTree = "<group>"; };
+		C45D0EB72040B730005EBC3D /* ACRetractableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACRetractableView.xib; sourceTree = "<group>"; };
 		C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC2.swift; sourceTree = "<group>"; };
 		C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC1.swift; sourceTree = "<group>"; };
 		C4A5E2062031E7F8000B0A81 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
@@ -497,6 +503,9 @@
 			isa = PBXGroup;
 			children = (
 				C4065DBB20184159009B651F /* CaseUI.storyboard */,
+				C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */,
+				C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */,
+				C45D0EB72040B730005EBC3D /* ACRetractableView.xib */,
 			);
 			path = CaseUI;
 			sourceTree = "<group>";
@@ -530,8 +539,8 @@
 		C4065DC420184159009B651F /* CaseTableCells */ = {
 			isa = PBXGroup;
 			children = (
-				C4065DC520184159009B651F /* TableHeaderViewController2.swift */,
 				C4065DC620184159009B651F /* Misc */,
+				C4065DC520184159009B651F /* TableHeaderViewController2.swift */,
 				C4065DCB20184159009B651F /* SampleTableViewCell2.xib */,
 				C4065DCC20184159009B651F /* SampleTableViewCell1.xib */,
 				C4065DCD20184159009B651F /* TableHeaderViewController1.swift */,
@@ -800,6 +809,7 @@
 				C4065E0E2018415A009B651F /* SampleHeaderView2.xib in Resources */,
 				C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */,
 				C4CFBBC6202D5A470020D060 /* CaseElastic.storyboard in Resources */,
+				C45D0EB82040B730005EBC3D /* ACRetractableView.xib in Resources */,
 				C4065DE620184159009B651F /* CaseTransitions.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -950,6 +960,7 @@
 				C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */,
 				C4065DEB20184159009B651F /* ACHorizontalInteractiveTransition.swift in Sources */,
 				C4065E1C2018415A009B651F /* CaseScrollViewController.swift in Sources */,
+				C45D0EB62040B6B9005EBC3D /* ACRetractableView.swift in Sources */,
 				C4065DF120184159009B651F /* SampleNavMainViewController.swift in Sources */,
 				C4065E002018415A009B651F /* ACBlurInAnimator.swift in Sources */,
 				C4065DE520184159009B651F /* CaseOrientationView1.swift in Sources */,
@@ -958,6 +969,7 @@
 				C4065DE320184159009B651F /* SampleTransition2ToViewController.swift in Sources */,
 				C4065D6E2016EB7D009B651F /* MainViewController.swift in Sources */,
 				C453BFD820223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift in Sources */,
+				C45D0EB42040B66B005EBC3D /* CaseUIViewController.swift in Sources */,
 				C4065DFD2018415A009B651F /* CaseUIViewWillMoveMainViewController.swift in Sources */,
 				C4065E0A2018415A009B651F /* CaseElasticSampleView.swift in Sources */,
 				C4065E182018415A009B651F /* SampleTableViewCell2.swift in Sources */,

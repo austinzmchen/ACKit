@@ -1,5 +1,5 @@
 //
-//  ACHideableViewType.swift
+//  ACHidableViewType.swift
 //  ACKit
 //
 //  Created by Austin Chen on 2017-11-27.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-public protocol ACHideableViewType {
-    var defaultHeight: CGFloat { get }
+public protocol ACHidableViewType {
+    var normalHeight: CGFloat { get }
     func setIsHidden(_ hidden: Bool, animated: Bool, completion: ((Bool) -> ())?)
 }
 
-extension ACView: ACHideableViewType {
+extension ACView: ACHidableViewType {
     // MARK: instance methods
     
     override open var isHidden: Bool {
@@ -24,12 +24,13 @@ extension ACView: ACHideableViewType {
             guard let heightConstraint = constraints.front({$0.firstAttribute == .height})
                 else { return }
             
-            if isHidden {
+            if newValue {
                 heightConstraint.constant = 0.0
             } else {
-                heightConstraint.constant = defaultHeight
+                heightConstraint.constant = normalHeight
             }
             self.superview?.layoutIfNeeded()
+            super.isHidden = newValue
         }
         
         get { return super.isHidden }
@@ -54,7 +55,7 @@ extension ACView: ACHideableViewType {
         if hidden {
             heightConstraint.constant = 0.0
         } else {
-            heightConstraint.constant = defaultHeight
+            heightConstraint.constant = normalHeight
             super.isHidden = false
         }
         
