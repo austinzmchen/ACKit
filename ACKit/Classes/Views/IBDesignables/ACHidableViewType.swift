@@ -21,15 +21,15 @@ extension ACView: ACHidableViewType {
                 return
             }
             
-            guard let heightConstraint = constraints.front({$0.firstAttribute == .height})
-                else { return }
-            
-            if newValue {
-                heightConstraint.constant = 0.0
-            } else {
-                heightConstraint.constant = normalHeight
+            if let heightConstraint = constraints.front({$0.firstAttribute == .height}) {
+                if newValue {
+                    heightConstraint.constant = 0.0
+                } else {
+                    heightConstraint.constant = normalHeight
+                }
+                self.superview?.layoutIfNeeded()
             }
-            self.superview?.layoutIfNeeded()
+            
             super.isHidden = newValue
         }
         
@@ -49,21 +49,23 @@ extension ACView: ACHidableViewType {
             return
         }
         
-        guard let heightConstraint = constraints.front({$0.firstAttribute == .height})
-            else { return }
-        
-        if hidden {
-            heightConstraint.constant = 0.0
+        if let heightConstraint = constraints.front({$0.firstAttribute == .height}) {
+            if hidden {
+                heightConstraint.constant = 0.0
+            } else {
+                heightConstraint.constant = normalHeight
+                super.isHidden = false
+            }
+            
+            UIView.animate(withDuration: 0.4, animations: {
+                self.superview?.layoutIfNeeded()
+            }, completion: { (finished) in
+                super.isHidden = hidden
+                completion.map{ $0(finished) }
+            })
         } else {
-            heightConstraint.constant = normalHeight
-            super.isHidden = false
-        }
-        
-        UIView.animate(withDuration: 0.4, animations: {
-            self.superview?.layoutIfNeeded()
-        }, completion: { (finished) in
             super.isHidden = hidden
-            if let c = completion { c(finished) }
-        })
+            completion.map{ $0(true) }
+        }
     }
 }
