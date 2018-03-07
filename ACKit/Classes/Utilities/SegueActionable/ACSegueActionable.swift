@@ -1,4 +1,4 @@
-//
+
 //  ACSegueActionable.swift
 //  ACKit
 //
@@ -21,10 +21,15 @@ extension ACSegueActionable where Self: UIViewController {
             segueActionDict[identifier] = action
             associatedObject = segueActionDict
             
-            // swizzle performSegue
-            ACSwizzle.swizzleSelector(#selector(prepare(for:sender:)), withNewSelector: #selector(swizzledPrepare(for:sender:)), on: self)
+            if !SwizzledSet.shared.isSwizzled(type(of: self)) {
+                // swizzle performSegue
+                ACSwizzle.swizzleSelector(#selector(prepare(for:sender:)),
+                                          withNewSelector: #selector(swizzledPrepare(for:sender:)), on: self)
+                SwizzledSet.shared.setSwizzled(type(of: self))
+            }
         } else {
             var segueActionDict: SegueActionDict = associatedObject as! SegueActionDict
+            segueActionDict.removeValue(forKey: identifier)
             segueActionDict[identifier] = action
             associatedObject = segueActionDict // needed otherwise action being performed uses old parameters
         }
@@ -45,5 +50,30 @@ extension UIViewController: ACSegueActionable {
         
         // call old method
         swizzledPrepare(for: segue, sender: nil) // this method signature actually points to the old one, prepare(for: sender)
+    }
+}
+
+private class SwizzledSet {
+    static let shared = SwizzledSet()
+    var swizzledTypes = Set<String>()
+    
+    func isSwizzled(type: String) -> Bool {
+        return swizzledTypes.contains(type)
+    }
+    
+    func setSwizzled(type: String) {
+        swizzledTypes.insert(type)
+    }
+}
+
+extension SwizzledSet {
+    func isSwizzled(_ a: Any) -> Bool {
+        let type = String(describing: a)
+        return swizzledTypes.contains(type)
+    }
+    
+    func setSwizzled(_ a: Any) {
+        let type = String(describing: a)
+        swizzledTypes.insert(type)
     }
 }
