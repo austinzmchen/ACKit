@@ -171,26 +171,6 @@
                                             <segue destination="III-F7-TJ2" kind="show" id="7pl-Wi-Jpn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="NJw-b2-kpW" style="IBUITableViewCellStyleDefault" id="XUq-1y-ywq">
-                                        <rect key="frame" x="0.0" y="616" width="375" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XUq-1y-ywq" id="Rlo-bH-ziT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Case Proxy Selector" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NJw-b2-kpW">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="79.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="hUJ-v8-zvN" kind="show" id="5fP-eg-Cs0"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -253,13 +233,21 @@
             </objects>
             <point key="canvasLocation" x="1578" y="94"/>
         </scene>
-        <!--CaseProxySelector-->
+        <!--CaseiPhoneX-->
         <scene sceneID="zi1-6l-gYG">
             <objects>
-                <viewControllerPlaceholder storyboardName="CaseProxySelector" id="hUJ-v8-zvN" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CaseiPhoneX" id="hUJ-v8-zvN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUS-C9-bYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="255"/>
+            <point key="canvasLocation" x="1565" y="252"/>
+        </scene>
+        <!--kCaseiPhoneXContainerVC-->
+        <scene sceneID="fWI-vv-La6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseiPhoneX" referencedIdentifier="kCaseiPhoneXContainerVC" id="9kq-q7-tU6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFM-5x-oto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1586" y="326"/>
         </scene>
         <!--CaseAutolayout-->
         <scene sceneID="7vW-yk-iZQ">

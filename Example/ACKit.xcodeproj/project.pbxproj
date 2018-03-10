@@ -82,6 +82,8 @@
 		C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */; };
 		C406D4DE201FA4DA00268161 /* CaseAccessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */; };
 		C406D4E0201FB59A00268161 /* CaseAccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */; };
+		C43B7C312053366200E370F1 /* CaseiPhoneX.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43B7C302053366200E370F1 /* CaseiPhoneX.storyboard */; };
+		C43B7C332053385E00E370F1 /* CaseiPhoneXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43B7C322053385E00E370F1 /* CaseiPhoneXViewController.swift */; };
 		C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */; };
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
@@ -92,6 +94,9 @@
 		C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */; };
 		C453BFD820223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */; };
 		C453BFDA2022405300D6AD00 /* CaseTableAutoHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */; };
+		C45AD879205391EE00C72808 /* Device&iOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45AD878205391EE00C72808 /* Device&iOS.storyboard */; };
+		C45AD87D2053929E00C72808 /* CaseLargeTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AD87B2053929E00C72808 /* CaseLargeTitleViewController.swift */; };
+		C45AD87E2053929E00C72808 /* CaseLargeTitle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45AD87C2053929E00C72808 /* CaseLargeTitle.storyboard */; };
 		C45D0EB42040B66B005EBC3D /* CaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */; };
 		C45D0EB62040B6B9005EBC3D /* ACRetractableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */; };
 		C45D0EB82040B730005EBC3D /* ACRetractableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D0EB72040B730005EBC3D /* ACRetractableView.xib */; };
@@ -211,6 +216,8 @@
 		C406D4DB201FA1E500268161 /* CaseAccessbility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseAccessbility.storyboard; sourceTree = "<group>"; };
 		C406D4DD201FA4DA00268161 /* CaseAccessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityViewController.swift; sourceTree = "<group>"; };
 		C406D4DF201FB59A00268161 /* CaseAccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseAccessibilityView.swift; sourceTree = "<group>"; };
+		C43B7C302053366200E370F1 /* CaseiPhoneX.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseiPhoneX.storyboard; sourceTree = "<group>"; };
+		C43B7C322053385E00E370F1 /* CaseiPhoneXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseiPhoneXViewController.swift; sourceTree = "<group>"; };
 		C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		C44CB74D1F53521100AF5FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C44CB7501F53521100AF5FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -222,6 +229,9 @@
 		C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CaseTableAutoHeight.storyboard; sourceTree = "<group>"; };
 		C453BFD720223F6C00D6AD00 /* CaseTableAutoHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightViewController.swift; sourceTree = "<group>"; };
 		C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableAutoHeightCell.swift; sourceTree = "<group>"; };
+		C45AD878205391EE00C72808 /* Device&iOS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Device&iOS.storyboard"; sourceTree = "<group>"; };
+		C45AD87B2053929E00C72808 /* CaseLargeTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseLargeTitleViewController.swift; sourceTree = "<group>"; };
+		C45AD87C2053929E00C72808 /* CaseLargeTitle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseLargeTitle.storyboard; sourceTree = "<group>"; };
 		C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUIViewController.swift; sourceTree = "<group>"; };
 		C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRetractableView.swift; sourceTree = "<group>"; };
 		C45D0EB72040B730005EBC3D /* ACRetractableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACRetractableView.xib; sourceTree = "<group>"; };
@@ -603,12 +613,22 @@
 				C4065D7D20184159009B651F /* Transitions */,
 				C4065D9820184159009B651F /* Misc */,
 				C4065DBC20184159009B651F /* ScrollViewBased */,
+				C45AD877205391C000C72808 /* Device&iOS */,
 				C44CB74E1F53521100AF5FC9 /* Base.lproj */,
 				C44CB7661F53521100AF5FC9 /* Images.xcassets */,
 				C44CB7671F53521100AF5FC9 /* Info.plist */,
 				C44CB74C1F53521100AF5FC9 /* ACKit_Example-Bridging-Header.h */,
 			);
 			path = ACKitExample;
+			sourceTree = "<group>";
+		};
+		C43B7C2F2053364700E370F1 /* CaseiPhoneX */ = {
+			isa = PBXGroup;
+			children = (
+				C43B7C302053366200E370F1 /* CaseiPhoneX.storyboard */,
+				C43B7C322053385E00E370F1 /* CaseiPhoneXViewController.swift */,
+			);
+			path = CaseiPhoneX;
 			sourceTree = "<group>";
 		};
 		C44CB74E1F53521100AF5FC9 /* Base.lproj */ = {
@@ -628,6 +648,25 @@
 				C453BFD92022405300D6AD00 /* CaseTableAutoHeightCell.swift */,
 			);
 			path = CaseTableAutoHeight;
+			sourceTree = "<group>";
+		};
+		C45AD877205391C000C72808 /* Device&iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C45AD878205391EE00C72808 /* Device&iOS.storyboard */,
+				C43B7C2F2053364700E370F1 /* CaseiPhoneX */,
+				C45AD87A2053926400C72808 /* CaseLargeTitle */,
+			);
+			path = "Device&iOS";
+			sourceTree = "<group>";
+		};
+		C45AD87A2053926400C72808 /* CaseLargeTitle */ = {
+			isa = PBXGroup;
+			children = (
+				C45AD87C2053929E00C72808 /* CaseLargeTitle.storyboard */,
+				C45AD87B2053929E00C72808 /* CaseLargeTitleViewController.swift */,
+			);
+			path = CaseLargeTitle;
 			sourceTree = "<group>";
 		};
 		C4CFBBC4202D5A140020D060 /* CaseElastic */ = {
@@ -775,9 +814,11 @@
 			files = (
 				C4065E192018415A009B651F /* CaseCollections.storyboard in Resources */,
 				C4E27FCF202B6FD4006025BC /* CaseTwitterLikeElasticHeader.storyboard in Resources */,
+				C45AD87E2053929E00C72808 /* CaseLargeTitle.storyboard in Resources */,
 				C4065DDD20184159009B651F /* CaseEmbedVCByCode.xib in Resources */,
 				C4065E152018415A009B651F /* CaseTableCells.storyboard in Resources */,
 				C4065E032018415A009B651F /* CaseAutolayout.storyboard in Resources */,
+				C45AD879205391EE00C72808 /* Device&iOS.storyboard in Resources */,
 				C4065DDB20184159009B651F /* CaseUnwind.storyboard in Resources */,
 				C4065DFF2018415A009B651F /* CaseBlurModal.storyboard in Resources */,
 				C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */,
@@ -803,6 +844,7 @@
 				C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */,
 				C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */,
 				C4065DF820184159009B651F /* CaseStackview.storyboard in Resources */,
+				C43B7C312053366200E370F1 /* CaseiPhoneX.storyboard in Resources */,
 				C4065DF020184159009B651F /* CaseNavigationController.storyboard in Resources */,
 				C4CFBBDA202F9BE00020D060 /* CaseProxySelector.storyboard in Resources */,
 				C4065E112018415A009B651F /* SampleTableViewCell2.xib in Resources */,
@@ -992,6 +1034,7 @@
 				C48690AC203759D600E04DD1 /* CaseElastic2SubVC1.swift in Sources */,
 				C4065DE820184159009B651F /* ACHorizontalTransitionManager.swift in Sources */,
 				C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */,
+				C43B7C332053385E00E370F1 /* CaseiPhoneXViewController.swift in Sources */,
 				C4065DEC20184159009B651F /* SampleTransitionToViewController.swift in Sources */,
 				C4065DEA20184159009B651F /* ACHorizontalSlideOutAnimator.swift in Sources */,
 				C4065DDA20184159009B651F /* CaseUnwindViewController2.swift in Sources */,
@@ -1003,6 +1046,7 @@
 				C4065DE020184159009B651F /* CaseEmbedSubVCByCode.swift in Sources */,
 				C4E27FD4202B7409006025BC /* CaseElastic3ViewController.swift in Sources */,
 				C4065DDE20184159009B651F /* CaseEmbedVCByCode.swift in Sources */,
+				C45AD87D2053929E00C72808 /* CaseLargeTitleViewController.swift in Sources */,
 				C4065DF320184159009B651F /* ACParallaxView.swift in Sources */,
 				C4065DFB2018415A009B651F /* CaseUIViewWillMoveViewController2.swift in Sources */,
 				C4065DF720184159009B651F /* UIImageView+Aldo.m in Sources */,
@@ -1143,7 +1187,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VJS4K2U458;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ac.ACKit-Example";
@@ -1162,7 +1206,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = VJS4K2U458;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ac.ACKit-Example";
