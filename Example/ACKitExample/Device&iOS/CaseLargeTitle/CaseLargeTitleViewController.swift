@@ -30,11 +30,6 @@ class CaseLargeTitleViewController: UIViewController {
         searchController.searchBar.scopeButtonTitles = ["Cat 1", "Cat 2", "Cat 2"]
         searchController.searchBar.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
 extension CaseLargeTitleViewController: UITableViewDelegate, UITableViewDataSource {

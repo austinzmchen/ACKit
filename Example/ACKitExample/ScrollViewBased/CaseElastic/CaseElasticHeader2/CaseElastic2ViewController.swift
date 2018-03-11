@@ -97,6 +97,13 @@ extension CaseElastic2ScrollViewDelegate: MBSnapshotHeaderViewDelegate {
             {
                 let y = abs(scrollView.contentOffset.y)
                 vc.headerView.elasticZoomConstant = y
+                
+//                print(vc.headerView.maxExpandableHeight + y)
+//                vc.headerView.cHeight = vc.headerView.maxExpandableHeight + y
+                vc.headerView.bounds.size.height = vc.headerView.maxExpandableHeight + y
+//                let r = (vc.headerView.cHeight + y) / vc.headerView.cHeight
+//                vc.headerView.transform = CGAffineTransform(scaleX: 1, y: r)
+////                vc.headerView.clipsToBounds = false
             }
             return // filter out
         default:
@@ -135,6 +142,7 @@ extension CaseElastic2ScrollViewDelegate: MBSnapshotHeaderViewDelegate {
             break
         case .changed:
             guard scrollView.contentOffset.y < 0,
+                vc.headerView.cHeight < vc.headerView.maxExpandableHeight, // exclude when elastic bounce
                 let v = Optional.some(gestureRecognizer.velocity(in: gestureRecognizer.view?.superview)),
                  v.y > 0 /* only care pan down */ else
             {
