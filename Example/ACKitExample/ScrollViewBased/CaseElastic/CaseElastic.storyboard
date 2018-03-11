@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,6 +99,26 @@
                                             <segue destination="LEp-w5-7bx" kind="presentation" id="Ut5-od-YqA"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tim-iD-F0u" style="IBUITableViewCellStyleDefault" id="A1b-HO-vLW">
+                                        <rect key="frame" x="0.0" y="320" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A1b-HO-vLW" id="XqU-vH-uSN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Twitter Like Elastic Header 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tim-iD-F0u">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="79.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KrZ-s4-8Vc" kind="presentation" id="o9E-rD-ucS"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -144,6 +163,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QLG-OA-KT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666" y="-837"/>
+        </scene>
+        <!--CaseTwitterLikeElasticHeader2-->
+        <scene sceneID="xDP-uL-USR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CaseTwitterLikeElasticHeader2" id="KrZ-s4-8Vc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53b-1p-QVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="-726"/>
         </scene>
     </scenes>
 </document>

@@ -100,6 +100,8 @@
 		C45D0EB42040B66B005EBC3D /* CaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */; };
 		C45D0EB62040B6B9005EBC3D /* ACRetractableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */; };
 		C45D0EB82040B730005EBC3D /* ACRetractableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45D0EB72040B730005EBC3D /* ACRetractableView.xib */; };
+		C47609D02055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47609CE2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.swift */; };
+		C47609D12055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C47609CF2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard */; };
 		C48690AB203759D600E04DD1 /* CaseElastic2SubVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */; };
 		C48690AC203759D600E04DD1 /* CaseElastic2SubVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */; };
 		C4A5E2072031E7F8000B0A81 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A5E2062031E7F8000B0A81 /* Misc.storyboard */; };
@@ -235,6 +237,8 @@
 		C45D0EB32040B66B005EBC3D /* CaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseUIViewController.swift; sourceTree = "<group>"; };
 		C45D0EB52040B6B9005EBC3D /* ACRetractableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACRetractableView.swift; sourceTree = "<group>"; };
 		C45D0EB72040B730005EBC3D /* ACRetractableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ACRetractableView.xib; sourceTree = "<group>"; };
+		C47609CE2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseTwitterLikeElasticHeader2.swift; sourceTree = "<group>"; };
+		C47609CF2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CaseTwitterLikeElasticHeader2.storyboard; sourceTree = "<group>"; };
 		C48690A9203759D500E04DD1 /* CaseElastic2SubVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC2.swift; sourceTree = "<group>"; };
 		C48690AA203759D600E04DD1 /* CaseElastic2SubVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseElastic2SubVC1.swift; sourceTree = "<group>"; };
 		C4A5E2062031E7F8000B0A81 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
@@ -669,6 +673,15 @@
 			path = CaseLargeTitle;
 			sourceTree = "<group>";
 		};
+		C47609CD2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2 */ = {
+			isa = PBXGroup;
+			children = (
+				C47609CE2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.swift */,
+				C47609CF2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard */,
+			);
+			path = CaseTwitterLikeElasticHeader2;
+			sourceTree = "<group>";
+		};
 		C4CFBBC4202D5A140020D060 /* CaseElastic */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,6 +690,7 @@
 				C4E27FC8202B4A63006025BC /* CaseElasticHeader2 */,
 				C4E27FCD202B6FB3006025BC /* CaseElasticHeader3 */,
 				C4CFBBC7202D5B2C0020D060 /* CaseTwitterLikeElasticHeader */,
+				C47609CD2055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2 */,
 			);
 			path = CaseElastic;
 			sourceTree = "<group>";
@@ -839,6 +853,7 @@
 				C4065E052018415A009B651F /* CaseUI.storyboard in Resources */,
 				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
 				C4065E092018415A009B651F /* CaseElasticHeader.storyboard in Resources */,
+				C47609D12055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard in Resources */,
 				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
 				C4065DE120184159009B651F /* CaseTransitions2.storyboard in Resources */,
 				C406D4DC201FA1E500268161 /* CaseAccessbility.storyboard in Resources */,
@@ -1024,6 +1039,7 @@
 				C44CB7691F53521100AF5FC9 /* AppDelegate.swift in Sources */,
 				C4065DED20184159009B651F /* CaseSwizzleViewController.swift in Sources */,
 				C4065E062018415A009B651F /* ElasticView.swift in Sources */,
+				C47609D02055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.swift in Sources */,
 				C4065DE720184159009B651F /* SampleTransitionFromViewController.swift in Sources */,
 				C4065DF620184159009B651F /* CaseParallaxMainViewController.swift in Sources */,
 				C4E27FCA202B4A89006025BC /* CaseElastic2ViewController.swift in Sources */,
