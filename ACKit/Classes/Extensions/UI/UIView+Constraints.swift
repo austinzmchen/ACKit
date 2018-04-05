@@ -6,41 +6,107 @@
 //  Copyright © 2017 Austin Chen. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol SnappableLayoutGuideType {
+    var leadingAnchor: NSLayoutXAxisAnchor { get }
+    var trailingAnchor: NSLayoutXAxisAnchor { get }
+    var topAnchor: NSLayoutYAxisAnchor { get }
+    var bottomAnchor: NSLayoutYAxisAnchor { get }
+}
+
+class SnappableLayoutGuide: SnappableLayoutGuideType {
+    var leadingAnchor: NSLayoutXAxisAnchor
+    var trailingAnchor: NSLayoutXAxisAnchor
+    var topAnchor: NSLayoutYAxisAnchor
+    var bottomAnchor: NSLayoutYAxisAnchor
+    
+    init(leadingAnchor: NSLayoutXAxisAnchor,
+         trailingAnchor: NSLayoutXAxisAnchor,
+         topAnchor: NSLayoutYAxisAnchor,
+         bottomAnchor: NSLayoutYAxisAnchor)
+    {
+        self.leadingAnchor = leadingAnchor
+        self.trailingAnchor = trailingAnchor
+        self.topAnchor = topAnchor
+        self.bottomAnchor = bottomAnchor
+    }
+}
+
+extension UILayoutGuide  {
+    var snappableLayoutGuide: SnappableLayoutGuide {
+        return SnappableLayoutGuide(leadingAnchor: leadingAnchor,
+                                    trailingAnchor: trailingAnchor,
+                                    topAnchor: topAnchor,
+                                    bottomAnchor: bottomAnchor)
+    }
+}
 
 extension UIView {
-    
-    open func snapTopBottom(toView view: UIView) {
-        self.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    var baseSnappableLayoutGuide: SnappableLayoutGuide {
+        let guide = SnappableLayoutGuide(leadingAnchor: leadingAnchor,
+                                         trailingAnchor: trailingAnchor,
+                                         topAnchor: topAnchor,
+                                         bottomAnchor: bottomAnchor)
+        return guide
+    }
+}
+
+extension UIView {
+    func snapTopBottom(to guide: SnappableLayoutGuideType) {
+        self.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: guide.bottomAnchor).isActive = true
     }
     
-    open func snapLeadTrail(toView view: UIView) {
-        self.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        self.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    func snapLeadTrail(to guide: SnappableLayoutGuideType) {
+        self.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
+        self.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
     }
     
-    open func snapAll(toView view: UIView) {
-        snapTopBottom(toView: view)
-        snapLeadTrail(toView: view)
+    func snapAll(to guide: SnappableLayoutGuideType) {
+        snapTopBottom(to: guide)
+        snapLeadTrail(to: guide)
     }
     
-    open func snapTopBottomToSuperview() {
+    func snapTopBottomToSuperview() {
         guard let sv = self.superview
             else { return }
         
-        snapTopBottom(toView: sv)
+        snapTopBottom(to: sv.baseSnappableLayoutGuide)
     }
     
-    open func snapLeadTrailToSuperview() {
+    func snapLeadTrailToSuperview() {
         guard let sv = self.superview
             else { return }
         
-        snapLeadTrail(toView: sv)
+        snapLeadTrail(to: sv.baseSnappableLayoutGuide)
     }
     
-    open func snapAllToSuperview() {
+    func snapAllToSuperview() {
         snapTopBottomToSuperview()
         snapLeadTrailToSuperview()
+    }
+    
+    // MARK: safe area
+    @available(iOS 11.0, *)
+    func snapTopBottomToSuperviewSafeArea() {
+        guard let sv = self.superview
+            else { return }
+        
+        snapTopBottom(to: sv.safeAreaLayoutGuide.snappableLayoutGuide)
+    }
+    
+    @available(iOS 11.0, *)
+    func snapLeadTrailToSuperviewSafeArea() {
+        guard let sv = self.superview
+            else { return }
+        
+        snapLeadTrail(to: sv.safeAreaLayoutGuide.snappableLayoutGuide)
+    }
+    
+    @available(iOS 11.0, *)
+    func snapAllToSuperviewSafeArea() {
+        snapTopBottomToSuperviewSafeArea()
+        snapLeadTrailToSuperviewSafeArea()
     }
 }
