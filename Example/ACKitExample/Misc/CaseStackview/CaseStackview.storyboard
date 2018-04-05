@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OWr-8A-gRz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OWr-8A-gRz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="9xf-JZ-erg">
-                                <rect key="frame" x="37" y="120" width="300" height="100"/>
+                                <rect key="frame" x="37.5" y="120" width="300" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-PR-NmY" userLabel="View1">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
@@ -53,7 +52,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ygm-yk-ivS">
-                                <rect key="frame" x="87" y="270" width="200" height="300"/>
+                                <rect key="frame" x="87.5" y="270" width="200" height="300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="HBI-gl-y1F" userLabel="View1" customClass="ACView" customModule="ACKit">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
