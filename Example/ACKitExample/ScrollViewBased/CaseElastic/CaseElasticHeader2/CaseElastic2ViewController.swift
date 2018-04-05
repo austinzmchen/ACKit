@@ -31,6 +31,7 @@ class CaseElastic2ViewController: UIViewController {
         
         headerView.maxExpandableHeight = 300
         headerView.minExpandableHeight = 100
+        headerView.clipsToBounds = false // for rubber band blue section
         
         // tabs header
         (tabsHeaderView.dataDelegate as? ACTabsHeaderCollectionViewDataDelegate)?.tabTitles = ["Tab 1", "Tab 2"]
@@ -98,12 +99,12 @@ extension CaseElastic2ScrollViewDelegate: MBSnapshotHeaderViewDelegate {
                 let y = abs(scrollView.contentOffset.y)
                 vc.headerView.elasticZoomConstant = y
                 
-//                print(vc.headerView.maxExpandableHeight + y)
-//                vc.headerView.cHeight = vc.headerView.maxExpandableHeight + y
+                // rubber band blue section
                 vc.headerView.bounds.size.height = vc.headerView.maxExpandableHeight + y
-//                let r = (vc.headerView.cHeight + y) / vc.headerView.cHeight
-//                vc.headerView.transform = CGAffineTransform(scaleX: 1, y: r)
-////                vc.headerView.clipsToBounds = false
+                vc.headerView.layoutIfNeeded() // weird, otherwise not working
+                
+                vc.tabsHeaderView.frame.origin.y = vc.headerView.bounds.height - vc.tabsHeaderView.frame.height
+                print(vc.tabsHeaderView.frame.minY)
             }
             return // filter out
         default:
