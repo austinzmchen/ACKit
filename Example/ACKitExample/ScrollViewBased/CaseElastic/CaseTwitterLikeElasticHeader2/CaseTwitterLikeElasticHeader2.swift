@@ -7,6 +7,12 @@
 
 import UIKit
 
+private let kHeight: CGFloat = 100
+private let kMinHeight: CGFloat = 70
+
+private let kHeight2: CGFloat = 250
+private let kMinHeight2: CGFloat = 50
+
 class CaseTwitterLikeElasticHeader2: UIViewController {
     @IBAction func backButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -60,7 +66,7 @@ extension CaseTwitterLikeElasticHeader2: UITableViewDelegate, UITableViewDataSou
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print(scrollView.contentOffset.y)
+        // print(scrollView.contentOffset.y)
         
         var f = headerView.frame
         f.origin.y = scrollView.contentOffset.y // make header view stay at top flushed
@@ -71,7 +77,7 @@ extension CaseTwitterLikeElasticHeader2: UITableViewDelegate, UITableViewDataSou
             headerView2.clipsToBounds = true
             
             
-            print(hv2Title.frame.minY)
+            // print(hv2Title.frame.minY)
             headerView.constraints.first{$0.identifier == "kTitleCstTop"}?.constant =
                 min(-hv2Title.frame.minY,
                     (headerView.bounds.height + hv1Title.bounds.height) / 2.0 ) // + because kTitleCstTop is relative from the label top to superview bottom
@@ -99,10 +105,3 @@ extension CaseTwitterLikeElasticHeader2: UITableViewDelegate, UITableViewDataSou
         headerView2.frame = f2
     }
 }
-
-private let kHeight: CGFloat = 100
-private let kMinHeight: CGFloat = 70
-
-private let kHeight2: CGFloat = 250
-private let kMinHeight2: CGFloat = 50
-

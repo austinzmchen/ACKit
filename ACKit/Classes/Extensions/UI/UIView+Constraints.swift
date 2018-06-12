@@ -8,6 +8,17 @@
 
 import UIKit
 
+/*
+ subview.snp.makeConstraints { (make) in
+    make.top.bottom.left.right.equalTo(view)
+ }
+ 
+ subview.snp.makeConstraints { (make) in
+    make.width.height.equalTo(200)
+    make.centerX.centerY.equalTo(view)
+ }
+ */
+
 protocol SnappableLayoutGuideType {
     var leadingAnchor: NSLayoutXAxisAnchor { get }
     var trailingAnchor: NSLayoutXAxisAnchor { get }
