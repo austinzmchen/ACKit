@@ -9,6 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Elastic Header
+
+Here is the twitter like scrolling. There are 6 different takes to pull this out, where first 3 takes demonstrate the failure apporach, and the last 3 the working approaches with increasing complexity.
+
+![](https://thumbs.gfycat.com/CloseHardKid-size_restricted.gif)
+![](https://thumbs.gfycat.com/HandmadeGentleBadger-size_restricted.gif)
+![](https://thumbs.gfycat.com/GaseousOddButterfly-size_restricted.gif) 
+
 ## Requirements
 
 ## Installation
