@@ -497,8 +497,8 @@
 			children = (
 				C4065DB220184159009B651F /* CaseBlurModalViewController.swift */,
 				C4065DB320184159009B651F /* CaseBlurModal.storyboard */,
-				C4065DB420184159009B651F /* ACBlurInAnimator.swift */,
 				C4065DB520184159009B651F /* CaseBlurModalMainViewController.swift */,
+				C4065DB420184159009B651F /* ACBlurInAnimator.swift */,
 				C4065DB620184159009B651F /* ACBlurOutAnimator.swift */,
 			);
 			path = CaseBlurModal;
