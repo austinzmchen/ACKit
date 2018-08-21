@@ -88,7 +88,6 @@
 		C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C44CB74F1F53521100AF5FC9 /* LaunchScreen.xib */; };
 		C44CB76B1F53521100AF5FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7511F53521100AF5FC9 /* Main.storyboard */; };
 		C44CB77B1F53521100AF5FC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7661F53521100AF5FC9 /* Images.xcassets */; };
-		C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C44CB7671F53521100AF5FC9 /* Info.plist */; };
 		C44CB77D1F53521100AF5FC9 /* SubMain3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CB7681F53521100AF5FC9 /* SubMain3ViewController.swift */; };
 		C453BFD12020E74D00D6AD00 /* CaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453BFD02020E74D00D6AD00 /* CaseCollectionCell.swift */; };
 		C453BFD620223E8700D6AD00 /* CaseTableAutoHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C453BFD520223E8700D6AD00 /* CaseTableAutoHeight.storyboard */; };
@@ -792,7 +791,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = VJS4K2U458;
+						DevelopmentTeam = JF6RD64R9G;
 						LastSwiftMigration = 0830;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -851,7 +850,6 @@
 				C4A5E2072031E7F8000B0A81 /* Misc.storyboard in Resources */,
 				C4065DFA2018415A009B651F /* CaseUIViewWillMove.storyboard in Resources */,
 				C4065E052018415A009B651F /* CaseUI.storyboard in Resources */,
-				C44CB77C1F53521100AF5FC9 /* Info.plist in Resources */,
 				C4065E092018415A009B651F /* CaseElasticHeader.storyboard in Resources */,
 				C47609D12055ECDD00E885E2 /* CaseTwitterLikeElasticHeader2.storyboard in Resources */,
 				C44CB76A1F53521100AF5FC9 /* LaunchScreen.xib in Resources */,
@@ -1201,7 +1199,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VJS4K2U458;
+				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1220,7 +1218,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = VJS4K2U458;
+				DEVELOPMENT_TEAM = JF6RD64R9G;
 				INFOPLIST_FILE = ACKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
